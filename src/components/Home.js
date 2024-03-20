@@ -41,15 +41,15 @@ const Home = () => {
         <div className="flex flex-col py-12 relative h-[calc(100vh-56px)]">
           <img
             src="./assets/training_screenshot.png"
-            className="min-w-[315px] rounded-[35px] absolute right-[60px] top-[70px]"
+            className="min-w-[300px] rounded-[35px] absolute right-[70px] top-[40px]"
             alt="training_screenshot"
           />
           <img
             src="./assets/login_screenshot.png"
-            className="min-w-[315px] rounded-[35px] absolute right-[120px] top-[150px]"
+            className="min-w-[300px] rounded-[35px] absolute right-[120px] top-[120px]"
             alt="matches_screenshot"
           />
-          <div className="absolute top-[600px] right-[380px] bg-white w-[200px] text-xs px-4 py-4 rounded-lg">
+          <div className="absolute top-[560px] right-[380px] bg-white w-[200px] text-sm px-4 py-4 rounded-lg">
             <div className="flex space-x-1 mb-3">
               <img src="./assets/star.png" />
               <img src="./assets/star.png" />
@@ -62,7 +62,7 @@ const Home = () => {
               se ha inscrito
             </span>
           </div>
-          <div className="absolute top-[250px] right-[-100px] bg-white w-[200px] text-xs px-4 py-4 rounded-lg">
+          <div className="absolute top-[210px] right-[-90px] bg-white w-[200px] text-sm px-4 py-4 rounded-lg">
             <div className="flex space-x-1 mb-3">
               <img src="./assets/star.png" />
               <img src="./assets/star.png" />
