@@ -6,6 +6,8 @@ module.exports = {
       colors: {
         beachliga_blue: "#00B8DE",
         beachliga_grey: "#36343B",
+        beachliga_yellow: "#FFB600",
+        beachliga_neutral: "#2B2930",
       },
       fontFamily: {
         body: ["Gotham"],
