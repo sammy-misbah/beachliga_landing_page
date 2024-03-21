@@ -4,7 +4,7 @@ const Planes = () => {
   return (
     <div className="bg-beachliga_bg_grey">
       <div className="max-w-[1200px] mx-auto pt-6 pb-24">
-        <h2 className="text-6xl text-beachliga_blue font-[500] mb-12">
+        <h2 className="text-5xl text-beachliga_blue font-[400] mb-12">
           Planes y precios
         </h2>
         <div className="flex justify-between mb-20">
@@ -20,6 +20,7 @@ const Planes = () => {
                   <img
                     src="./assets/check_black.png"
                     className="w-[18px] h-[14px] mr-4"
+                    alt="check_black"
                   />
                   <div className="text-xl font-[500]">Title</div>
                 </div>
@@ -27,6 +28,7 @@ const Planes = () => {
                   <img
                     src="./assets/check_black.png"
                     className="w-[18px] h-[14px] mr-4"
+                    alt="check_black"
                   />
                   <div className="text-xl font-[500]">Title</div>
                 </div>
@@ -34,13 +36,14 @@ const Planes = () => {
                   <img
                     src="./assets/check_black.png"
                     className="w-[18px] h-[14px] mr-4"
+                    alt="check_black"
                   />
                   <div className="text-xl font-[500]">Title</div>
                 </div>
               </div>
             </div>
             <div>
-              <img src="./assets/line1.png" className="mb-6" />
+              <img src="./assets/line1.png" className="mb-6" alt="line_1" />
               <h2 className="text-5xl font-[400] mb-6">0€</h2>
               <div className="flex justify-center">
                 <button className="w-[290px] bg-black text-white py-2 rounded-full font-[500] text-lg">
@@ -61,6 +64,7 @@ const Planes = () => {
                   <img
                     src="./assets/check_lightblue.png"
                     className="w-[18px] h-[14px] mr-4"
+                    alt="check_lightblue"
                   />
                   <div className="text-xl font-[500]">Title</div>
                 </div>
@@ -68,6 +72,7 @@ const Planes = () => {
                   <img
                     src="./assets/check_lightblue.png"
                     className="w-[18px] h-[14px] mr-4"
+                    alt="check_lightblue"
                   />
                   <div className="text-xl font-[500]">Title</div>
                 </div>
@@ -75,13 +80,14 @@ const Planes = () => {
                   <img
                     src="./assets/check_lightblue.png"
                     className="w-[18px] h-[14px] mr-4"
+                    alt="check_lightblue"
                   />
                   <div className="text-xl font-[500]">Title</div>
                 </div>
               </div>
             </div>
             <div>
-              <img src="./assets/line2.png" className="mb-6" />
+              <img src="./assets/line2.png" className="mb-6" alt="line_2" />
               <h2 className="text-5xl font-[400] mb-6">
                 10€<span className="text-3xl">/mes</span>
               </h2>
@@ -104,6 +110,7 @@ const Planes = () => {
                   <img
                     src="./assets/check_white.png"
                     className="w-[18px] h-[14px] mr-4"
+                    alt="check_white"
                   />
                   <div className="text-xl font-[500]">Title</div>
                 </div>
@@ -111,6 +118,7 @@ const Planes = () => {
                   <img
                     src="./assets/check_white.png"
                     className="w-[18px] h-[14px] mr-4"
+                    alt="check_white"
                   />
                   <div className="text-xl font-[500]">Title</div>
                 </div>
@@ -118,6 +126,7 @@ const Planes = () => {
                   <img
                     src="./assets/check_white.png"
                     className="w-[18px] h-[14px] mr-4"
+                    alt="check_white"
                   />
                   <div className="text-xl font-[500]">Title</div>
                 </div>
@@ -125,6 +134,7 @@ const Planes = () => {
                   <img
                     src="./assets/check_white.png"
                     className="w-[18px] h-[14px] mr-4"
+                    alt="check_white"
                   />
                   <div className="text-xl font-[500]">Title</div>
                 </div>
@@ -132,13 +142,14 @@ const Planes = () => {
                   <img
                     src="./assets/check_white.png"
                     className="w-[18px] h-[14px] mr-4"
+                    alt="check_white"
                   />
                   <div className="text-xl font-[500]">Title</div>
                 </div>
               </div>
             </div>
             <div>
-              <img src="./assets/line3.png" className="mb-6" />
+              <img src="./assets/line3.png" className="mb-6" alt="line_3" />
               <h2 className="text-5xl font-[400] mb-6">
                 19€<span className="text-3xl">/mes</span>
               </h2>
@@ -154,6 +165,7 @@ const Planes = () => {
           <img
             src="./assets/question_mark.png"
             className="mr-12 w-[80px] h-[90px]"
+            alt="question_mark"
           />
           <div className="flex flex-col">
             <h3 className="text-beachliga_yellow text-2xl max-w-[600px] font-[400] mb-6">

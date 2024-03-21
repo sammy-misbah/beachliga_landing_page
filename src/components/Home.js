@@ -51,11 +51,11 @@ const Home = () => {
           />
           <div className="absolute top-[560px] right-[350px] bg-white w-[200px] text-sm px-4 py-4 rounded-lg">
             <div className="flex space-x-1 mb-3">
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
             </div>
             <span className="font-semibold  text-beachliga_neutral">
               Puedo crear un torneo en menos de 1 minuto y ver fácilmente quién
@@ -64,11 +64,11 @@ const Home = () => {
           </div>
           <div className="absolute top-[210px] right-[-90px] bg-white w-[200px] text-sm px-4 py-4 rounded-lg">
             <div className="flex space-x-1 mb-3">
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
             </div>
             <span className="font-semibold  text-beachliga_neutral">
               Una app genial para encontrar con quién entrenar
