@@ -16,13 +16,13 @@ const Clientes = () => {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <div className="flex flex-col justify-center items-center text-6xl text-white border-4 rounded-full w-60 h-60">
+          <div className="flex flex-col justify-center items-center text-5xl text-white border-4 rounded-full w-60 h-60">
             +26
             <br /> <span className="text-3xl"> clubs</span>
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <div className="flex flex-col justify-center items-center text-6xl text-white border-4 rounded-full w-60 h-60">
+          <div className="flex flex-col justify-center items-center text-5xl text-white border-4 rounded-full w-60 h-60">
             +1000
             <br /> <span className="text-3xl"> usuarios</span>
           </div>

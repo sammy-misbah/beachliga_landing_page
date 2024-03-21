@@ -5,7 +5,7 @@ const Home = () => {
     <div className="bg-beachliga_grey h-[calc(100vh-65px)]">
       <div className="flex justify-between max-w-[1200px] mx-auto">
         <div className="flex flex-col justify-center m-6 py-6">
-          <h1 className="text-6xl text-beachliga_blue font-[300] mb-6">
+          <h1 className="text-6xl text-beachliga_blue font-[400] mb-6">
             Descubre una
             <br /> nueva forma de
             <br /> hacer <span className="text-beachliga_yellow">deporte</span>
@@ -41,15 +41,15 @@ const Home = () => {
         <div className="flex flex-col py-12 relative h-[calc(100vh-56px)]">
           <img
             src="./assets/training_screenshot.png"
-            className="min-w-[300px] rounded-[35px] absolute right-[70px] top-[40px]"
+            className="min-w-[320px] rounded-[35px] absolute right-[70px] top-[50px]"
             alt="training_screenshot"
           />
           <img
             src="./assets/login_screenshot.png"
-            className="min-w-[300px] rounded-[35px] absolute right-[120px] top-[120px]"
+            className="min-w-[320px] rounded-[35px] absolute right-[120px] top-[130px]"
             alt="matches_screenshot"
           />
-          <div className="absolute top-[560px] right-[380px] bg-white w-[200px] text-sm px-4 py-4 rounded-lg">
+          <div className="absolute top-[560px] right-[350px] bg-white w-[200px] text-sm px-4 py-4 rounded-lg">
             <div className="flex space-x-1 mb-3">
               <img src="./assets/star.png" />
               <img src="./assets/star.png" />
