@@ -2,13 +2,13 @@ import React from "react";
 
 const Planes = () => {
   return (
-    <div className="bg-beachliga_bg_grey">
+    <div className="bg-beachliga_bg_grey" id="precios">
       <div className="max-w-[1200px] mx-auto pt-6 pb-24">
-        <h2 className="text-5xl text-beachliga_blue font-[400] mb-12">
+        <h2 className="text-5xl text-beachliga_blue font-[400] mb-10">
           Planes y precios
         </h2>
         <div className="flex justify-between mb-20">
-          <div className="flex flex-col w-[350px] h-[620px] justify-between px-10 py-8 border-2 border-beachliga_lightgrey rounded-3xl bg-white">
+          <div className="flex flex-col w-[360px] h-[620px] justify-between px-8 py-10 border-2 border-beachliga_lightgrey rounded-3xl bg-white">
             <div>
               <h3 className="text-4xl font-semibold mb-6">Gratis</h3>
               <p className="mb-6 text-lg font-[400]">
@@ -46,13 +46,13 @@ const Planes = () => {
               <img src="./assets/line1.png" className="mb-6" alt="line_1" />
               <h2 className="text-5xl font-[400] mb-6">0€</h2>
               <div className="flex justify-center">
-                <button className="w-[290px] bg-black text-white py-2 rounded-full font-[500] text-lg">
+                <button className="w-[290px] bg-black text-white py-3 rounded-full font-[500] text-lg">
                   ¡Empecemos!
                 </button>
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-[350px] h-[620px] justify-between px-10 py-8 border-2 border-beachliga_blue_border rounded-3xl bg-beachliga_lightblue text-beachliga_blue">
+          <div className="flex flex-col w-[360px] h-[620px] justify-between px-8 py-10 border-2 border-beachliga_blue_border rounded-3xl bg-beachliga_lightblue text-beachliga_blue">
             <div>
               <h3 className="text-4xl font-semibold mb-6">Pro</h3>
               <p className="mb-6 text-lg font-[400]">
@@ -92,13 +92,13 @@ const Planes = () => {
                 10€<span className="text-3xl">/mes</span>
               </h2>
               <div className="flex justify-center">
-                <button className="w-[290px] bg-beachliga_blue text-white py-2 rounded-full font-[500] text-lg">
+                <button className="w-[290px] bg-beachliga_blue text-white py-3 rounded-full font-[500] text-lg">
                   ¡Empecemos!
                 </button>
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-[350px] h-[620px] justify-between px-10 py-8 rounded-3xl bg-beachliga_blue text-white">
+          <div className="flex flex-col w-[360px] h-[620px] justify-between px-8 py-10 rounded-3xl bg-beachliga_blue text-white">
             <div>
               <h3 className="text-4xl font-semibold mb-6">Premium</h3>
               <p className="mb-6 text-lg">
@@ -154,7 +154,7 @@ const Planes = () => {
                 19€<span className="text-3xl">/mes</span>
               </h2>
               <div className="flex justify-center">
-                <button className="w-[290px] bg-white text-beachliga_blue py-2 rounded-full font-[500] text-lg">
+                <button className="w-[290px] bg-white text-beachliga_blue py-3 rounded-full font-[500] text-lg">
                   ¡Empecemos!
                 </button>
               </div>

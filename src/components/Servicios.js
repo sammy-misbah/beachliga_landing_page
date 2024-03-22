@@ -2,7 +2,10 @@ import React from "react";
 
 const Servicios = () => {
   return (
-    <div className="max-w-[1200px] mx-auto flex justify-between py-24 space-x-24">
+    <div
+      className="max-w-[1200px] mx-auto flex justify-between py-24 space-x-24"
+      id="funcionalidades"
+    >
       <div className="flex flex-col items-center">
         <img
           src="./assets/eventos.png"

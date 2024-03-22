@@ -3,19 +3,21 @@ import React from "react";
 const Opiniones = () => {
   return (
     <div className="max-w-[1200px] mx-auto py-24">
-      <h2 className="text-6xl text-beachliga_blue font-[500] mb-12">
+      <h2 className="text-5xl text-beachliga_blue font-[400] mb-24">
         ¿Qué dicen de nosotros?
       </h2>
       <div className="flex space-x-12">
-        <div className="flex flex-col justify-between py-8 px-10 text-white w-[350px] h-[320px] bg-beachliga_grey border-[3px] border-beachliga_blue rounded-[35px]">
+        <div className="flex flex-col py-6 px-8 text-white w-[380px] h-[500px] bg-beachliga_grey border-[3px] border-beachliga_blue rounded-[35px] relative">
+          <img
+            src="./assets/dani.webp"
+            className="absolute w-[150px] h-[150px] rounded-full top-[-60px] right-[-30px] border-beachliga_blue border-[3px]"
+          />
           <div>
-            <h3 className="font-[500] text-lg ">Juan Muñoz</h3>
-            <h4 className="mb-4">
-              Director de la Federación Voleybol Comunidad Valenciana
-            </h4>
+            <h3 className="font-[500] text-lg ">Daniel Oberthür</h3>
+            <h4 className="mb-4">Jugador nacional</h4>
           </div>
           <div>
-            <div className="flex mb-4">
+            <div className="flex mb-2">
               <img src="./assets/star.png" />
               <img src="./assets/star.png" />
               <img src="./assets/star.png" />
@@ -23,20 +25,25 @@ const Opiniones = () => {
               <img src="./assets/star.png" />
             </div>
             <p className="text-xl">
-              Una app genial que cubre la necesidad de dar visibilidad al
-              volleyball en la ciudad de Valencia
+              Registrarse para un torneo de voleibol playa con Beachliga ha sido
+              muy fácil y mucho más rápido que en otros torneos. Me registré en
+              1 minuto a través de mi cuenta de Facebook, y pude pagar
+              rápidamente con PayPal sin necesidad de llenar documentos
+              adicionales o enviar recibos de pago. ¡Un proceso muy ágil!
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-between py-8 px-10 text-white w-[350px] h-[320px] bg-beachliga_grey border-[3px] border-beachliga_blue rounded-[35px]">
+        <div className="flex flex-col py-6 px-8 text-white w-[380px] h-[500px] bg-beachliga_grey border-[3px] border-beachliga_blue rounded-[35px] relative">
+          <img
+            src="./assets/finn.webp"
+            className="absolute w-[150px] h-[150px] rounded-full top-[-60px] right-[-30px] border-beachliga_blue border-[3px]"
+          />
           <div>
-            <h3 className="font-[500] text-lg ">Juan Muñoz</h3>
-            <h4 className="mb-4">
-              Director de la Federación Voleybol Comunidad Valenciana
-            </h4>
+            <h3 className="font-[500] text-lg ">Finn Pickert</h3>
+            <h4 className="mb-4">Jugador Nacional</h4>
           </div>
           <div>
-            <div className="flex mb-4">
+            <div className="flex mb-2">
               <img src="./assets/star.png" />
               <img src="./assets/star.png" />
               <img src="./assets/star.png" />
@@ -44,20 +51,24 @@ const Opiniones = () => {
               <img src="./assets/star.png" />
             </div>
             <p className="text-xl">
-              Una app genial que cubre la necesidad de dar visibilidad al
-              volleyball en la ciudad de Valencia
+              ¡Simplemente brillante! Registrarse para torneos a través de la
+              plataforma Beachliga es fácil, rápido y muy conveniente.
+              ¡Finalmente, una solución adecuada para reemplazar los formularios
+              de Google!
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-between py-8 px-10 text-white w-[350px] h-[320px] bg-beachliga_grey border-[3px] border-beachliga_blue rounded-[35px]">
+        <div className="flex flex-col py-6 px-8 text-white w-[380px] h-[500px] bg-beachliga_grey border-[3px] border-beachliga_blue rounded-[35px] relative">
+          <img
+            src="./assets/blanca.webp"
+            className="absolute w-[150px] h-[150px] rounded-full top-[-60px] right-[-30px] border-beachliga_blue border-[3px]"
+          />
           <div>
-            <h3 className="font-[500] text-lg ">Juan Muñoz</h3>
-            <h4 className="mb-4">
-              Director de la Federación Voleybol Comunidad Valenciana
-            </h4>
+            <h3 className="font-[500] text-lg ">Blanca Seguí</h3>
+            <h4 className="mb-4">Jugadora del Madison Tour</h4>
           </div>
           <div>
-            <div className="flex mb-4">
+            <div className="flex mb-2">
               <img src="./assets/star.png" />
               <img src="./assets/star.png" />
               <img src="./assets/star.png" />
@@ -65,8 +76,11 @@ const Opiniones = () => {
               <img src="./assets/star.png" />
             </div>
             <p className="text-xl">
-              Una app genial que cubre la necesidad de dar visibilidad al
-              volleyball en la ciudad de Valencia
+              La plataforma Beachliga simplifica enormemente el registro en los
+              torneos. Al crear tu perfil una vez al principio, puedes
+              registrarte rápidamente en todos los torneos futuros sin necesidad
+              de repetir toda la información personal o de pago. Es visual,
+              práctico y, sobre todo, ÁGIL.
             </p>
           </div>
         </div>

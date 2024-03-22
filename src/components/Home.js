@@ -41,16 +41,16 @@ const Home = () => {
         <div className="flex flex-col py-12 relative h-[calc(100vh-56px)]">
           <img
             src="./assets/training_screenshot.png"
-            className="min-w-[320px] rounded-[35px] absolute right-[70px] top-[50px]"
+            className="min-w-[320px] rounded-[35px] absolute right-[70px] top-[50px] shadow-2xl border-[5px] border-beachliga_neutral"
             alt="training_screenshot"
           />
           <img
             src="./assets/login_screenshot.png"
-            className="min-w-[320px] rounded-[35px] absolute right-[120px] top-[130px]"
+            className="min-w-[320px] rounded-[35px] absolute right-[140px] top-[130px] shadow-2xl border-[5px] border-beachliga_neutral"
             alt="matches_screenshot"
           />
-          <div className="absolute top-[560px] right-[350px] bg-white w-[200px] text-sm px-4 py-4 rounded-lg">
-            <div className="flex space-x-1 mb-3">
+          <div className="absolute top-[560px] right-[390px] bg-white w-[200px] text-sm px-4 py-3 rounded-lg">
+            <div className="flex space-x-1 mb-2">
               <img src="./assets/star.png" alt="star" />
               <img src="./assets/star.png" alt="star" />
               <img src="./assets/star.png" alt="star" />
@@ -62,8 +62,8 @@ const Home = () => {
               se ha inscrito
             </span>
           </div>
-          <div className="absolute top-[210px] right-[-90px] bg-white w-[200px] text-sm px-4 py-4 rounded-lg">
-            <div className="flex space-x-1 mb-3">
+          <div className="absolute top-[210px] right-[-90px] bg-white w-[200px] text-sm px-4 py-3 rounded-lg">
+            <div className="flex space-x-1 mb-2">
               <img src="./assets/star.png" alt="star" />
               <img src="./assets/star.png" alt="star" />
               <img src="./assets/star.png" alt="star" />

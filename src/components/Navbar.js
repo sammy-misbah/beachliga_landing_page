@@ -10,11 +10,11 @@ const Navbar = () => {
           alt="vector-logo"
         />
         <div className="space-x-12 text-white font-body text-sm">
-          <a href="/">Título</a>
-          <a href="/">Título</a>
-          <a href="/">Título</a>
-          <a href="/">Título</a>
-          <a href="/">Título</a>
+          <a href="/">Inicio</a>
+          <a href="/#funcionalidades">Funcionalidades</a>
+          <a href="/#precios">Planes & Precios</a>
+          <a href="/#noticias">Noticias</a>
+          <a href="/#contacto">Contacto</a>
         </div>
       </div>
     </nav>

@@ -7,16 +7,17 @@ import Home from "./components/Home";
 import Instagram from "./components/Instagram";
 import Lanzadera from "./components/Lanzadera";
 import MasFuncionalidades from "./components/MasFuncionalidades";
-import Navbar from "./components/Navbar";
 import Opiniones from "./components/Opiniones";
 import Perfiles from "./components/Perfiles";
 import Planes from "./components/Planes";
 import Servicios from "./components/Servicios";
 import Video from "./components/Video";
+import Navbar from "./components/Navbar";
+import { Router } from "react-router-dom";
 
 function App() {
   return (
-    <div className="">
+    <div>
       <Navbar />
       <Home />
       <Clientes />
