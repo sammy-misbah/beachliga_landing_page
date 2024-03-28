@@ -12,7 +12,7 @@ const Footer = () => {
           <img src="./assets/linkedin.png" />
         </a>
         <div className="flex mr-[10px] text-white space-x-12 text-md">
-          <div>Términos y Condiciones</div>
+          <a href="/terms">Términos y Condiciones</a>
           <div>Contacta con nosotros</div>
           <div>Inversores</div>
           <div>Noticias</div>
