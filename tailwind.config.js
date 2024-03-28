@@ -18,6 +18,9 @@ module.exports = {
         body: ["Gotham"],
       },
     },
+    fontFamily: {
+      sans: ["IBM Plex San"],
+    },
   },
   plugins: [],
 };
