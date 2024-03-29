@@ -3,10 +3,10 @@ import React from "react";
 const Contacto = () => {
   return (
     <div className="bg-beachliga_blue" id="contacto">
-      <div className="max-w-[1200px] mx-auto py-24">
+      <div className="max-w-[1200px] mx-auto py-24 px-12">
         <div className="flex flex-col">
           <h2 className="text-white text-5xl font-[400] mb-12">Contacto</h2>
-          <form className="flex flex-col  w-1/2">
+          <form className="flex flex-col  lg:w-1/2">
             <div className="flex mb-6">
               <input
                 className="py-4 px-5 rounded-md w-1/2 mr-6"

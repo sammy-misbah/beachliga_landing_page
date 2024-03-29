@@ -6,11 +6,11 @@ const Terms = () => {
     <div>
       <Navbar />
       <div>
-        <div className="max-w-[1200px] mx-auto p-6 py-24 font-[raleway] text-gray-800">
-          <h1 className="text-4xl text-center font-semibold mb-24">
+        <div className="max-w-[1200px] mx-auto p-6 py-24  text-gray-800">
+          <h1 className="text-4xl text-center font-semibold mb-16">
             Allgemeine Geschäftsbedinungen & Datenschutz
           </h1>
-          <h2 className="text-2xl mb-6">DATENSCHUTZRICHTLINIE</h2>
+          <h2 className="text-2xl mb-6 font-[500]">DATENSCHUTZRICHTLINIE</h2>
           <p className="mb-6">
             Gemäß Artikel 13 sowie den Grundsätzen der Rechtmäßigkeit, Fairness
             und Transparenz gemäß der Verordnung (EU) 2016/679, der Allgemeinen
@@ -27,7 +27,7 @@ const Terms = () => {
             E-Mail-Adresse hello@beachliga.com kontaktieren. Im Folgenden
             BEACHLIGA genannt.
           </p>
-          <h2 className="text-2xl mb-6">
+          <h2 className="text-2xl mb-6 font-[500]">
             I. DATENVERARBEITUNG IM RAHMEN DER WEBSITE
           </h2>
           <p className="mb-6">
@@ -141,13 +141,15 @@ const Terms = () => {
             Interesses von BEACHLIGA erhalten möchten, können Sie der
             Verarbeitung Ihrer Daten zu diesem Zweck widersprechen.
           </p>
-          <h2 className="text-2xl mb-6">II. DATEN VON DRITTEN PERSONEN</h2>
+          <h2 className="text-2xl mb-6 font-[500]">
+            II. DATEN VON DRITTEN PERSONEN
+          </h2>
           <p className="mb-6">
             Wenn Sie während Ihrer Kommunikation mit BEACHLIGA Daten von
             Drittpersonen zur Verfügung stellen, informieren wir Sie darüber
           </p>
           <p className="mb-6">ALLGEMEINE RESERVIERUNGSBEDINGUNGEN</p>
-          <h3 className="text-2xl mb-6">I. KAUFPROZESS</h3>
+          <h3 className="text-2xl mb-6 font-[500]">I. KAUFPROZESS</h3>
           <p className="mb-6">
             Um Einkäufe bei BEACHLIGA zu tätigen, muss der Benutzer volljährig
             sein und nach spanischem Recht voll geschäftsfähig sein. Um den
@@ -162,7 +164,7 @@ const Terms = () => {
             Anmeldung erhalten Sie eine Benachrichtigung per E-Mail, die die
             Transaktion und die damit verbundenen Daten bestätigt.
           </p>
-          <h3 className="text-2xl mb-6">II. PREISE</h3>
+          <h3 className="text-2xl mb-6 font-[500]">II. PREISE</h3>
           <p className="mb-6">
             Der Preis für die Reservierung oder Anmeldung zu Turnieren ist
             derjenige, der neben den entsprechenden Informationen angegeben ist.
@@ -180,7 +182,9 @@ const Terms = () => {
             zusammenarbeiten, verfügen über ihre jeweiligen
             Sicherheitszertifikate.
           </p>
-          <h3 className="text-2xl mb-6">III. ÄNDERUNGEN UND STORNIERUNGEN</h3>
+          <h3 className="text-2xl mb-6 font-[500]">
+            III. ÄNDERUNGEN UND STORNIERUNGEN
+          </h3>
           <p className="mb-6">
             Unsere Stornierungs- und Änderungsrichtlinie umfasst folgende Fälle:
             Turniere Sie können Ihre Teilnahme an Turnieren ohne zusätzliche
@@ -199,7 +203,7 @@ const Terms = () => {
             stornieren, und wenn Sie nicht teilnehmen, erhalten Sie keine
             Rückerstattung des dafür gezahlten Betrags.
           </p>
-          <h3 className="text-2xl mb-6">IV. WIDERRUFSRECHT</h3>
+          <h3 className="text-2xl mb-6 font-[500]">IV. WIDERRUFSRECHT</h3>
           <p className="mb-6">
             Bei BEACHLIGA garantieren wir Ihr Recht, von Ihrem Kauf
             zurückzutreten. Dieses Recht wird wirksam, wenn Sie innerhalb von 14
@@ -232,7 +236,7 @@ const Terms = () => {
             Zahlung verwendet wurde. Es werden keine Strafen aus diesem Grund
             angewendet.
           </p>
-          <h3 className="text-2xl mb-6">
+          <h3 className="text-2xl mb-6 font-[500]">
             V. NUTZUNGSBEDINGUNGEN UND REGELN FÜR SPIELER ODER SCHÜLER
           </h3>
           <p className="mb-6">
@@ -268,7 +272,7 @@ const Terms = () => {
             unserer Gemeinschaft sind: Beispielsweise: Regeln für den Club
             BeachBol
           </p>
-          <h3 className="text-2xl mb-6">VI. ANWENDBARES RECHT</h3>
+          <h3 className="text-2xl mb-6 font-[500]">VI. ANWENDBARES RECHT</h3>
           <p className="mb-6">
             Das Kaufsystem unterliegt dem geltenden spanischen Recht. Im Falle
             eines Konflikts oder Meinungsverschiedenheiten sind die Gerichte
@@ -282,8 +286,8 @@ const Terms = () => {
             Streitigkeiten über den folgenden Link zugreifen: http://
             ec.europa.eu/consumers/odr
           </p>
-          <h3 className="text-2xl mb-6">RECHTLICHE HINWEISE</h3>
-          <h3 className="text-2xl mb-6">I. GEGENSTAND</h3>
+          <h3 className="text-2xl mb-6 font-[500]">RECHTLICHE HINWEISE</h3>
+          <h3 className="text-2xl mb-6 font-[500]">I. GEGENSTAND</h3>
           <p className="mb-6">
             Die vorliegenden rechtlichen Bedingungen werden von MANUEL SCHMID
             nachfolgend BEACHLIGA genannt, festgelegt, um die Kriterien und
@@ -309,12 +313,14 @@ const Terms = () => {
             hält. Falls Änderungen die Privatsphäre der Nutzer beeinträchtigen,
             wird vor dem Inkrafttreten der Änderungen darauf hingewiesen.
           </p>
-          <h3 className="text-2xl mb-6">II. DATENSCHUTZRICHTLINIE</h3>
+          <h3 className="text-2xl mb-6 font-[500]">
+            II. DATENSCHUTZRICHTLINIE
+          </h3>
           <p className="mb-6">
             Sie können unsere Datenschutzrichtlinie unter folgendem Link
             einsehen: https:// beachliga.com/legal/privacy-policy
           </p>
-          <h3 className="text-2xl mb-6">III. LINK-RICHTLINIE</h3>
+          <h3 className="text-2xl mb-6 font-[500]">III. LINK-RICHTLINIE</h3>
           <p className="mb-6">
             Auf dieser Website gibt es Links zu Seiten Dritter, um Informationen
             unserer Lieferanten und vertrauenswürdiger Websites bereitzustellen,
@@ -327,7 +333,7 @@ const Terms = () => {
             Inhalte, Angebote und/oder Produkte und Dienstleistungen
             verantwortlich, die der Nutzer auf den verlinkten Seiten findet.
           </p>
-          <h3 className="text-2xl mb-6">IV. COOKIES</h3>
+          <h3 className="text-2xl mb-6 font-[500]">IV. COOKIES</h3>
           <p className="mb-6">
             Diese Website erfordert die Installation von technischen Cookies und
             personalisierten Cookies, aber sie installiert keine analytischen,
@@ -342,7 +348,7 @@ const Terms = () => {
             aktiviert haben, kann dies zu einer nicht ganz korrekten Erfahrung
             auf unserer Website führen.
           </p>
-          <h3 className="text-2xl mb-6">V. GEISTIGES EIGENTUM</h3>
+          <h3 className="text-2xl mb-6 font-[500]">V. GEISTIGES EIGENTUM</h3>
           <p className="mb-6">
             Alle Inhalte der Website, Design, Anwendungen, grafischen und
             multimedialen Inhalte, Blogbeiträge, schriftliche Inhalte der
@@ -356,7 +362,9 @@ const Terms = () => {
             oder gewerblichem Eigentum beeinträchtigt, ist nicht gestattet. Die
             Nutzer dürfen diese Website nur privat nutzen.
           </p>
-          <h3 className="text-2xl mb-6">VI. NUTZERVERPFLICHTUNGEN</h3>
+          <h3 className="text-2xl mb-6 font-[500]">
+            VI. NUTZERVERPFLICHTUNGEN
+          </h3>
           <p className="mb-6">
             Durch den Zugriff und die Nutzung dieser Webseite akzeptiert der
             Nutzer stillschweigend die folgenden allgemeinen Bedingungen:
@@ -373,7 +381,7 @@ const Terms = () => {
             ihm bereitgestellten Daten verantwortlich und verpflichtet sich,
             etwaige Änderungen in diesen Daten mitzuteilen.
           </p>
-          <h3 className="text-2xl mb-6">VII. HAFTUNGSAUSSCHLUSS</h3>
+          <h3 className="text-2xl mb-6 font-[500]">VII. HAFTUNGSAUSSCHLUSS</h3>
           <p className="mb-6">
             Datenschutz: BEACHLIGA hat die erforderlichen technischen und
             organisatorischen Maßnahmen getroffen und implementiert, um die
@@ -385,7 +393,7 @@ const Terms = () => {
             menschlicher Handlung oder von physischen oder natürlichen Medien
             stammen.
           </p>
-          <h3 className="text-2xl mb-6">
+          <h3 className="text-2xl mb-6 font-[500]">
             VIII. ANWENDBARES RECHT UND GERICHTSSTAND
           </h3>
           <p className="mb-6">
@@ -395,7 +403,9 @@ const Terms = () => {
             vorsehen: der Wohnsitz des Käufers oder der Ort der Erfüllung der
             Verpflichtung.
           </p>
-          <h3 className="text-2xl mb-6">© COPYRIGHT 2024 BEACHLIGA</h3>
+          <h3 className="text-2xl mb-6 font-[500]">
+            © COPYRIGHT 2024 BEACHLIGA
+          </h3>
         </div>
       </div>
     </div>
