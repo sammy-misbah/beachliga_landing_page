@@ -7,7 +7,7 @@ const MasFuncionalidades = () => {
         Más funcionalidades
       </h2>
       <div className="flex flex-col items-center md:flex-row text-beachliga_text">
-        <div className="flex flex-col w-1/3 items-center">
+        <div className="flex flex-col md:w-1/3 items-center">
           <div className="flex flex-col  md:flex-row items-center mb-8">
             <img
               src="./assets/credit_card.png"
