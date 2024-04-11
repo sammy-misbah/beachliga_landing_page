@@ -5,7 +5,7 @@ import Whatsapp from "./utils/Whatsapp";
 
 function App() {
   return (
-    <div className="max-w-screen">
+    <div className="relative">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/terms" element={<Terms />} />
