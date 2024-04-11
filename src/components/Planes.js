@@ -55,11 +55,7 @@ const Planes = () => {
               </div>
             </div>
           </div>
-          <div className="relative flex flex-col w-[340px] h-[640px] justify-between px-8 py-10 border-2 border-beachliga_blue_border rounded-3xl bg-beachliga_lightblue text-beachliga_blue  mb-12 lg:mb-0">
-            <img
-              className="absolute w-[150px] right-[-50px] top-[-80px]"
-              src="assets/crown.png"
-            />
+          <div className="flex flex-col w-[340px] h-[640px] justify-between px-8 py-10 border-2 border-beachliga_blue_border rounded-3xl bg-beachliga_lightblue text-beachliga_blue  mb-12 lg:mb-0">
             <div>
               <h3 className="text-4xl font-semibold mb-6">Pro</h3>
               <p className="mb-6 text-lg font-[400]">
