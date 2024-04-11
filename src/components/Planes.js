@@ -8,7 +8,7 @@ const Planes = () => {
           Planes y precios
         </h2>
         <div className="flex flex-col items-center lg:flex-row lg:items-center justify-between mb-20">
-          <div className="flex flex-col w-[340px] h-[640px] justify-between px-8 py-10 border-2 border-beachliga_lightgrey rounded-3xl bg-white mb-12 lg:mb-0">
+          <div className="flex flex-col w-[340px] xl:w-[340px] lg:w-[300px] h-[640px] justify-between px-8 py-10 border-2 border-beachliga_lightgrey rounded-3xl bg-white mb-12 lg:mb-0">
             <div>
               <h3 className="text-4xl font-semibold mb-6">Gratis</h3>
               <p className="mb-6 text-lg font-[400]">
@@ -50,12 +50,18 @@ const Planes = () => {
               <h2 className="text-5xl font-[400] mb-6">0€</h2>
               <div className="flex justify-center">
                 <button className="w-[290px] bg-black text-white py-3 rounded-full font-[500] text-lg">
-                  ¡Empecemos!
+                  <a
+                    href="https://onelink.to/x7v9kz"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    ¡Empecemos!
+                  </a>
                 </button>
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-[340px] h-[640px] justify-between px-8 py-10 border-2 border-beachliga_blue_border rounded-3xl bg-beachliga_lightblue text-beachliga_blue  mb-12 lg:mb-0">
+          <div className="flex flex-col w-[340px] xl:w-[340px] lg:w-[300px] h-[640px] justify-between px-8 py-10 border-2 border-beachliga_blue_border rounded-3xl bg-beachliga_lightblue text-beachliga_blue  mb-12 lg:mb-0">
             <div>
               <h3 className="text-4xl font-semibold mb-6">Pro</h3>
               <p className="mb-6 text-lg font-[400]">
@@ -101,12 +107,18 @@ const Planes = () => {
               </h2>
               <div className="flex justify-center">
                 <button className="w-[290px] bg-beachliga_blue text-white py-3 rounded-full font-[500] text-lg">
-                  ¡Empecemos!
+                  <a
+                    href="https://onelink.to/x7v9kz"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    ¡Empecemos!
+                  </a>
                 </button>
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-[340px] h-[640px] justify-between px-8 py-10 rounded-3xl bg-beachliga_blue text-white">
+          <div className="flex flex-col w-[340px] xl:w-[340px] lg:w-[300px] h-[640px] justify-between px-8 py-10 rounded-3xl bg-beachliga_blue text-white">
             <div>
               <h3 className="text-4xl font-semibold mb-6">Premium</h3>
               <p className="mb-6 text-lg">
@@ -140,7 +152,13 @@ const Planes = () => {
               </h2>
               <div className="flex justify-center">
                 <button className="w-[290px] bg-white text-beachliga_blue py-3 rounded-full font-[500] text-lg">
-                  ¡Empecemos!
+                  <a
+                    href="https://onelink.to/x7v9kz"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    ¡Empecemos!
+                  </a>
                 </button>
               </div>
             </div>
@@ -158,7 +176,13 @@ const Planes = () => {
               <br /> Ponte en contacto con nosotros para un plan personalizado.
             </h3>
             <button className="bg-beachliga_yellow w-[200px] md:w-[350px] text-white py-3 px-4 rounded-full font-[400] text-lg">
-              Quiero un plan personalizado
+              <a
+                href="https://onelink.to/x7v9kz"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Quiero un plan personalizado
+              </a>
             </button>
           </div>
         </div>

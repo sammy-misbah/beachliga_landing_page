@@ -6,8 +6,8 @@ const Terms = () => {
     <div>
       <Navbar />
       <div>
-        <div className="max-w-[1200px] mx-auto p-6 py-24  text-gray-800">
-          <h1 className="text-4xl text-center font-semibold mb-16">
+        <div className="max-w-[1200px] mx-auto p-6 py-24  text-gray-800 font-[400]">
+          <h1 className="text-4xl text-center font-semibold mb-20 lg:w-3/4 lg:mx-auto">
             Allgemeine Geschäftsbedinungen & Datenschutz
           </h1>
           <h2 className="text-2xl mb-6 font-[500]">DATENSCHUTZRICHTLINIE</h2>
@@ -396,14 +396,14 @@ const Terms = () => {
           <h3 className="text-2xl mb-6 font-[500]">
             VIII. ANWENDBARES RECHT UND GERICHTSSTAND
           </h3>
-          <p className="mb-6">
+          <p className="mb-20">
             Es gelten die Bestimmungen des spanischen Rechtssystems. Benutzer:
             Im Falle von Streitigkeiten sind die Gerichte und Tribunale
             zuständig, wie es die anwendbaren gesetzlichen Bestimmungen
             vorsehen: der Wohnsitz des Käufers oder der Ort der Erfüllung der
             Verpflichtung.
           </p>
-          <h3 className="text-2xl mb-6 font-[500]">
+          <h3 className="text-lg mb-6 font-[400]">
             © COPYRIGHT 2024 BEACHLIGA
           </h3>
         </div>

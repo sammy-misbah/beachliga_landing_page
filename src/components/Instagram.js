@@ -8,7 +8,7 @@ const Instagram = () => {
         <h3 className="text-beachliga_yellow text-3xl mb-2">ÚLTIMOS POSTS</h3>
         <h4 className="text-white text-2xl mb-12">Lo último en Instagram</h4>
         <div className="flex flex-col lg:flex-row lg:space-x-6 mb-24">
-          <div className="flex flex-col justify-between pb-8 lg:w-[450px] h-[600px] bg-white rounded-xl mb-12 lg:mb-0">
+          <div className="flex flex-col justify-between pb-8 lg:w-[300px] xl:w-[400px] h-[600px] bg-white rounded-xl mb-12 lg:mb-0">
             <div>
               <img
                 src="./assets/insta1.png"
@@ -33,7 +33,7 @@ const Instagram = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col justify-between pb-8 lg:w-[450px] h-[600px] bg-white rounded-xl mb-12 lg:mb-0">
+          <div className="flex flex-col justify-between pb-8 lg:w-[300px] xl:w-[400px] h-[600px] bg-white rounded-xl mb-12 lg:mb-0">
             <div>
               <img
                 src="./assets/insta2.png"
@@ -58,7 +58,7 @@ const Instagram = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col justify-between pb-8 lg:w-[450px] h-[600px] bg-white rounded-xl">
+          <div className="flex flex-col justify-between pb-8 lg:w-[300px] xl:w-[400px] h-[600px] bg-white rounded-xl">
             <div>
               <img
                 src="./assets/insta3.png"

@@ -2,7 +2,7 @@ import React from "react";
 
 const MasFuncionalidades = () => {
   return (
-    <div className="max-w-[1200px] mx-auto pb-20 pt-6 px-12">
+    <div className="max-w-[1200px] mx-auto pb-20 pt-6 px-12 font-[400]">
       <h2 className="text-center text-beachliga_yellow text-4xl font-[400] mb-12">
         Más funcionalidades
       </h2>

@@ -11,8 +11,11 @@ const Descarga = () => {
               ¡Descarga nuestra app!
             </h3>
             <div className="flex space-x-12">
-              <img src="./assets/google_play3.png" className="h-[50px]" />
-              <img src="./assets/apple.png" className="h-[50px]" />
+              <img
+                src="./assets/google_play3.png"
+                className="h-[40px] lg:h-[50px]"
+              />
+              <img src="./assets/apple.png" className="h-[40px] lg:h-[50px]" />
             </div>
           </div>
           <div className="hidden lg:block relative w-[430px]">

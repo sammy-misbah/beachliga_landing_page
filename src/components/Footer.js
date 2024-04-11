@@ -11,7 +11,7 @@ const Footer = () => {
         >
           <img src="./assets/linkedin.png" />
         </a>
-        <div className="flex mr-[10px] text-white lg:space-x-12 lg:text-md flex-col">
+        <div className="flex mr-[10px] text-white lg:space-x-12 lg:text-md lg:flex-row flex-col">
           <div>
             <a href="/terms">Términos y Condiciones</a>
           </div>

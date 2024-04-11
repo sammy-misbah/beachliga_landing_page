@@ -7,10 +7,10 @@ const Perfiles = () => {
         <h2 className="text-5xl text-beachliga_blue mb-6 font-[400]">
           ¿Qué perfil eres?
         </h2>
-        <h3 className="text-2xl max-w-[600px] mb-12">
+        <h3 className="text-2xl max-w-[600px] mb-12 font-[400]">
           Escoge el plan que mejor se adapte a tu perfil y a tus necesidades.
         </h3>
-        <div className="flex flex-col md:flex-row justify-between">
+        <div className="flex flex-col md:flex-row justify-between font-[400]">
           <div className="flex flex-col items-center mb-12 md:mb-0">
             <img
               src="./assets/entrenadores.png"

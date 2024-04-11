@@ -9,19 +9,19 @@ const Contacto = () => {
           <form className="flex flex-col  lg:w-1/2">
             <div className="flex mb-6">
               <input
-                className="py-4 px-5 rounded-md w-1/2 mr-6"
+                className="py-2 lg:py-4 px-5 rounded-md w-1/2 mr-6"
                 label="nombre"
                 placeholder="Nombre"
               />
               <input
-                className="py-4 px-5 rounded-md w-1/2"
+                className="py-2 lg:py-4 px-5 rounded-md w-1/2"
                 label="apellido"
                 placeholder="Apellido"
               />
             </div>
             <div className="flex mb-6">
               <input
-                className="py-4 px-5 rounded-md w-1/2 mr-6"
+                className="py-2 lg:py-4 px-5 rounded-md w-1/2 mr-6"
                 label="correo"
                 placeholder="Correo"
               />

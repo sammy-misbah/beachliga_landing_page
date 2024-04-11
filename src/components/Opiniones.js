@@ -6,8 +6,8 @@ const Opiniones = () => {
       <h2 className="text-5xl text-beachliga_blue font-[400] mb-24">
         ¿Qué dicen de nosotros?
       </h2>
-      <div className="flex lg:space-x-12 flex-col lg:flex-row items-center">
-        <div className="flex flex-col py-6 px-8 text-white w-[380px] h-[500px] bg-beachliga_grey border-[3px] border-beachliga_blue rounded-[35px] relative mb-24 lg:mb-0">
+      <div className="flex lg:space-x-12 flex-col lg:flex-row items-center lg:items-stretch ">
+        <div className="flex flex-col py-6 px-8 text-white w-[300px] md:w-[380px] lg:w-[500px] bg-beachliga_grey border-[3px] border-beachliga_blue rounded-[35px] relative mb-24 lg:mb-0">
           <img
             src="./assets/dani.webp"
             className="absolute w-[150px] h-[150px] rounded-full top-[-60px] right-[-30px] border-beachliga_blue border-[3px]"
@@ -33,7 +33,7 @@ const Opiniones = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col py-6 px-8 text-white w-[380px] h-[500px] bg-beachliga_grey border-[3px] border-beachliga_blue rounded-[35px] relative mb-24 lg:mb-0">
+        <div className="flex flex-col py-6 px-8 text-white w-[300px] md:w-[380px] lg:w-[500px] bg-beachliga_grey border-[3px] border-beachliga_blue rounded-[35px] relative mb-24 lg:mb-0">
           <img
             src="./assets/finn.webp"
             className="absolute w-[150px] h-[150px] rounded-full top-[-60px] right-[-30px] border-beachliga_blue border-[3px]"
@@ -58,7 +58,7 @@ const Opiniones = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col py-6 px-8 text-white w-[380px] h-[500px] bg-beachliga_grey border-[3px] border-beachliga_blue rounded-[35px] relative">
+        <div className="flex flex-col py-6 px-8 text-white w-[300px] md:w-[380px] lg:w-[500px] bg-beachliga_grey border-[3px] border-beachliga_blue rounded-[35px] relative">
           <img
             src="./assets/blanca.webp"
             className="absolute w-[150px] h-[150px] rounded-full top-[-60px] right-[-30px] border-beachliga_blue border-[3px]"

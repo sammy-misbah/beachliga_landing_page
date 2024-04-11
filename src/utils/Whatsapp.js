@@ -3,7 +3,7 @@ import React from "react";
 const Whatsapp = () => {
   return (
     <a
-      className="fixed bottom-12 right-12 h-16 w-16 z-10"
+      className="fixed lg:bottom-12 lg:right-12 bottom-6 right-6 h-16 w-16 z-10"
       href="https://wa.me/34600256862"
       target="_blank"
       rel="noreferrer"

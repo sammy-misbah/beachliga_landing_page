@@ -26,16 +26,24 @@ const Home = () => {
             </h3>
           </div>
           <div className="flex items-center space-x-8 mb-12 lg:mb-0">
-            <img
-              src="./assets/google_play3.png"
-              className="h-[40px] xl:h-[47px]"
-              alt="google-play"
-            />
-            <img
-              src="./assets/apple.png"
-              className="h-[40px] xl:h-[47px]"
-              alt="apple"
-            />
+            <a
+              href="https://bit.ly/beachliga-google-play"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="./assets/google_play3.png"
+                className="h-[40px] xl:h-[47px]"
+                alt="google-play"
+              />
+            </a>
+            <a href="https://apple.co/4asnKF5" target="_blank" rel="noreferrer">
+              <img
+                src="./assets/apple.png"
+                className="h-[40px] xl:h-[47px]"
+                alt="apple"
+              />
+            </a>
           </div>
         </div>
         <div className="flex relative mx-12 lg:mx-0">
