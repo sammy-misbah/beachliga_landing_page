@@ -11,14 +11,18 @@ const Perfiles = () => {
           Escoge el plan que mejor se adapte a tu perfil y a tus necesidades.
         </h3>
         <div className="flex flex-col md:flex-row justify-between font-[400]">
-          <div className="flex flex-col items-center mb-12 md:mb-0">
-            <img
-              src="./assets/entrenadores.png"
-              className="mb-6 w-[225px] h-[225px] rounded-full"
-              alt="coach"
-            />
-            <h3 className="text-2xl max-w-[200px] text-center">Entrenadores</h3>
-          </div>
+          <a href="/jugadores">
+            <div className="flex flex-col items-center mb-12 md:mb-0">
+              <img
+                src="./assets/entrenadores.png"
+                className="mb-6 w-[225px] h-[225px] rounded-full"
+                alt="coach"
+              />
+              <h3 className="text-2xl max-w-[200px] text-center">
+                Entrenadores
+              </h3>
+            </div>
+          </a>
           <div className="flex flex-col items-center mb-12 md:mb-0">
             <img
               src="./assets/balls.png"
