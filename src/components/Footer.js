@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-beachliga_grey p-12">
+    <div className="bg-beachliga_grey p-12 border-t-2">
       <div className="max-w-[1200px] mx-auto flex justify-between">
         <a
           href="https://www.linkedin.com/company/revel-cool/about/"
@@ -11,7 +11,7 @@ const Footer = () => {
         >
           <img src="./assets/linkedin.png" />
         </a>
-        <div className="flex mr-[10px] text-white lg:space-x-12 lg:text-md lg:flex-row flex-col">
+        <div className="flex mr-[10px] text-white lg:space-x-12 lg:text-md lg:flex-row flex-col space-y-1 lg:-space-y-0">
           <div>
             <a href="/terms">Términos y Condiciones</a>
           </div>
