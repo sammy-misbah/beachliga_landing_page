@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const Jugadores = () => {
+const Federaciones = () => {
   return (
     <div
       className="relative bg-beachliga_blue text-white overflow-hidden"
@@ -145,4 +145,4 @@ const Jugadores = () => {
   );
 };
 
-export default Jugadores;
+export default Federaciones;

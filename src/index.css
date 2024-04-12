@@ -27,7 +27,7 @@ body {
   left: 0;
   width: 24px;
   height: 2px;
-  background: white;
+  background: black;
   transform: rotate(0);
   transition: all 0.5s;
 }
@@ -58,9 +58,9 @@ body {
 }
 
 .app-transform {
-  position: relative;
+  /* position: relative;
   outline: 50px solid #b765dd;
-  outline-offset: 0px;
+  outline-offset: 0px; */
 }
 
 .app-transform:before {

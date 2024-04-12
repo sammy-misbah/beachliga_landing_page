@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-beachliga_grey p-12 border-t-2">
+    <div className="bg-beachliga_grey p-12">
       <div className="max-w-[1200px] mx-auto flex justify-between">
         <a
           href="https://www.linkedin.com/company/revel-cool/about/"

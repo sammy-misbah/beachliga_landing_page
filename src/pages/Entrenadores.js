@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const Jugadores = () => {
+const Entrenadores = () => {
   return (
     <div
       className="relative bg-beachliga_blue text-white overflow-hidden"
@@ -20,11 +20,11 @@ const Jugadores = () => {
       <div className="shape3"></div> */}
       <div className="pb-16 pt-6 lg:py-24 px-6 lg:px-12 max-w-[1200px] mx-auto  relative z-10">
         <h3 className="text-center text-3xl lg:text-4xl font-[400] mb-6 lg:mb-12 mt-12">
-          Participantes y Jugadores
+          Entrenadores
         </h3>
         <h2 className="text-center text-5xl lg:text-6xl mx-auto font-[500] mb-16 lg:mb-24">
-          Haciendo espacio para el <br />
-          espíritu del equipo
+          Optimiza tu tiempo <br />y concéntrate en lo que <br />
+          realmente importa
         </h2>
         <div className="flex items-center lg:items-start lg:flex-row flex-col-reverse mb-16">
           <div className="lg:w-1/2 lg:pr-32">
@@ -145,4 +145,4 @@ const Jugadores = () => {
   );
 };
 
-export default Jugadores;
+export default Entrenadores;
