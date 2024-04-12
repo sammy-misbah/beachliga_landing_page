@@ -51,7 +51,7 @@ const Jugadores = () => {
             </p>
           </div>
           <div className="lg:w-1/2 mb-12 lg:mb-0">
-            <img src="./assets/spike.webp" className="rounded-xl" />
+            <img src="./assets/torneo_bl1.jpg" className="rounded-xl" />
           </div>
         </div>
         <h2 className="text-center text-5xl mx-auto font-[500] mb-24">
@@ -59,11 +59,8 @@ const Jugadores = () => {
           horas de tu valioso tiempo
         </h2>
         <div className="flex flex-col lg:flex-row items-center lg:items-start">
-          <div className="lg:w-1/2 lg:pr-24">
-            <img
-              src="./assets/matches_screenshot.png"
-              className="rounded-[50px] shadow-2xl border-[8px] border-beachliga_neutral"
-            />
+          <div className="lg:w-1/2 lg:pr-12 flex lg:justify-center">
+            <img src="./assets/app.png" className="rounded-[50px] shadow-2xl" />
           </div>
           <div className="lg:w-1/2 flex flex-col text-2xl lg:text-3xl font-[400]">
             <div className="flex pt-12 items-start lg:items-center">
