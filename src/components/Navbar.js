@@ -9,8 +9,8 @@ const Navbar = () => {
     nav.classList.toggle("flex");
   };
   return (
-    <nav className="flex bg-beachliga_blue h-[65px]">
-      <div className="flex w-[80%] max-w-[1200px] mx-auto items-center justify-between">
+    <nav className="flex bg-white h-[65px] text-black  relative z-10">
+      <div className="flex w-[80%] max-w-[1200px] mx-auto items-center justify-between ">
         <a href="/">
           <img
             src="./assets/vector_logo.png"
@@ -18,7 +18,7 @@ const Navbar = () => {
             alt="vector-logo"
           />
         </a>
-        <div className="hidden md:flex space-x-8 lg:space-x-12 text-white font-body text-sm">
+        <div className="hidden md:flex space-x-8 lg:space-x-12  font-body text-sm">
           <a href="/">Inicio</a>
           <a href="/#funcionalidades">Funcionalidades</a>
           <a href="/#precios">Planes & Precios</a>
@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <div
             id="menu"
-            className="absolute top-20 left-6 right-6 hidden flex-col items-center space-y-6 bg-beachliga_blue py-6 drop-shadow-md text-white"
+            className="absolute top-20 left-6 right-6 hidden flex-col items-center space-y-6 bg-beachliga_blue py-6 drop-shadow-md "
           >
             <a href="/">Inicio</a>
             <a href="/#funcionalidades">Funcionalidades</a>
