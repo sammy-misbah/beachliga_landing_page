@@ -51,7 +51,7 @@ const Jugadores = () => {
             </p>
           </div>
           <div className="lg:w-1/2 mb-12 lg:mb-0">
-            <img src="./assets/torneo_bl1.jpg" className="rounded-xl" />
+            <img src="./assets/torneo_bl1.png" className="rounded-xl" />
           </div>
         </div>
         <h2 className="text-center text-5xl mx-auto font-[500] mb-24">
