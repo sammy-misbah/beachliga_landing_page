@@ -6,7 +6,7 @@ const Jugadores = () => {
   return (
     <div className="bg-beachliga_grey text-white">
       <Navbar />
-      <div className="py-16 lg:py-24 px-12 max-w-[1200px] mx-auto">
+      <div className="py-16 lg:py-24 px-6 lg:px-12 max-w-[1200px] mx-auto">
         <h3 className="text-center text-3xl lg:text-4xl font-[400] mb-6 lg:mb-12 mt-12">
           Participantes y Jugadores
         </h3>
