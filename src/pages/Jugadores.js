@@ -6,7 +6,7 @@ const Jugadores = () => {
   return (
     <div className="bg-beachliga_grey text-white">
       <Navbar />
-      <div className="py-16 lg:py-24 px-6 lg:px-12 max-w-[1200px] mx-auto">
+      <div className="pb-16 pt-6 lg:py-24 px-6 lg:px-12 max-w-[1200px] mx-auto">
         <h3 className="text-center text-3xl lg:text-4xl font-[400] mb-6 lg:mb-12 mt-12">
           Participantes y Jugadores
         </h3>
@@ -50,7 +50,7 @@ const Jugadores = () => {
               mensaje se pierda.
             </p>
           </div>
-          <div className="lg:w-1/2 mb-24 lg:mb-0">
+          <div className="lg:w-1/2 mb-12 lg:mb-0">
             <img src="./assets/spike.webp" className="rounded-xl" />
           </div>
         </div>
