@@ -4,7 +4,12 @@ import Footer from "../components/Footer";
 
 const Jugadores = () => {
   return (
-    <div className="bg-beachliga_grey text-white">
+    <div
+      className="bg-beachliga_grey text-white"
+      style={{
+        background: "linear-gradient(180deg, #0000 5.76%, #ee894c 87.98%)",
+      }}
+    >
       <Navbar />
       <div className="pb-16 pt-6 lg:py-24 px-6 lg:px-12 max-w-[1200px] mx-auto">
         <h3 className="text-center text-3xl lg:text-4xl font-[400] mb-6 lg:mb-12 mt-12">
@@ -24,7 +29,7 @@ const Jugadores = () => {
             <h5 className="text-xl font-[500] mb-1">
               Comunica tu asistencia al grupo de forma clara y sencilla.
             </h5>
-            <p className="text-md font-[400] mb-4">
+            <p className="text-md  mb-4">
               Si bien es comprensible que a veces se nos pase por alto, la
               experiencia con Beachliga reduce significativamente la posibilidad
               de olvidos gracias a su eficiente sistema de recordatorios y
@@ -34,7 +39,7 @@ const Jugadores = () => {
             <h5 className="text-xl font-[500] mb-1">
               Mantén al equipo unido y conectado.
             </h5>
-            <p className="text-md font-[400] mb-4">
+            <p className="text-md  mb-4">
               Centraliza tus mensajes y publicaciones en un solo lugar. En medio
               del ruido de otras aplicaciones, nos aseguramos de que puedas
               comunicarte fácilmente con el líder de tu grupo y otros miembros.
@@ -42,7 +47,7 @@ const Jugadores = () => {
             <h5 className="text-xl font-[500] mb-1">
               Cada persona es importante.
             </h5>
-            <p className="text-md font-[400] mb-4">
+            <p className="text-md  mb-4">
               Cuando la ubicación del evento no está clara o todos tienen ideas
               diferentes sobre la comida para la fiesta, ¡los chats de grupo
               pueden volverse caóticos! Pero con Beachliga, las encuestas
