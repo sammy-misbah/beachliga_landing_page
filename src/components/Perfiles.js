@@ -23,34 +23,42 @@ const Perfiles = () => {
               </h3>
             </div>
           </a>
-          <div className="flex flex-col items-center mb-12 md:mb-0">
-            <img
-              src="./assets/balls.png"
-              className="mb-6 w-[225px] h-[225px] rounded-full"
-              alt="club"
-            />
-            <h3 className="text-2xl max-w-[200px] text-center">
-              Clubes y organizadores
-            </h3>
-          </div>
-          <div className="flex flex-col items-center mb-12 md:mb-0">
-            <img
-              src="./assets/players.jpg"
-              className="mb-6 w-[225px] h-[225px] rounded-full"
-              alt="player"
-            />
-            <h3 className="text-2xl max-w-[200px] text-center">
-              Jugadores y participantes
-            </h3>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              src="./assets/federacion2.png"
-              className="mb-6 w-[225px] h-[225px] rounded-full"
-              alt="federacion"
-            />
-            <h3 className="text-2xl max-w-[200px] text-center">Federaciones</h3>
-          </div>
+          <a href="/clubes">
+            <div className="flex flex-col items-center mb-12 md:mb-0">
+              <img
+                src="./assets/balls.png"
+                className="mb-6 w-[225px] h-[225px] rounded-full"
+                alt="club"
+              />
+              <h3 className="text-2xl max-w-[200px] text-center">
+                Clubes y organizadores
+              </h3>
+            </div>
+          </a>
+          <a href="/jugadores">
+            <div className="flex flex-col items-center mb-12 md:mb-0">
+              <img
+                src="./assets/players.jpg"
+                className="mb-6 w-[225px] h-[225px] rounded-full"
+                alt="player"
+              />
+              <h3 className="text-2xl max-w-[200px] text-center">
+                Jugadores y participantes
+              </h3>
+            </div>
+          </a>
+          <a href="/federaciones">
+            <div className="flex flex-col items-center">
+              <img
+                src="./assets/federacion2.png"
+                className="mb-6 w-[225px] h-[225px] rounded-full"
+                alt="federacion"
+              />
+              <h3 className="text-2xl max-w-[200px] text-center">
+                Federaciones
+              </h3>
+            </div>
+          </a>
         </div>
       </div>
     </div>

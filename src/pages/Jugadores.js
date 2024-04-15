@@ -20,59 +20,51 @@ const Jugadores = () => {
       <div className="shape3"></div> */}
       <div className="pb-16 pt-6 lg:py-24 px-6 lg:px-12 max-w-[1200px] mx-auto  relative z-10">
         <h3 className="text-center text-3xl lg:text-4xl font-[400] mb-6 lg:mb-12 mt-12">
-          Participantes y Jugadores
+          Jugadores
         </h3>
         <h2 className="text-center text-5xl lg:text-6xl mx-auto font-[500] mb-16 lg:mb-24">
-          Haciendo espacio para el <br />
-          espíritu del equipo
+          Encuentra un club y apuntate a los eventos mas cerca de ti.
         </h2>
         <div className="flex items-center lg:items-start lg:flex-row flex-col-reverse mb-16">
           <div className="lg:w-1/2 lg:pr-32">
             <h4 className="text-3xl lg:text-4xl font-[500] mb-10">
-              Con Beachliga, disfruta de la organización y la diversión mientras
-              compartes experiencias, cooperas y mantienes al tanto las fechas
-              importantes.
+              Ya sea que quieres aprender a jugar, encontrar un grupo de tu
+              nivel o apuntarte a torneos, Beachliga es la App que necesitas.
             </h4>
             <h5 className="text-xl font-[500] mb-1">
-              Comunica tu asistencia al grupo de forma clara y sencilla.
+              Encuentra a jugadores cerca de ti.
             </h5>
             <p className="text-md  mb-4">
-              Si bien es comprensible que a veces se nos pase por alto, la
-              experiencia con Beachliga reduce significativamente la posibilidad
-              de olvidos gracias a su eficiente sistema de recordatorios y
-              organización, brindándote la tranquilidad de que todos los
-              detalles importantes estarán cubiertos.
+              Busca los clubes mas cercanos, apuntate a clases, conecta con
+              jugadores de tu zona y empieza a jugar!
+            </p>
+            <h5 className="text-xl font-[500] mb-1">Apuntate a torneos.</h5>
+            <p className="text-md  mb-4">
+              Si tienes ganas de competir, con Beachliga podras registrarte de
+              forma segura y sencilla a los torneos.
             </p>
             <h5 className="text-xl font-[500] mb-1">
-              Mantén al equipo unido y conectado.
+              Encuentra tu pareja ideal.
             </h5>
             <p className="text-md  mb-4">
-              Centraliza tus mensajes y publicaciones en un solo lugar. En medio
-              del ruido de otras aplicaciones, nos aseguramos de que puedas
-              comunicarte fácilmente con el líder de tu grupo y otros miembros.
-            </p>
-            <h5 className="text-xl font-[500] mb-1">
-              Cada persona es importante.
-            </h5>
-            <p className="text-md  mb-4">
-              Cuando la ubicación del evento no está clara o todos tienen ideas
-              diferentes sobre la comida para la fiesta, ¡los chats de grupo
-              pueden volverse caóticos! Pero con Beachliga, las encuestas
-              aseguran que todas las opiniones sean consideradas y ningún
-              mensaje se pierda.
+              Ponte en contacto con jugadores de tu zona y encuentra tu pareja
+              para la proxima quedada o para el proximo torneo.
             </p>
           </div>
           <div className="lg:w-1/2 mb-12 lg:mb-0">
-            <img src="./assets/torneo_bl1.png" className="rounded-xl" />
+            <img src="./assets/anina_daria.png" className="rounded-xl" />
           </div>
         </div>
-        <h2 className="text-center text-5xl mx-auto font-[500] mb-24">
+        {/* <h2 className="text-center text-5xl mx-auto font-[500] mb-24">
           Funciones que te ahorrarán <br />
           horas de tu valioso tiempo
-        </h2>
+        </h2> */}
         <div className="flex flex-col lg:flex-row items-center lg:items-start mb-24">
           <div className="lg:w-1/2 lg:pr-12 flex lg:justify-center">
-            <img src="./assets/app.png" className="rounded-[50px] shadow-2xl" />
+            <img
+              src="./assets/jugadores_app.png"
+              className="rounded-[50px] shadow-2xl"
+            />
           </div>
           <div className="lg:w-1/2 flex flex-col text-2xl lg:text-3xl font-[400]">
             <div className="flex pt-12 items-start lg:items-center">
@@ -80,14 +72,14 @@ const Jugadores = () => {
                 src="./assets/white_check.png"
                 className="w-8 lg:w-10 mr-4 pt-2 lg:pt-0"
               />
-              <h4>Programa notificaciones de eventos</h4>
+              <h4>Inscripcion a torneos y clases cerca de ti</h4>
             </div>
             <div className="flex pt-12 items-start lg:items-center">
               <img
                 src="./assets/white_check.png"
                 className="w-8 lg:w-10 mr-4 pt-2 lg:pt-0"
               />
-              <h4>Comunícate de manera efectiva con tus compañeros</h4>
+              <h4>Reserva de pista</h4>
             </div>
             <div className="flex pt-12 items-start lg:items-center">
               <img
@@ -108,36 +100,35 @@ const Jugadores = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center lg:flex-row lg:justify-between">
-          <div className="lg:w-1/2">
-            <h3 className="text-6xl font-[600] mb-12">
-              Regístrate en <br />
-              solo 1 minuto
-            </h3>
-            <div className="flex space-x-6 mb-12">
-              <img src="./assets/apple.png" />
-              <img src="./assets/google_play.png" />
-            </div>
-            <div className="flex space-x-6 items-center">
-              <img
-                src="data:image/gif;base64,R0lGODdhfQB9AIAAAAAAAP///ywAAAAAfQB9AAAC/4SPqbvhnp58zMw4M628+w9eiLYx4kFq4Mq2poSR3GmltIvn1W3P8Gj76YbEWsmo2gmRwSIrCIUAj52bLxqLpq5a2VT6sSqx326Ga+Ytq2t0r5ymZuNU8Us+hs7pATd9vmLXoLX3l9cXstaVo+aF0naIFqhIiNOY9Ih3Bzao2ckJsGhJ6cg06RkKuYmYqTdat1V2CgqYCEvmcnkma0vLG0bq2ro7rFsLjCqooPtWHExs+uuhrHzM1Hz9bCzNlqz6yZpdmjqOTQ5azW3djV7pfIsZPTwbvvxtD19Pzxw736uvLlJAZPHONRkITtK/dfu09ZM37V46fxRbmBNVkR3AjP8KOf7jV+4eQziGMl6U6E5cGj9x1p30hkulGZYrub309a4gH2o78xXyeejmTpozbT40SBRkTScE620z+YypVItRjQL1ODUrvnZXISJFqDXsU69jv4Y967Iq1K5iey712jGi27l0oZmVixNc3b09R65qyDdwUawJPwo+HPOuRsCIGW+EG7TkEHOMjvrVK1kH5VcFL28dWmRzLstgf77VTHr0OM+mB09OTRa2QdEyHcdVnHY1Sd05H3/myTZ3593De9sWSFgx7dmyl7e+DZxrcZnR7RKFLhJsdYyQV/G57Xl7StyRWyIv/Le8sO6Yzad/j779evLeM4dHCfP0ROrj7+f/P9jUd8T5lpRa8lmnnmvMoVJgcAPut6B+sjUonW/caSSgcZwByF6ECNbnXm0bZhjfZ+BZVSGFdi1X3YlrpZigUC2eZyKNZbUmI3550ddhWeIlxqKOFgop3JAhKucQb/w5CN9vzRno4Y86ZZfchUXiKKRQ9KiIXT5BAkllj/2h6NSYvd1II5YM2niUUis+6SWRCw1YZI7/PZcmmyHFued0SCrJY40avsihh136CaGbdbYJZ4UznskooJWt2aSKJBqaFYSsPTgXnlNpWhqnbnkqFajJqdkXnZmGKShehS56p6qQUuoqmoQ+KuKsOx5XZZI7KirqroYxGRugwOpK4LAw/zb5paO+fkhVn4hF6qy0qJYJ5rQ+judmt88KBuuUfIo7n7ZvjntuteQWau622aqb7qtoYapauVBaOa9zMd77LatO6AviuuFC25ak+7LlLa1MAXygu/BKqaCpS/7KLbXYpnrqwRS/G++1Wo7YKLsWezwyyMZWbG2wIit8LZeyFivsrf0aTMTHGcuMLsOopXwzzPHi+2nJPf+5LtClCt3hwCSzbPKySZNpa7Tw+uf0Yi8HuuXVuGINNZSTTq2d13oKHNqzVF+cLM5Vf4121ESn7fPZWQ+dKKsOGxlz3HM2NbfelY4NN9d08xsr36EOrvDdLpZYd+KdHn7gpgGijPHTAT+j/W9mdEkeOeQYUg7a0KQKXivol0pMr+WlJ6aV4irzmuu8hA7ceNH+lo3wzHmnzrvsriMLe+/5Ev6w3RbfUAAAOw=="
-                className="w-[100px] xl:w-[120px]"
-                alt="qr-code"
-              />
-              <div className="text-xl lg:text-2xl font-[500]">
-                Bájate
-                <br /> BeachLiga
-                <br /> al movil.
-                <br /> Es gratis.
-              </div>
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex space-x-6 items-center mb-12">
+            <img
+              src="data:image/gif;base64,R0lGODdhfQB9AIAAAAAAAP///ywAAAAAfQB9AAAC/4SPqbvhnp58zMw4M628+w9eiLYx4kFq4Mq2poSR3GmltIvn1W3P8Gj76YbEWsmo2gmRwSIrCIUAj52bLxqLpq5a2VT6sSqx326Ga+Ytq2t0r5ymZuNU8Us+hs7pATd9vmLXoLX3l9cXstaVo+aF0naIFqhIiNOY9Ih3Bzao2ckJsGhJ6cg06RkKuYmYqTdat1V2CgqYCEvmcnkma0vLG0bq2ro7rFsLjCqooPtWHExs+uuhrHzM1Hz9bCzNlqz6yZpdmjqOTQ5azW3djV7pfIsZPTwbvvxtD19Pzxw736uvLlJAZPHONRkITtK/dfu09ZM37V46fxRbmBNVkR3AjP8KOf7jV+4eQziGMl6U6E5cGj9x1p30hkulGZYrub309a4gH2o78xXyeejmTpozbT40SBRkTScE620z+YypVItRjQL1ODUrvnZXISJFqDXsU69jv4Y967Iq1K5iey712jGi27l0oZmVixNc3b09R65qyDdwUawJPwo+HPOuRsCIGW+EG7TkEHOMjvrVK1kH5VcFL28dWmRzLstgf77VTHr0OM+mB09OTRa2QdEyHcdVnHY1Sd05H3/myTZ3593De9sWSFgx7dmyl7e+DZxrcZnR7RKFLhJsdYyQV/G57Xl7StyRWyIv/Le8sO6Yzad/j779evLeM4dHCfP0ROrj7+f/P9jUd8T5lpRa8lmnnmvMoVJgcAPut6B+sjUonW/caSSgcZwByF6ECNbnXm0bZhjfZ+BZVSGFdi1X3YlrpZigUC2eZyKNZbUmI3550ddhWeIlxqKOFgop3JAhKucQb/w5CN9vzRno4Y86ZZfchUXiKKRQ9KiIXT5BAkllj/2h6NSYvd1II5YM2niUUis+6SWRCw1YZI7/PZcmmyHFued0SCrJY40avsihh136CaGbdbYJZ4UznskooJWt2aSKJBqaFYSsPTgXnlNpWhqnbnkqFajJqdkXnZmGKShehS56p6qQUuoqmoQ+KuKsOx5XZZI7KirqroYxGRugwOpK4LAw/zb5paO+fkhVn4hF6qy0qJYJ5rQ+judmt88KBuuUfIo7n7ZvjntuteQWau622aqb7qtoYapauVBaOa9zMd77LatO6AviuuFC25ak+7LlLa1MAXygu/BKqaCpS/7KLbXYpnrqwRS/G++1Wo7YKLsWezwyyMZWbG2wIit8LZeyFivsrf0aTMTHGcuMLsOopXwzzPHi+2nJPf+5LtClCt3hwCSzbPKySZNpa7Tw+uf0Yi8HuuXVuGINNZSTTq2d13oKHNqzVF+cLM5Vf4121ESn7fPZWQ+dKKsOGxlz3HM2NbfelY4NN9d08xsr36EOrvDdLpZYd+KdHn7gpgGijPHTAT+j/W9mdEkeOeQYUg7a0KQKXivol0pMr+WlJ6aV4irzmuu8hA7ceNH+lo3wzHmnzrvsriMLe+/5Ev6w3RbfUAAAOw=="
+              className="w-[100px] xl:w-[135px]"
+              alt="qr-code"
+            />
+            <div className="text-xl lg:text-3xl ">
+              Bájate
+              <br /> BeachLiga
+              <br /> al movil.
+              <br /> Es gratis.
             </div>
           </div>
-          <div className="hidden lg:flex w-1/2 justify-center">
+          <div className="flex space-x-6 mb-12">
+            <img src="./assets/apple.png" className="w-[250px]" />
+            <img src="./assets/google_play.png" className="w-[250px]" />
+          </div>
+
+          {/* <h3 className="text-6xl font-[500] mb-12">
+            Regístrate en <br />
+            solo 1 minuto
+          </h3> */}
+          {/* <div className="hidden lg:flex w-1/2 justify-center">
             <img
               src="./assets/app_photo.png"
               className="app-transform rounded-[100%] w-[450px] h-[450px] "
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <Footer />
