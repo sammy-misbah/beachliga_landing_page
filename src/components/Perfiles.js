@@ -14,7 +14,7 @@ const Perfiles = () => {
           <a href="/jugadores">
             <div className="flex flex-col items-center mb-12 md:mb-0">
               <img
-                src="./assets/entrenadores.png"
+                src="./assets/luca_marisol.jpg"
                 className="mb-6 w-[225px] h-[225px] rounded-full"
                 alt="coach"
               />
@@ -38,7 +38,7 @@ const Perfiles = () => {
           <a href="/jugadores">
             <div className="flex flex-col items-center mb-12 md:mb-0">
               <img
-                src="./assets/players.jpg"
+                src="./assets/anina_gabri.jpg"
                 className="mb-6 w-[225px] h-[225px] rounded-full"
                 alt="player"
               />

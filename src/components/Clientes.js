@@ -18,13 +18,13 @@ const Clientes = () => {
         <div className="flex space-x-12">
           <div className="flex justify-center items-center">
             <div className="flex flex-col justify-center items-center text-2xl md:text-5xl text-white border-4 rounded-full w-40 h-40 md:w-60 md:h-60">
-              +26
-              <br /> <span className="text-3xl"> clubs</span>
+              +1500
+              <br /> <span className="text-3xl"> torneos</span>
             </div>
           </div>
           <div className="flex justify-center items-center">
             <div className="flex flex-col justify-center items-center text-2xl md:text-5xl text-white border-4 rounded-full w-40 h-40 md:w-60 md:h-60">
-              +1000
+              +25000
               <br /> <span className="text-3xl"> usuarios</span>
             </div>
           </div>
