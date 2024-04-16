@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
-const Terms = () => {
+const Terms = ({ language, setLanguage }) => {
   return (
     <div>
-      <Navbar />
+      <Navbar language={language} setLanguage={setLanguage} />
       <div>
         <div className="max-w-[1200px] mx-auto p-6 py-24  text-gray-800 font-[400]">
           <h1 className="text-4xl text-center font-semibold mb-20 lg:w-3/4 lg:mx-auto">
@@ -408,6 +409,7 @@ const Terms = () => {
           </h3>
         </div>
       </div>
+      <Footer language={language} />
     </div>
   );
 };

@@ -1,6 +1,23 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ language, setLanguage }) => {
+  const translations = {
+    en: {
+      terms: "Terms & Conditions",
+      contact: "Contact us",
+      investors: "Investors",
+      news: "News",
+      beach_liga: "Beach Liga",
+    },
+    es: {
+      terms: "Términos y Condiciones",
+      contact: "Contacta con nosotros",
+      investors: "Inversores",
+      news: "Noticias",
+      beach_liga: "Beach Liga",
+    },
+  };
+
   return (
     <div className="bg-beachliga_grey p-12">
       <div className="max-w-[1200px] mx-auto flex justify-between">
@@ -13,12 +30,21 @@ const Footer = () => {
         </a>
         <div className="flex mr-[10px] text-white lg:space-x-12 lg:text-md lg:flex-row flex-col space-y-1 lg:-space-y-0">
           <div>
-            <a href="/terms">Términos y Condiciones</a>
+            <a href="/terms">{translations[language].terms}</a>
           </div>
-          <div>Contacta con nosotros</div>
-          <div>Inversores</div>
-          <div>Noticias</div>
-          <div>Beach Liga</div>
+          <div>
+            <a href="#contact">{translations[language].contact}</a>
+          </div>
+
+          <div>
+            <a href="#contact">{translations[language].investors}</a>
+          </div>
+          <div>
+            <a href="#noticias">{translations[language].news}</a>
+          </div>
+          <div>
+            <a href="#">{translations[language].beach_liga}</a>
+          </div>
         </div>
       </div>
     </div>

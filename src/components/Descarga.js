@@ -1,6 +1,12 @@
 import React from "react";
 
-const Descarga = () => {
+const Descarga = ({ language }) => {
+  const translations = {
+    en: {
+      download: "Download our App!",
+    },
+    es: { download: "¡Descarga nuestra App!" },
+  };
   return (
     <div className="bg-beachliga_blue overflow-hidden">
       <div className="max-w-[1200px] mx-auto py-24 px-12">
@@ -11,7 +17,7 @@ const Descarga = () => {
               className="w-[135px] mb-6"
             />
             <h3 className="text-4xl text-white mb-8 text-center">
-              ¡Descarga nuestra app!
+              {translations[language].download}
             </h3>
             <div className="flex space-x-12">
               <img

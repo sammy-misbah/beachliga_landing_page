@@ -2,53 +2,96 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const Jugadores = () => {
+const Jugadores = ({ language, setLanguage }) => {
+  const translations = {
+    en: {
+      title: "Players",
+      subtitle: "Find clubs and events near you",
+      subsubtitle:
+        "Whether you want to learn to play, find a group at your level, or sign up for tournaments, Beachliga is the app you need.",
+      part_1_title: "Find players near you",
+      part_1_desc:
+        "Find the closest clubs, sign up for classes, connect with players in your area, and start playing!",
+      part_2_title: "Sign up for tournaments",
+      part_2_desc:
+        "If you're eager to compete, with Beachliga you can register securely and easily for tournaments.",
+      part_3_title: "Find your ideal partner",
+      part_3_desc:
+        "Get in touch with players in your area and find your partner for the next meet-up or tournament.",
+      title_2: "Connect with people in your area and start playing!",
+      feature_1: "Sign up for tournaments and classes near you",
+      feature_2: "Court reservation",
+      feature_3: "Find your ideal partner to compete in tournaments",
+      feature_4: "Explore the Beachliga player community",
+      quote:
+        "I've registered for dozens of tournaments using Beachliga. The process is efficient and super easy",
+      author: "Julia, national player",
+      download_1: "Download",
+      download_2: "BeachLiga",
+      download_3: "on your mobile.",
+      download_4: "It's free.",
+    },
+    es: {
+      title: "Jugadores",
+      subtitle: "Encuentra los clubes y eventos cerca de ti",
+      subsubtitle:
+        "Ya sea que quieres aprender a jugar, encontrar un grupo de tu nivel o apuntarte a torneos, Beachliga es la App que necesitas.",
+      part_1_title: "Encuentra a jugadores cerca de ti",
+      part_1_desc:
+        "Busca los clubes mas cercanos, apuntate a clases, conecta con jugadores de tu zona y empieza a jugar!",
+      part_2_title: "Apúntate a torneos",
+      part_2_desc:
+        "Si tienes ganas de competir, con Beachliga podras registrarte de forma segura y sencilla a los torneos.",
+      part_3_title: "Encuentra tu pareja ideal",
+      part_3_desc:
+        "Ponte en contacto con jugadores de tu zona y encuentra tu pareja para la proxima quedada o para el proximo torneo.",
+      title_2: "Ponte en contacto con gente de tu zona y empieza a jugar!",
+      feature_1: "Inscripción a torneos y clases cerca de ti",
+      feature_2: "Reserva de pista",
+      feature_3: "Encuentra tu compañero ideal para competir en torneos",
+      feature_4: "Explora la comunidad de jugadores de Beachliga",
+      quote:
+        "Me he registrado a decenas de torneos usando Beachliga. El proceso es eficaz y super sencillo",
+      author: "Julia, jugadora nacional",
+      download_1: "Bájate",
+      download_2: "BeachLiga",
+      download_3: "al movil.",
+      download_4: "Es gratis.",
+    },
+  };
+
   return (
-    <div
-      className="relative bg-white text-gray-800 overflow-hidden"
-      style={
-        {
-          // background: "linear-gradient(180deg,#6051E8  5.76%, #D44FDD 87.98%)",
-          // backgroundImage: "url(./assets/gradient_2.jpg)",
-          // backgroundSize: "100% 100%",
-        }
-      }
-    >
-      <Navbar />
-      {/* <div className="shape1"></div>
-      <div className="shape2"></div>
-      <div className="shape3"></div> */}
+    <div className="relative bg-white text-gray-800 overflow-hidden">
+      <Navbar language={language} setLanguage={setLanguage} />
       <div className="pt-6 lg:pt-24 lg:pb-0 px-6 lg:px-12 max-w-[1200px] mx-auto relative z-10">
         <h3 className="text-center text-2xl lg:text-4xl font-[400] mb-6 lg:mb-10 mt-12">
-          Jugadores
+          {translations[language].title}
         </h3>
-        <h2 className="text-center text-4xl lg:text-6xl mx-auto font-[500] mb-16 lg:mb-28">
-          Encuentra un club y apuntate a los eventos mas cerca de ti.
+        <h2 className="text-center text-4xl lg:text-6xl mx-auto font-[500] mb-16 lg:mb-28 lg:w-2/3">
+          {translations[language].subtitle}
         </h2>
         <div className="flex items-center lg:items-start lg:flex-row flex-col-reverse mb-24">
           <div className="lg:w-1/2 lg:pr-12">
             <h4 className="text-3xl lg:text-4xl font-[500] mb-10">
-              Ya sea que quieres aprender a jugar, encontrar un grupo de tu
-              nivel o apuntarte a torneos, Beachliga es la App que necesitas.
+              {translations[language].subsubtitle}
             </h4>
             <h5 className="text-xl font-[500] mb-1">
-              Encuentra a jugadores cerca de ti.
+              {translations[language].part_1_title}
             </h5>
             <p className="text-md  mb-4">
-              Busca los clubes mas cercanos, apuntate a clases, conecta con
-              jugadores de tu zona y empieza a jugar!
-            </p>
-            <h5 className="text-xl font-[500] mb-1">Apuntate a torneos.</h5>
-            <p className="text-md  mb-4">
-              Si tienes ganas de competir, con Beachliga podras registrarte de
-              forma segura y sencilla a los torneos.
+              {translations[language].part_1_desc}
             </p>
             <h5 className="text-xl font-[500] mb-1">
-              Encuentra tu pareja ideal.
+              {translations[language].part_2_title}
             </h5>
             <p className="text-md  mb-4">
-              Ponte en contacto con jugadores de tu zona y encuentra tu pareja
-              para la proxima quedada o para el proximo torneo.
+              {translations[language].part_2_desc}
+            </p>
+            <h5 className="text-xl font-[500] mb-1">
+              {translations[language].part_3_title}
+            </h5>
+            <p className="text-md  mb-4">
+              {translations[language].part_3_desc}
             </p>
           </div>
           <div className="lg:w-1/2 mb-12 lg:mb-0">
@@ -56,10 +99,9 @@ const Jugadores = () => {
           </div>
         </div>
       </div>
-      {/* <h2 className="text-center text-5xl mx-auto font-[500] mb-24">
-          Funciones que te ahorrarán <br />
-          horas de tu valioso tiempo
-        </h2> */}
+      <h2 className="text-center text-5xl mx-auto font-[500] mb-24 lg:w-1/2 px-6">
+        {translations[language].title_2}
+      </h2>
       <div className="max-w-[1200px] mx-auto  px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row items-center lg:items-start mb-32">
           <div className="lg:w-1/2 flex lg:justify-center">
@@ -74,31 +116,28 @@ const Jugadores = () => {
                 src="./assets/check_black.png"
                 className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2"
               />
-              <h4>Inscripcion a torneos y clases cerca de ti</h4>
+              <h4>{translations[language].feature_1}</h4>
             </div>
             <div className="flex pt-8 items-start lg:items-center">
               <img
                 src="./assets/check_black.png"
                 className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2"
               />
-              <h4>Reserva de pista</h4>
+              <h4>{translations[language].feature_2}</h4>
             </div>
             <div className="flex pt-8 items-start lg:items-center">
               <img
                 src="./assets/check_black.png"
                 className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2"
               />
-              <h4>Encuentra tu compañero ideal para competir en torneos</h4>
+              <h4>{translations[language].feature_3}</h4>
             </div>
             <div className="flex pt-8 items-start lg:items-center">
               <img
                 src="./assets/check_black.png"
                 className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2"
               />
-              <h4>
-                Explora la comunidad de jugadores y conéctate con compañeros de
-                juego
-              </h4>
+              <h4>{translations[language].feature_4}</h4>
             </div>
           </div>
         </div>
@@ -113,13 +152,10 @@ const Jugadores = () => {
               <img src="./assets/star.png" className="w-[30px]" />
               <img src="./assets/star.png" className="w-[30px]" />
             </div>
-            <div className="mb-12">
-              "Me he registrado a decenas de torneos usando Beachliga. El
-              proceso es eficaz y super sencillo"
-            </div>
+            <div className="mb-12">"{translations[language].quote}"</div>
           </div>
           <div className="text-2xl flex justify-end">
-            Julia, jugadora nacional
+            {translations[language].author}
           </div>
         </div>
       </div>
@@ -133,10 +169,10 @@ const Jugadores = () => {
                 alt="qr-code"
               />
               <div className="text-xl lg:text-3xl ">
-                Bájate
-                <br /> BeachLiga
-                <br /> al movil.
-                <br /> Es gratis.
+                {translations[language].download_1}
+                <br /> {translations[language].download_2}
+                <br /> {translations[language].download_3}
+                <br /> {translations[language].download_4}
               </div>
             </div>
             <div className="flex space-x-6 mb-12">
@@ -156,7 +192,7 @@ const Jugadores = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer language={language} />
     </div>
   );
 };

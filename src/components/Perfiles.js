@@ -1,14 +1,35 @@
 import React from "react";
 
-const Perfiles = () => {
+const Perfiles = ({ language }) => {
+  const translations = {
+    en: {
+      profile: "What profile are you?",
+      profile_desc:
+        "Choose the plan that best fits your profile and your needs.",
+      trainers: "Coaches",
+      clubs: "Clubs and organizers",
+      players: "Players and participants",
+      federations: "Federations",
+    },
+    es: {
+      profile: "¿Qué perfil eres?",
+      profile_desc:
+        "Escoge el plan que mejor se adapte a tu perfil y a tus necesidades.",
+      trainers: "Entrenadores",
+      clubs: "Clubes y organizadores",
+      players: "Jugadores y participantes",
+      federations: "Federaciones",
+    },
+  };
+
   return (
     <div className="bg-beachliga_bg_grey">
       <div className="max-w-[1200px] mx-auto py-24 pt-20 px-12">
         <h2 className="text-5xl text-beachliga_blue mb-6 font-[400]">
-          ¿Qué perfil eres?
+          {translations[language].profile}
         </h2>
         <h3 className="text-2xl max-w-[600px] mb-12 font-[400]">
-          Escoge el plan que mejor se adapte a tu perfil y a tus necesidades.
+          {translations[language].profile_desc}
         </h3>
         <div className="flex flex-col md:flex-row justify-between font-[400]">
           <a href="/jugadores">
@@ -19,7 +40,7 @@ const Perfiles = () => {
                 alt="coach"
               />
               <h3 className="text-2xl max-w-[200px] text-center">
-                Entrenadores
+                {translations[language].trainers}
               </h3>
             </div>
           </a>
@@ -31,7 +52,7 @@ const Perfiles = () => {
                 alt="club"
               />
               <h3 className="text-2xl max-w-[200px] text-center">
-                Clubes y organizadores
+                {translations[language].clubs}
               </h3>
             </div>
           </a>
@@ -43,7 +64,7 @@ const Perfiles = () => {
                 alt="player"
               />
               <h3 className="text-2xl max-w-[200px] text-center">
-                Jugadores y participantes
+                {translations[language].players}
               </h3>
             </div>
           </a>
@@ -55,7 +76,7 @@ const Perfiles = () => {
                 alt="federacion"
               />
               <h3 className="text-2xl max-w-[200px] text-center">
-                Federaciones
+                {translations[language].federations}
               </h3>
             </div>
           </a>

@@ -1,10 +1,30 @@
 import React from "react";
 
-const MasFuncionalidades = () => {
+const MasFuncionalidades = ({ language }) => {
+  const translations = {
+    en: {
+      more_features: "Additional features",
+      payments: "In-app payments",
+      events: "Event organization",
+      communication: "Instant communication",
+      results: "Online results",
+      admin: "Player management",
+      register: "Registration automation",
+    },
+    es: {
+      more_features: "Más funcionalidades",
+      payments: "Pagos desde la app",
+      events: "Organización de eventos",
+      communication: "Comunicación instantánea",
+      results: "Resultados online",
+      admin: "Administración de jugadores",
+      register: "Automatización de registro",
+    },
+  };
   return (
     <div className="max-w-[1200px] mx-auto pb-20 pt-6 px-12 font-[400]">
       <h2 className="text-center text-beachliga_yellow text-4xl font-[400] mb-12">
-        Más funcionalidades
+        {translations[language].more_features}
       </h2>
       <div className="flex flex-col items-center md:flex-row text-beachliga_text">
         <div className="flex flex-col md:w-1/3 items-center">
@@ -15,7 +35,7 @@ const MasFuncionalidades = () => {
               alt="credit_card"
             />
             <h3 className="text-center md:text-left text-xl lg:text-2xl max-w-[190px]">
-              Pagos desde la app
+              {translations[language].payments}
             </h3>
           </div>
           <div className="flex flex-col items-center md:flex-row mb-8 md:mb-0">
@@ -25,7 +45,7 @@ const MasFuncionalidades = () => {
               alt="cup"
             />
             <h3 className="text-center md:text-left text-xl lg:text-2xl max-w-[190px]">
-              Resultados online
+              {translations[language].results}
             </h3>
           </div>
         </div>
@@ -37,7 +57,7 @@ const MasFuncionalidades = () => {
               alt="resultados"
             />
             <h3 className="text-center md:text-left text-xl lg:text-2xl max-w-[190px]">
-              Organización de eventos
+              {translations[language].events}
             </h3>
           </div>
           <div className="flex flex-col items-center md:flex-row mb-8 md:mb-0">
@@ -47,7 +67,7 @@ const MasFuncionalidades = () => {
               alt="eventos"
             />
             <h3 className="text-center md:text-left text-xl lg:text-2xl max-w-[190px]">
-              Administración de jugadores
+              {translations[language].admin}
             </h3>
           </div>
         </div>
@@ -59,7 +79,7 @@ const MasFuncionalidades = () => {
               alt="chat"
             />
             <h3 className="text-center md:text-left text-xl lg:text-2xl max-w-[190px]">
-              Comunicación instantánea
+              {translations[language].communication}
             </h3>
           </div>
           <div className="flex flex-col items-center md:flex-row">
@@ -69,7 +89,7 @@ const MasFuncionalidades = () => {
               alt="registro"
             />
             <h3 className="text-center md:text-left text-xl lg:text-2xl max-w-[190px]">
-              Automatización de registro
+              {translations[language].register}
             </h3>
           </div>
         </div>

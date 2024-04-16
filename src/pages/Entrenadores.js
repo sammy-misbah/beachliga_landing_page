@@ -2,55 +2,96 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const Entrenadores = () => {
+const Entrenadores = ({ language, setLanguage }) => {
+  const translations = {
+    en: {
+      title: "Coaches",
+      subtitle: "Plan, manage, and communicate efficiently",
+      subsubtitle:
+        "With Beachliga, you can plan your training sessions, receive payments, and communicate with your students.",
+      part_1_title: "Plan your training sessions",
+      part_1_desc:
+        "Create your training groups: choose the location, schedule, level, and get to know players in your area.",
+      part_2_title: "Payment management",
+      part_2_desc:
+        "On Beachliga, we offer you simple and secure payment management: your students will have access to a secure payment platform, and you will receive the money immediately.",
+      part_3_title: "Communicate with your students",
+      part_3_desc:
+        "Through our chat, you can send messages to club members, create groups, and communicate directly with your colleagues and students.",
+      title_2: "Features that will save you hours of your valuable time.",
+      feature_1: "Plan and create your training groups",
+      feature_2: "Effective communication with club members",
+      feature_3: "Training and event notifications",
+      feature_4: "Private chat for each training group",
+      quote:
+        "With Beachliga, I can see how many students I have in each group and communicate directly with them",
+      author: "Blai, Coach at Beachbol",
+      download_1: "Download",
+      download_2: "BeachLiga",
+      download_3: "on your mobile.",
+      download_4: "It's free.",
+    },
+    es: {
+      title: "Entrenadores",
+      subtitle: "Planifica, gestiona y comunica de manera eficiente",
+      subsubtitle:
+        "Con Beachliga, puedes planificar tus entrenamientos, recibir los pagos y comunicar con tus alumnos.",
+      part_1_title: "Planifica tus entrenamientos",
+      part_1_desc:
+        "Crea tus grupos de entrenamientos: elije el lugar, el horario, el nivel y hazte conocer de los jugadores de tu zona.",
+      part_2_title: "Gestión de pagos",
+      part_2_desc:
+        "En Beachliga, te ofrecemos una gestion de pagos sencilla y segura: tus alumnos tendran acceso a una plataforma de pago segura y recibiras el dinero de forma immediata.",
+      part_3_title: "Comunica con tus alumnos",
+      part_3_desc:
+        "A través de nuestro chat, podras mandar mensajes a los miembros del club, crear grupos y comunicar directamente con tus colegas y alumnos.",
+      title_2: "Funciones que te ahorrarán horas de tu valioso tiempo",
+      feature_1: "Planifica y crea tus grupos de entrenamientos",
+      feature_2: "Comunícacion efectiva con los miembros del club",
+      feature_3: "Notificaciones de entrenamientos y eventos",
+      feature_4: "Chat privado para cada grupo de entrenamiento",
+      quote:
+        "Con Beachliga, puedo ver cuantos alumnos tengo en cada grupo y comunicar directamente con ellos",
+      author: "Blai, Entrenador del Beachbol",
+      download_1: "Bájate",
+      download_2: "BeachLiga",
+      download_3: "al movil.",
+      download_4: "Es gratis.",
+    },
+  };
+
   return (
-    <div
-      className="relative bg-white overflow-hidden text-gray-800"
-      style={
-        {
-          // background: "linear-gradient(180deg,#6051E8  5.76%, #D44FDD 87.98%)",
-          // backgroundImage: "url(./assets/gradient_2.jpg)",
-          // backgroundSize: "100% 100%",
-        }
-      }
-    >
-      <Navbar />
-      {/* <div className="shape1"></div>
-      <div className="shape2"></div>
-      <div className="shape3"></div> */}
+    <div className="relative bg-white overflow-hidden text-gray-800">
+      <Navbar language={language} setLanguage={setLanguage} />
       <div className="pt-6 lg:pt-24 lg:pb-0 px-6 lg:px-12 max-w-[1200px] mx-auto relative z-10">
         <h3 className="text-center text-2xl lg:text-4xl font-[400] mb-6 lg:mb-10 mt-12">
-          Entrenadores
+          {translations[language].title}
         </h3>
-        <h2 className="text-center text-4xl lg:text-6xl mx-auto font-[500] mb-16 lg:mb-28">
-          Planifica, gestiona y comunica de manera eficiente.
+        <h2 className="text-center text-4xl lg:text-6xl mx-auto font-[500] mb-16 lg:mb-28 lg:w-2/3">
+          {translations[language].subtitle}
         </h2>
         <div className="flex items-center lg:items-start lg:flex-row flex-col-reverse mb-24">
           <div className="lg:w-1/2 lg:pr-12">
             <h4 className="text-3xl lg:text-4xl font-[500] mb-10">
-              Con Beachliga, puedes planificar tus entrenamientos, recibir los
-              pagos y comunicar con tus alumnos.
+              {translations[language].subsubtitle}
             </h4>
             <h5 className="text-xl font-[500] mb-1">
-              Planifica tus entrenamientos
+              {translations[language].part_1_title}
             </h5>
             <p className="text-md  mb-4">
-              Crea tus grupos de entrenamientos: elije el lugar, el horario, el
-              nivel y mucho mas y hazte conocer de los jugadores de tu zona.
-            </p>
-            <h5 className="text-xl font-[500] mb-1">Gestión de pagos</h5>
-            <p className="text-md  mb-4">
-              En la plataforma Beachliga, te ofrecemos una gestion de pagos
-              sencilla y segura: tus alumnos tendran acceso a una plataforma de
-              pago segura y recibiras el dinero de forma immediata
+              {translations[language].part_1_desc}
             </p>
             <h5 className="text-xl font-[500] mb-1">
-              Comunica con tus compañeros y alumnos
+              {translations[language].part_2_title}
             </h5>
             <p className="text-md  mb-4">
-              A través de nuestro chat, podras mandar mensajes a los miembros
-              del club, crear grupos y comunicar de manera sencilla con tus
-              colegas y alumnos.
+              {translations[language].part_2_desc}
+            </p>
+            <h5 className="text-xl font-[500] mb-1">
+              {translations[language].part_3_title}
+            </h5>
+            <p className="text-md  mb-4">
+              {translations[language].part_3_desc}
             </p>
           </div>
           <div className="lg:w-1/2 mb-12 lg:mb-0">
@@ -58,10 +99,9 @@ const Entrenadores = () => {
           </div>
         </div>
       </div>
-      {/* <h2 className="text-center text-5xl mx-auto font-[500] mb-24">
-          Funciones que te ahorrarán <br />
-          horas de tu valioso tiempo
-        </h2> */}
+      <h2 className="text-center text-5xl mx-auto font-[500] mb-24 lg:w-1/2 px-6">
+        {translations[language].title_2}
+      </h2>
       <div className="flex flex-col lg:flex-row items-center lg:items-start mb-32 max-w-[1200px] mx-auto  px-6 lg:px-12">
         <div className="lg:w-1/2 flex lg:justify-center">
           <img
@@ -75,28 +115,28 @@ const Entrenadores = () => {
               src="./assets/check_black.png"
               className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2 lg:pt-0"
             />
-            <h4>Planifica y crea tus grupos de entrenamientos</h4>
+            <h4>{translations[language].feature_1}</h4>
           </div>
           <div className="flex pt-8 items-start lg:items-center">
             <img
               src="./assets/check_black.png"
               className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2 lg:pt-0"
             />
-            <h4>Comunícacion efectiva con los miembros del club</h4>
+            <h4>{translations[language].feature_2}</h4>
           </div>
           <div className="flex pt-8 items-start lg:items-center">
             <img
               src="./assets/check_black.png"
               className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2 lg:pt-0"
             />
-            <h4>Notificaciones de entrenamientos y eventos</h4>
+            <h4>{translations[language].feature_3}</h4>
           </div>
           <div className="flex pt-8 items-start lg:items-center">
             <img
               src="./assets/check_black.png"
               className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2 lg:pt-0"
             />
-            <h4>Chat privado para cada grupo de entrenamiento</h4>
+            <h4>{translations[language].feature_4}</h4>
           </div>
         </div>
       </div>
@@ -110,13 +150,10 @@ const Entrenadores = () => {
               <img src="./assets/star.png" className="w-[30px]" />
               <img src="./assets/star.png" className="w-[30px]" />
             </div>
-            <div className="mb-12">
-              "Gracias a Beachliga, puedo ver cuantos alumnos tengo en cada de
-              mis grupos y comunicar directamente con ellos"
-            </div>
+            <div className="mb-12">"{translations[language].quote}"</div>
           </div>
           <div className="text-2xl flex justify-end">
-            Blai, entrenador del Beachbol
+            {translations[language].author}
           </div>
         </div>
       </div>
@@ -129,10 +166,10 @@ const Entrenadores = () => {
               alt="qr-code"
             />
             <div className="text-xl lg:text-3xl ">
-              Bájate
-              <br /> BeachLiga
-              <br /> al movil.
-              <br /> Es gratis.
+              {translations[language].download_1}
+              <br /> {translations[language].download_2}
+              <br /> {translations[language].download_3}
+              <br /> {translations[language].download_4}
             </div>
           </div>
           <div className="flex space-x-6 mb-12">
@@ -151,7 +188,7 @@ const Entrenadores = () => {
           />
         </div>
       </div>
-      <Footer />
+      <Footer language={language} />
     </div>
   );
 };

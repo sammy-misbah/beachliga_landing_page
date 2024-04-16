@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
-import {
-  faArrowLeft,
-  faChevronLeft,
-  faChevronUp,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
-const Navbar = () => {
+const Navbar = ({ language, setLanguage }) => {
   const [dropdownIsOpen, setDropdownIsOpen] = useState(false);
   const [subDropdownIsOpen, setSubDropdownIsOpen] = useState(false);
 
@@ -34,6 +30,33 @@ const Navbar = () => {
     setSubDropdownIsOpen(false);
   };
 
+  const translations = {
+    en: {
+      home: "Home",
+      who: "For whom?",
+      trainers: "Coaches",
+      clubs: "Clubs",
+      players: "Players",
+      federations: "Federations",
+      features: "Features",
+      plans: "Plans & Pricing",
+      news: "News",
+      contact: "Contact us",
+    },
+    es: {
+      home: "Inicio",
+      who: "¿Para quién?",
+      trainers: "Entrenadores",
+      clubs: "Clubes",
+      players: "Jugadores",
+      federations: "Federaciones",
+      features: "Funcionalidades",
+      plans: "Planes & Precios",
+      news: "Noticias",
+      contact: "Contacto",
+    },
+  };
+
   return (
     <nav className="flex bg-beachliga_blue h-[65px] text-white relative z-20">
       <div className="flex w-[80%] max-w-[1200px] mx-auto items-center justify-between ">
@@ -45,10 +68,10 @@ const Navbar = () => {
           />
         </a>
         <div className="hidden md:flex space-x-8 lg:space-x-12 font-body text-sm">
-          <a href="/">Inicio</a>
+          <a href="/">{translations[language].home}</a>
           <button onClick={toggleDropdown}>
             <div className="flex items-center relative ">
-              <div className="mr-3">¿Para quién?</div>
+              <div className="mr-3">{translations[language].who}</div>
               <FontAwesomeIcon
                 className="pt-1"
                 icon={dropdownIsOpen ? faChevronUp : faChevronDown}
@@ -62,33 +85,33 @@ const Navbar = () => {
                   href="/entrenadores"
                   className="hover:bg-white w-full py-2 hover:text-black bg-beachliga_blue"
                 >
-                  Entrenadores
+                  {translations[language].trainers}
                 </a>
                 <a
                   href="/clubes"
                   className="hover:bg-white w-full py-2 hover:text-black bg-beachliga_blue"
                 >
-                  Clubes
+                  {translations[language].clubs}
                 </a>
                 <a
                   href="/jugadores"
                   className="hover:bg-white w-full py-2 hover:text-black bg-beachliga_blue"
                 >
-                  Jugadores
+                  {translations[language].players}
                 </a>
                 <a
                   href="/federaciones"
                   className="hover:bg-white w-full py-2 hover:text-black bg-beachliga_blue"
                 >
-                  Federaciones
+                  {translations[language].federations}
                 </a>
               </div>
             </div>
           </button>
-          <a href="/#funcionalidades">Funcionalidades</a>
-          <a href="/#precios">Planes & Precios</a>
-          <a href="/#noticias">Noticias</a>
-          <a href="/#contacto">Contacto</a>
+          <a href="/#funcionalidades">{translations[language].features}</a>
+          <a href="/#precios">{translations[language].plans}</a>
+          <a href="/#noticias">{translations[language].news}</a>
+          <a href="/#contacto">{translations[language].contact}</a>
         </div>
         <div className="md:hidden ">
           <div
@@ -106,22 +129,24 @@ const Navbar = () => {
                       size="lg"
                     />
                   </button>
-                  <a href="/entrenadores">Entrenadores</a>
+                  <a href="/entrenadores">{translations[language].trainers}</a>
                 </div>
-                <a href="/clubes">Clubes</a>
-                <a href="/jugadores">Jugadores</a>
-                <a href="/federaciones">Federaciones</a>
+                <a href="/clubes">{translations[language].clubs}</a>
+                <a href="/jugadores">{translations[language].players}</a>
+                <a href="/federaciones">{translations[language].federations}</a>
               </>
             ) : (
               <>
-                <a href="/">Inicio</a>
+                <a href="/">{translations[language].home}</a>
                 <button className="mr-3" onClick={openSubDropdown}>
-                  ¿Para quién?
+                  {translations[language].who}
                 </button>
-                <a href="/#funcionalidades">Funcionalidades</a>
-                <a href="/#precios">Planes & Precios</a>
-                <a href="/#noticias">Noticias</a>
-                <a href="/#contacto">Contacto</a>
+                <a href="/#funcionalidades">
+                  {translations[language].features}
+                </a>
+                <a href="/#precios">{translations[language].plans}</a>
+                <a href="/#noticias">{translations[language].news}</a>
+                <a href="/#contacto">{translations[language].contact}</a>
               </>
             )}
           </div>
@@ -134,6 +159,14 @@ const Navbar = () => {
           <span className="hamburger-top"></span>
           <span className="hamburger-middle"></span>
           <span className="hamburger-bottom"></span>
+        </button>
+      </div>
+      <div className="flex items-center pr-12">
+        <button onClick={() => setLanguage("en")}>
+          <img src="./assets/greatbritain_flag.svg" className="w-[30px] mr-3" />
+        </button>
+        <button onClick={() => setLanguage("es")}>
+          <img src="./assets/spain_flag.png" className="w-[30px]" />
         </button>
       </div>
     </nav>

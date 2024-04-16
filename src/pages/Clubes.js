@@ -2,56 +2,96 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const Clubes = () => {
+const Clubes = ({ language, setLanguage }) => {
+  const translations = {
+    en: {
+      title: "Clubs and organizations",
+      subtitle: "Easily manage your club's events",
+      subsubtitle:
+        "With Beachliga, creating events for your club and managing members has never been easier.",
+      part_1_title: "Create and organize events",
+      part_1_desc:
+        "In just 2 minutes, you can create events and training sessions for your club and allow players to sign up through our platform.",
+      part_2_title: "Manage club members and students",
+      part_2_desc:
+        "With Beachliga, you can see the status of your training sessions at any time: number of students, payment status, attendance, etc...",
+      part_3_title: "Court reservation",
+      part_3_desc:
+        "With Beachliga, you can give players the opportunity to reserve a court for free or by paying.",
+      title_2: "Create your events in 2 clicks.",
+      feature_1: "Tournament and training creation in 2 clicks.",
+      feature_2: "Simple and secure payment management",
+      feature_3: "Court reservation system",
+      feature_4: "Real-time results",
+      quote:
+        "BeachLiga is the perfect app to manage everything happening at the club",
+      author: "Simone, BeachBol Manager",
+      download_1: "Download",
+      download_2: "BeachLiga",
+      download_3: "on your mobile.",
+      download_4: "It's free.",
+    },
+    es: {
+      title: "Clubes y organizaciónes",
+      subtitle: "Gestiona de manera sencilla los eventos de tu club",
+      subsubtitle:
+        "Con Beachliga, crear los eventos de tu club y gestionar los miembros nunca ha sido tan fácil.",
+      part_1_title: "Crea y organiza eventos",
+      part_1_desc:
+        "En solo 2 minutos, podras crear los eventos y entrenamientos de tu club y permitir a los jugadores de apuntarse a través de nuestra plataforma.",
+      part_2_title: "Gestiona los miembros y alumnos del club",
+      part_2_desc:
+        "Con Beachliga, podras ver en cada momento el estado de tus entrenamientos: numero de alumnos, estado de pago, asistencia etc...",
+      part_3_title: "Reserva de pistas",
+      part_3_desc:
+        "Con Beachliga, puedes ofrecer a los jugadores la posibilidad de reservar una cancha de forma gratuita o pagando.",
+      title_2: "Crea tus eventos en 2 clics",
+      feature_1: "Creación de torneos y entrenamientos en 2 clics",
+      feature_2: "Gestión de pagos sencilla y segura",
+      feature_3: "Sistema de reserva de pistas",
+      feature_4: "Resultados en tiempo real",
+      quote:
+        "BeachLiga es la App perfecta para gestionar todo lo que pasa en el club",
+      author: "Simone, Encargado del BeachBol",
+      download_1: "Bájate",
+      download_2: "BeachLiga",
+      download_3: "al movil.",
+      download_4: "Es gratis.",
+    },
+  };
+
   return (
-    <div
-      className="relative bg-white overflow-hidden text-gray-800"
-      style={
-        {
-          // background: "linear-gradient(180deg,#6051E8  5.76%, #D44FDD 87.98%)",
-          // backgroundImage: "url(./assets/gradient_2.jpg)",
-          // backgroundSize: "100% 100%",
-        }
-      }
-    >
-      <Navbar />
-      {/* <div className="shape1"></div>
-      <div className="shape2"></div>
-      <div className="shape3"></div> */}
+    <div className="relative bg-white overflow-hidden text-gray-800">
+      <Navbar language={language} setLanguage={setLanguage} />
       <div className="pt-6 lg:pt-24 lg:pb-0 px-6 lg:px-12 max-w-[1200px] mx-auto relative z-10">
         <h3 className="text-center text-2xl lg:text-4xl font-[400] mb-6 lg:mb-10 mt-12">
-          Clubes y organizaciónes
+          {translations[language].title}
         </h3>
-        <h2 className="text-center text-4xl lg:text-6xl mx-auto font-[500] mb-16 lg:mb-28">
-          Gestiona de manera sencilla los eventos de tu Club
+        <h2 className="text-center text-4xl lg:text-6xl mx-auto font-[500] mb-16 lg:mb-28 lg:w-2/3">
+          {translations[language].subtitle}
         </h2>
         <div className="flex items-center lg:items-start lg:flex-row flex-col-reverse mb-24">
           <div className="lg:w-1/2 lg:pr-12">
             <h4 className="text-3xl lg:text-4xl font-[500] mb-10">
-              Con Beachliga, crear los eventos de tu Club y gestionar los
-              miembros nunca ha sido tan facil.
+              {translations[language].subsubtitle}
             </h4>
             <h5 className="text-xl font-[500] mb-1">
-              Crea y organiza eventos.
+              {translations[language].part_1_title}
             </h5>
             <p className="text-md  mb-4">
-              En solo 2 minutos, podras crear los eventos y entrenamientos de tu
-              club y permitir a los jugadores de apuntarse a través de nuestra
-              plataforma segura.
+              {translations[language].part_1_desc}
             </p>
             <h5 className="text-xl font-[500] mb-1">
-              Gestiona los miembros y alumnos del club.
+              {translations[language].part_2_title}
             </h5>
             <p className="text-md  mb-4">
-              Con Beachliga, podras ver en cada momento el estado de tus eventos
-              y de tus entrenamientos: numero de jugadores, estado de pago,
-              asistencia y mucho mas.
+              {translations[language].part_2_desc}
             </p>
-            <h5 className="text-xl font-[500] mb-1">Reserva de pistas</h5>
+            <h5 className="text-xl font-[500] mb-1">
+              {translations[language].part_3_title}
+            </h5>
             <p className="text-md  mb-4">
-              Tu club dispone de varias pistas y te gustaria alquilar algunas?
-              Con beachliga, puedes dar la oportunidad a los jugadores de
-              reservar un campo de forma gratis o pagando.
+              {translations[language].part_3_desc}
             </p>
           </div>
           <div className="lg:w-1/2 mb-12 lg:mb-0">
@@ -59,10 +99,9 @@ const Clubes = () => {
           </div>
         </div>
       </div>
-      {/* <h2 className="text-center text-5xl mx-auto font-[500] mb-24">
-          Funciones que te ahorrarán <br />
-          horas de tu valioso tiempo
-        </h2> */}
+      <h2 className="text-center text-5xl mx-auto font-[500] mb-24 lg:w-1/2 px-6">
+        {translations[language].title_2}
+      </h2>
       <div className="max-w-[1200px] mx-auto  px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row items-center lg:items-start mb-32">
           <div className="lg:w-1/2 flex lg:justify-center">
@@ -74,28 +113,28 @@ const Clubes = () => {
                 src="./assets/check_black.png"
                 className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2"
               />
-              <h4>Creación de torneos y entrenamientos en 2 clics</h4>
+              <h4>{translations[language].feature_1}</h4>
             </div>
             <div className="flex pt-8 items-start lg:items-center">
               <img
                 src="./assets/check_black.png"
                 className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2"
               />
-              <h4>Gestión de pagos sencilla y segura</h4>
+              <h4>{translations[language].feature_2}</h4>
             </div>
             <div className="flex pt-8 items-start lg:items-center">
               <img
                 src="./assets/check_black.png"
                 className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2"
               />
-              <h4>Sistema de reserva de pistas</h4>
+              <h4>{translations[language].feature_3}</h4>
             </div>
             <div className="flex pt-8 items-start lg:items-center">
               <img
                 src="./assets/check_black.png"
                 className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2"
               />
-              <h4>Resultados en tiempo real</h4>
+              <h4>{translations[language].feature_4}</h4>
             </div>
           </div>
         </div>
@@ -110,13 +149,10 @@ const Clubes = () => {
               <img src="./assets/star.png" className="w-[30px]" />
               <img src="./assets/star.png" className="w-[30px]" />
             </div>
-            <div className="mb-12">
-              "BeachLiga es la App perfecta para gestionar nuestros torneos y
-              grupos de entrenamientos"
-            </div>
+            <div className="mb-12">"{translations[language].quote}"</div>
           </div>
           <div className="text-2xl flex justify-end">
-            Simone, Encargado del BeachBol
+            {translations[language].author}
           </div>
         </div>
       </div>
@@ -130,10 +166,10 @@ const Clubes = () => {
                 alt="qr-code"
               />
               <div className="text-xl lg:text-3xl ">
-                Bájate
-                <br /> BeachLiga
-                <br /> al movil.
-                <br /> Es gratis.
+                {translations[language].download_1}
+                <br /> {translations[language].download_2}
+                <br /> {translations[language].download_3}
+                <br /> {translations[language].download_4}
               </div>
             </div>
             <div className="flex space-x-6 mb-12">
@@ -153,7 +189,7 @@ const Clubes = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer language={language} />
     </div>
   );
 };

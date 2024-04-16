@@ -2,59 +2,100 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const Federaciones = () => {
+const Federaciones = ({ language, setLanguage }) => {
+  const translations = {
+    en: {
+      title: "Federations",
+      subtitle: "Manage your community events",
+      subsubtitle:
+        "Beachliga allows you to manage licenses and track results for clubs and players in your community.",
+      part_1_title: "License management for federated players",
+      part_1_desc:
+        "With Beachliga, players can easily upload their licenses and have access to federated tournaments.",
+      part_2_title: "Updated federal ranking",
+      part_2_desc:
+        "Follow the updated ranking of players and clubs from the federation after each event.",
+      part_3_title: "Creation of federated events",
+      part_3_desc:
+        "With Beachliga, you can create events for federated players of all ages in just a few clicks.",
+      title_2: "Keep track of everything happening in your community",
+      feature_1: "License management",
+      feature_2: "Federal ranking updated after each event",
+      feature_3: "Organization and creation of federated events",
+      feature_4: "Results of all federated players",
+      quote:
+        "BeachLiga allows us to manage all events in the Valencian Community in one place",
+      author: "Nuria, Valencian Volleyball Federation",
+      download_1: "Download",
+      download_2: "BeachLiga",
+      download_3: "on your mobile.",
+      download_4: "It's free.",
+    },
+    es: {
+      title: "Federaciones",
+      subtitle: "Gestiona los eventos de tu comunidad",
+      subsubtitle:
+        "Beachliga te permite gestionar las licencias y seguir los resultados de los clubes y jugadores de tu comunidad.",
+      part_1_title: "Gestión de licencias para jugadores federados",
+      part_1_desc:
+        "Con Beachliga, los jugadores podran subir de forma sencilla sus licencias y tener acceso a los torneos federados.",
+      part_2_title: "Ranking federal actualizado",
+      part_2_desc:
+        "Sigue el ranking actualizado de jugadores y clubes de la federación después de cada evento.",
+      part_3_title: "Creación de eventos federados",
+      part_3_desc:
+        "Con Beachliga, puedes crear eventos para jugadores federados de todas las edades en unos clics.",
+      title_2: "Sigue todo lo que pasa en tu comunidad",
+      feature_1: "Gestión de licencias",
+      feature_2: "Ranking federal actualizado a cada evento",
+      feature_3: "Organización y creación de eventos federados",
+      feature_4: "Resultados de todos los jugadores federados",
+      quote:
+        "BeachLiga nos permite gestionar todos los eventos de la Comunidad Valenciana en un mismo lugar",
+      author: "Nuria, Federación Valenciana de Voleibol",
+      download_1: "Bájate",
+      download_2: "BeachLiga",
+      download_3: "al movil.",
+      download_4: "Es gratis.",
+    },
+  };
+
   return (
-    <div
-      className="relative bg-white text-gray-800 overflow-hidden"
-      style={
-        {
-          // background: "linear-gradient(180deg,#6051E8  5.76%, #D44FDD 87.98%)",
-          // backgroundImage: "url(./assets/gradient_2.jpg)",
-          // backgroundSize: "100% 100%",
-        }
-      }
-    >
-      <Navbar />
+    <div className="relative bg-white text-gray-800 overflow-hidden">
+      <Navbar language={language} setLanguage={setLanguage} />
       <div className="pt-6 lg:pt-24 lg:pb-0 px-6 lg:px-12 max-w-[1200px] mx-auto relative z-10">
         <h3 className="text-center text-2xl lg:text-4xl font-[400] mb-6 lg:mb-10 mt-12">
-          Federaciones
+          {translations[language].title}
         </h3>
-        <h2 className="text-center text-4xl lg:text-6xl mx-auto font-[500] mb-16 lg:mb-28">
-          Gestiona facilmente los jugadores de tu comunidad
+        <h2 className="text-center text-4xl lg:text-6xl mx-auto font-[500] mb-16 lg:mb-28 lg:w-2/3">
+          {translations[language].subtitle}
         </h2>
         <div className="flex items-center lg:items-start lg:flex-row flex-col-reverse mb-24">
           <div className="lg:w-1/2 lg:pr-12">
             <h4 className="text-3xl lg:text-4xl font-[500] mb-10">
-              Beachliga te permite gestionar las licencias y seguir los
-              resultados de los clubes y jugadores de tu comunidad.
+              {translations[language].subsubtitle}
             </h4>
             <h5 className="text-xl font-[500] mb-1">
-              Gestión de licencias para los jugadores federados.
+              {translations[language].part_1_title}
             </h5>
-            <p className="text-md mb-4">
-              Con Beachliga, los jugadores podran subir de forma sencilla sus
-              licencias y tener acceso a los torneos federados.
-            </p>
+            <p className="text-md mb-4">{translations[language].part_1_desc}</p>
             <h5 className="text-xl font-[500] mb-1">
-              Ranking federal actualizado.
+              {translations[language].part_2_title}
             </h5>
-            <p className="text-md mb-4">
-              Sigue el ranking de los jugadores y clubes de la federacion
-              actualizado después de cada evento.
-            </p>
+            <p className="text-md mb-4">{translations[language].part_2_desc}</p>
             <h5 className="text-xl font-[500] mb-1">
-              Creación de eventos federados
+              {translations[language].part_3_title}
             </h5>
-            <p className="text-md mb-4">
-              Con Beachliga, puedes crear eventos para jugadores federados de
-              todas las edades de manera sencilla.
-            </p>
+            <p className="text-md mb-4">{translations[language].part_3_desc}</p>
           </div>
           <div className="lg:w-1/2 mb-12 lg:mb-0">
             <img src="./assets/torneo_bl1.png" className="rounded-xl" />
           </div>
         </div>
       </div>
+      <h2 className="text-center text-5xl mx-auto font-[500] mb-24 lg:w-1/2 px-6">
+        {translations[language].title_2}
+      </h2>
       <div className="max-w-[1200px] mx-auto  px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row items-center lg:items-start mb-32">
           <div className="lg:w-1/2 flex lg:justify-center">
@@ -69,30 +110,28 @@ const Federaciones = () => {
                 src="./assets/check_black.png"
                 className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2 lg:pt-0"
               />
-              <h4>Gestión de licencias</h4>
+              <h4> {translations[language].feature_1}</h4>
             </div>
             <div className="flex pt-8 items-start lg:items-center">
               <img
                 src="./assets/check_black.png"
                 className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2 lg:pt-0"
               />
-              <h4>Ranking federal actualizado a cada evento</h4>
+              <h4> {translations[language].feature_2}</h4>
             </div>
             <div className="flex pt-8 items-start lg:items-center">
               <img
                 src="./assets/check_black.png"
                 className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2 lg:pt-0"
               />
-              <h4>Organización y creación de eventos de manera sencilla</h4>
+              <h4> {translations[language].feature_3}</h4>
             </div>
             <div className="flex pt-8 items-start lg:items-center">
               <img
                 src="./assets/check_black.png"
                 className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2 lg:pt-0"
               />
-              <h4>
-                Seguimiento de los resultados de todos los jugadores federados
-              </h4>
+              <h4>{translations[language].feature_4}</h4>
             </div>
           </div>
         </div>
@@ -107,13 +146,10 @@ const Federaciones = () => {
               <img src="./assets/star.png" className="w-[30px]" />
               <img src="./assets/star.png" className="w-[30px]" />
             </div>
-            <div className="mb-12">
-              "BeachLiga nos permite gestionar todos los eventos de la Comunidad
-              Valenciana en un mismo lugar"
-            </div>
+            <div className="mb-12">{translations[language].quote}</div>
           </div>
           <div className="text-2xl flex justify-end">
-            Nuria, Federacion Valenciana de Voleibol
+            {translations[language].author}
           </div>
         </div>
       </div>
@@ -127,10 +163,10 @@ const Federaciones = () => {
                 alt="qr-code"
               />
               <div className="text-xl lg:text-3xl ">
-                Bájate
-                <br /> BeachLiga
-                <br /> al movil.
-                <br /> Es gratis.
+                {translations[language].download_1}
+                <br /> {translations[language].download_2}
+                <br /> {translations[language].download_3}
+                <br /> {translations[language].download_4}
               </div>
             </div>
             <div className="flex space-x-6 mb-12">
@@ -150,7 +186,7 @@ const Federaciones = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer language={language} />
     </div>
   );
 };

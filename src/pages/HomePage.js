@@ -14,23 +14,23 @@ import Servicios from "../components/Servicios";
 import Video from "../components/Video";
 import Navbar from "../components/Navbar";
 
-const HomePage = () => {
+const HomePage = ({ language, setLanguage }) => {
   return (
     <div>
-      <Navbar />
-      <Home />
-      <Clientes />
-      <Video />
-      <Servicios />
-      <MasFuncionalidades />
-      <Perfiles />
-      <Planes />
-      <Lanzadera />
-      <Opiniones />
-      <Descarga />
-      <Instagram />
-      <Contacto />
-      <Footer />
+      <Navbar language={language} setLanguage={setLanguage} />
+      <Home language={language} setLanguage={setLanguage} />
+      <Clientes language={language} setLanguage={setLanguage} />
+      <Video language={language} setLanguage={setLanguage} />
+      <Servicios language={language} setLanguage={setLanguage} />
+      <MasFuncionalidades language={language} setLanguage={setLanguage} />
+      <Perfiles language={language} setLanguage={setLanguage} />
+      <Planes language={language} setLanguage={setLanguage} />
+      <Lanzadera language={language} setLanguage={setLanguage} />
+      <Opiniones language={language} setLanguage={setLanguage} />
+      <Descarga language={language} setLanguage={setLanguage} />
+      <Instagram language={language} setLanguage={setLanguage} />
+      <Contacto language={language} setLanguage={setLanguage} />
+      <Footer language={language} setLanguage={setLanguage} />
     </div>
   );
 };
