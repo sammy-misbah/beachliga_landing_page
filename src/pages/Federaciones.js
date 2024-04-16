@@ -64,7 +64,7 @@ const Federaciones = ({ language, setLanguage }) => {
     <div className="relative bg-white text-gray-800 overflow-hidden">
       <Navbar language={language} setLanguage={setLanguage} />
       <div className="pt-6 lg:pt-24 lg:pb-0 px-6 lg:px-12 max-w-[1200px] mx-auto relative z-10">
-        <h3 className="text-center text-2xl lg:text-4xl font-[400] mb-6 lg:mb-10 mt-12">
+        <h3 className="text-center text-2xl lg:text-4xl font-[400] mb-6 mt-12">
           {translations[language].title}
         </h3>
         <h2 className="text-center text-4xl lg:text-6xl mx-auto font-[500] mb-16 lg:mb-28 lg:w-2/3">

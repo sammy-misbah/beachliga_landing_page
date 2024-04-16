@@ -32,7 +32,7 @@ const Perfiles = ({ language }) => {
           {translations[language].profile_desc}
         </h3>
         <div className="flex flex-col md:flex-row justify-between font-[400]">
-          <a href="/jugadores">
+          <a href="/entrenadores">
             <div className="flex flex-col items-center mb-12 md:mb-0">
               <img
                 src="./assets/luca_marisol.jpg"
