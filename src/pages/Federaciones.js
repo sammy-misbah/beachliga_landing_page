@@ -89,7 +89,7 @@ const Federaciones = ({ language, setLanguage }) => {
             <p className="text-md mb-4">{translations[language].part_3_desc}</p>
           </div>
           <div className="lg:w-1/2 mb-12 lg:mb-0">
-            <img src="./assets/torneo_bl1.jpg" className="rounded-xl" />
+            <img src="./assets/torneo_bl1.png" className="rounded-xl" />
           </div>
         </div>
       </div>

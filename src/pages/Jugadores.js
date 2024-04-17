@@ -95,7 +95,7 @@ const Jugadores = ({ language, setLanguage }) => {
             </p>
           </div>
           <div className="lg:w-1/2 mb-12 lg:mb-0">
-            <img src="./assets/anina_daria.jpg" className="rounded-xl" />
+            <img src="./assets/anina_daria.png" className="rounded-xl" />
           </div>
         </div>
       </div>
