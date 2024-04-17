@@ -25,7 +25,7 @@ const Clubes = ({ language, setLanguage }) => {
       feature_4: "Real-time results",
       quote:
         "BeachLiga is the perfect app to manage everything happening at the club",
-      author: "Simone, BeachBol Manager",
+      author: "Obán, Mediterranean Beach Volley",
       download_1: "Download",
       download_2: "BeachLiga",
       download_3: "on your mobile.",
@@ -95,7 +95,7 @@ const Clubes = ({ language, setLanguage }) => {
             </p>
           </div>
           <div className="lg:w-1/2 mb-12 lg:mb-0">
-            <img src="./assets/qr_torneo.png" className="rounded-xl" />
+            <img src="./assets/qr_torneo.jpg" className="rounded-xl" />
           </div>
         </div>
       </div>
@@ -140,19 +140,27 @@ const Clubes = ({ language, setLanguage }) => {
         </div>
       </div>
       <div className="bg-beachliga_grey text-white  px-6 lg:px-12">
-        <div className="flex flex-col mb-32 py-16 max-w-[1200px] mx-auto">
-          <div className="text-2xl lg:text-3xl italic text-center">
-            <div className="flex justify-center mb-6">
-              <img src="./assets/star.png" className="w-[30px]" />
-              <img src="./assets/star.png" className="w-[30px]" />
-              <img src="./assets/star.png" className="w-[30px]" />
-              <img src="./assets/star.png" className="w-[30px]" />
-              <img src="./assets/star.png" className="w-[30px]" />
-            </div>
-            <div className="mb-12">"{translations[language].quote}"</div>
+        <div className="flex max-w-[1200px] mx-auto  mb-32 py-16 flex-col items-center lg:flex-row lg:items-start">
+          <div className="mb-6">
+            <img
+              src="./assets/oban_min.jpg"
+              className="lg:mr-6 rounded-full w-[400px]"
+            />
           </div>
-          <div className="text-2xl flex justify-end">
-            {translations[language].author}
+          <div className="flex flex-col">
+            <div className="text-2xl lg:text-3xl italic text-center">
+              <div className="flex justify-center mb-6">
+                <img src="./assets/star.png" className="w-[30px]" />
+                <img src="./assets/star.png" className="w-[30px]" />
+                <img src="./assets/star.png" className="w-[30px]" />
+                <img src="./assets/star.png" className="w-[30px]" />
+                <img src="./assets/star.png" className="w-[30px]" />
+              </div>
+              <div className="mb-12">"{translations[language].quote}"</div>
+            </div>
+            <div className="text-2xl flex justify-end">
+              {translations[language].author}
+            </div>
           </div>
         </div>
       </div>
