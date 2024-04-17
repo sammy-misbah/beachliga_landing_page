@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Footer = ({ language, setLanguage }) => {
   const translations = {
@@ -30,20 +31,20 @@ const Footer = ({ language, setLanguage }) => {
         </a>
         <div className="flex mr-[10px] text-white lg:space-x-12 lg:text-md lg:flex-row flex-col space-y-1 lg:-space-y-0">
           <div>
-            <a href="/terms">{translations[language].terms}</a>
+            <Link to="/terms">{translations[language].terms}</Link>
           </div>
           <div>
-            <a href="#contact">{translations[language].contact}</a>
+            <Link to="/#contact">{translations[language].contact}</Link>
           </div>
 
           <div>
-            <a href="#contact">{translations[language].investors}</a>
+            <Link to="/#contact">{translations[language].investors}</Link>
           </div>
           <div>
-            <a href="#noticias">{translations[language].news}</a>
+            <Link to="/#noticias">{translations[language].news}</Link>
           </div>
           <div>
-            <a href="#">{translations[language].beach_liga}</a>
+            <Link to="/">{translations[language].beach_liga}</Link>
           </div>
         </div>
       </div>

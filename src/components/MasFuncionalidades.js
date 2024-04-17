@@ -7,7 +7,7 @@ const MasFuncionalidades = ({ language }) => {
       payments: "In-app payments",
       events: "Event organization",
       communication: "Instant communication",
-      results: "Online results",
+      results: "Real-time results",
       admin: "Player management",
       register: "Registration automation",
     },
@@ -31,7 +31,7 @@ const MasFuncionalidades = ({ language }) => {
           <div className="flex flex-col  md:flex-row items-center mb-8">
             <img
               src="./assets/credit_card.png"
-              className="md:mr-3 w-[48px] h-[48px] w-[48px] h-[48px]"
+              className="md:mr-3 w-[48px] h-[48px]"
               alt="credit_card"
             />
             <h3 className="text-center md:text-left text-xl lg:text-2xl max-w-[190px]">

@@ -138,7 +138,7 @@ const Federaciones = ({ language, setLanguage }) => {
       </div>
       <div className="bg-beachliga_grey text-white  px-6 lg:px-12">
         <div className="flex flex-col mb-32 py-12 max-w-[1200px] mx-auto">
-          <div className="text-3xl lg:text-4xl italic text-center">
+          <div className="text-2xl lg:text-3xl italic text-center">
             <div className="flex justify-center mb-6">
               <img src="./assets/star.png" className="w-[30px]" />
               <img src="./assets/star.png" className="w-[30px]" />
@@ -170,14 +170,22 @@ const Federaciones = ({ language, setLanguage }) => {
               </div>
             </div>
             <div className="flex space-x-6 mb-12">
-              <img src="./assets/apple.png" className="w-[200px]" />
-              <img src="./assets/google_play.png" className="w-[200px]" />
+              <a
+                href="https://apple.co/4asnKF5"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="./assets/apple.png" className="h-[70px]" />
+              </a>
+              <a
+                href="https://bit.ly/beachliga-google-play"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="./assets/google_play3.png" className="h-[70px]" />
+              </a>
             </div>
           </div>
-          {/* <h3 className="text-6xl font-[500] mb-12">
-            Regístrate en <br />
-            solo 1 minuto
-          </h3> */}
           <div className="hidden lg:flex w-1/2 justify-center">
             <img
               src="./assets/app_photo.png"

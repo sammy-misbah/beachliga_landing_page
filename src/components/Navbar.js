@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
 import { faArrowLeft, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = ({ language, setLanguage }) => {
   const [dropdownIsOpen, setDropdownIsOpen] = useState(false);
@@ -59,7 +60,7 @@ const Navbar = ({ language, setLanguage }) => {
 
   return (
     <nav className="flex bg-beachliga_blue h-[65px] text-white relative z-20">
-      <div className="flex w-[80%] max-w-[1200px] mx-auto items-center justify-between ">
+      <div className="flex w-[80%] max-w-[1200px] mx-auto items-center justify-between px-6">
         <a href="/">
           <img
             src="./assets/vector_logo.png"
@@ -108,12 +109,12 @@ const Navbar = ({ language, setLanguage }) => {
               </div>
             </div>
           </button>
-          <a href="/#funcionalidades">{translations[language].features}</a>
-          <a href="/#precios">{translations[language].plans}</a>
-          <a href="/#noticias">{translations[language].news}</a>
-          <a href="/#contacto">{translations[language].contact}</a>
+          <Link to="/#funcionalidades">{translations[language].features}</Link>
+          <Link to="/#precios">{translations[language].plans}</Link>
+          <Link to="/#noticias">{translations[language].news}</Link>
+          <Link to="/#contacto">{translations[language].contact}</Link>
         </div>
-        <div className="md:hidden ">
+        <div className="md:hidden">
           <div
             id="menu"
             className="absolute top-20 left-6 right-6 hidden flex-col items-center space-y-6 bg-beachliga_blue py-6 drop-shadow-md "
@@ -129,24 +130,28 @@ const Navbar = ({ language, setLanguage }) => {
                       size="lg"
                     />
                   </button>
-                  <a href="/entrenadores">{translations[language].trainers}</a>
+                  <Link to="/entrenadores">
+                    {translations[language].trainers}
+                  </Link>
                 </div>
-                <a href="/clubes">{translations[language].clubs}</a>
-                <a href="/jugadores">{translations[language].players}</a>
-                <a href="/federaciones">{translations[language].federations}</a>
+                <Link to="/clubes">{translations[language].clubs}</Link>
+                <Link to="/jugadores">{translations[language].players}</Link>
+                <Link to="/federaciones">
+                  {translations[language].federations}
+                </Link>
               </>
             ) : (
               <>
-                <a href="/">{translations[language].home}</a>
+                <Link to="/">{translations[language].home}</Link>
                 <button className="mr-3" onClick={openSubDropdown}>
                   {translations[language].who}
                 </button>
-                <a href="/#funcionalidades">
+                <Link to="/#funcionalidades">
                   {translations[language].features}
-                </a>
-                <a href="/#precios">{translations[language].plans}</a>
-                <a href="/#noticias">{translations[language].news}</a>
-                <a href="/#contacto">{translations[language].contact}</a>
+                </Link>
+                <Link to="/#precios">{translations[language].plans}</Link>
+                <Link to="/#noticias">{translations[language].news}</Link>
+                <Link to="/#contacto">{translations[language].contact}</Link>
               </>
             )}
           </div>
@@ -161,7 +166,7 @@ const Navbar = ({ language, setLanguage }) => {
           <span className="hamburger-bottom"></span>
         </button>
       </div>
-      <div className="flex items-center pr-12">
+      <div className="flex items-center pr-12 pb-2">
         <button onClick={() => setLanguage("en")}>
           <img src="./assets/greatbritain_flag.svg" className="w-[30px] mr-3" />
         </button>
