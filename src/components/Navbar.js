@@ -143,7 +143,7 @@ const Navbar = ({ language, setLanguage }) => {
             ) : (
               <>
                 <Link to="/">{translations[language].home}</Link>
-                <button className="mr-3" onClick={openSubDropdown}>
+                <button className="" onClick={openSubDropdown}>
                   {translations[language].who}
                 </button>
                 <Link to="/#funcionalidades">

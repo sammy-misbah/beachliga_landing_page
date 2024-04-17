@@ -41,7 +41,7 @@ const Clientes = ({ language }) => {
             <div className="flex flex-col justify-center items-center text-2xl md:text-5xl text-white border-4 rounded-full w-40 h-40 md:w-60 md:h-60">
               +1500
               <br />
-              <span className="text-3xl">
+              <span className="text-xl lg:text-3xl">
                 {translations[language].tournaments}
               </span>
             </div>
@@ -50,7 +50,9 @@ const Clientes = ({ language }) => {
             <div className="flex flex-col justify-center items-center text-2xl md:text-5xl text-white border-4 rounded-full w-40 h-40 md:w-60 md:h-60">
               +25000
               <br />{" "}
-              <span className="text-3xl">{translations[language].users}</span>
+              <span className="text-xl lg:text-3xl">
+                {translations[language].users}
+              </span>
             </div>
           </div>
         </div>
