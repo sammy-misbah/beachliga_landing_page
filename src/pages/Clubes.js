@@ -95,7 +95,7 @@ const Clubes = ({ language, setLanguage }) => {
             </p>
           </div>
           <div className="lg:w-1/2 mb-12 lg:mb-0">
-            <img src="./assets/qr_torneo.jpg" className="rounded-xl" />
+            <img src="./assets/qr_torneo.png" className="rounded-xl" />
           </div>
         </div>
       </div>
