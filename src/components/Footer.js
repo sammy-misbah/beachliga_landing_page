@@ -30,22 +30,11 @@ const Footer = ({ language, setLanguage }) => {
           <img src="./assets/linkedin.png" />
         </a>
         <div className="flex mr-[10px] text-white lg:space-x-12 lg:text-md lg:flex-row flex-col space-y-1 lg:-space-y-0">
-          <div>
-            <Link to="/terms">{translations[language].terms}</Link>
-          </div>
-          <div>
-            <Link to="/#contact">{translations[language].contact}</Link>
-          </div>
-
-          <div>
-            <Link to="/#contact">{translations[language].investors}</Link>
-          </div>
-          <div>
-            <Link to="/#noticias">{translations[language].news}</Link>
-          </div>
-          <div>
-            <Link to="/">{translations[language].beach_liga}</Link>
-          </div>
+          <Link to="/terms">{translations[language].terms}</Link>
+          <Link to="/#contact">{translations[language].contact}</Link>
+          <Link to="/#contact">{translations[language].investors}</Link>
+          <Link to="/#noticias">{translations[language].news}</Link>
+          <Link to="/">{translations[language].beach_liga}</Link>
         </div>
       </div>
     </div>
