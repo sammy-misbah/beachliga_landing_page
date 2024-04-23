@@ -85,7 +85,7 @@ const Contacto = ({ language }) => {
             <div className="flex justify-end">
               <button
                 type="submit"
-                className="w-[150px] bg-black text-white py-3 px-4 rounded-full font-[400]"
+                className="w-[150px] bg-black text-white py-3 px-4 rounded-full font-[400] flex justify-center items-center"
               >
                 {translations[language].send}
               </button>

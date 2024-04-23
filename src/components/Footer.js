@@ -23,7 +23,7 @@ const Footer = ({ language, setLanguage }) => {
     <div className="bg-beachliga_grey p-12">
       <div className="max-w-[1200px] mx-auto flex justify-between">
         <a
-          href="https://www.linkedin.com/company/revel-cool/about/"
+          href="https://www.linkedin.com/company/beachliga/"
           target="_blank"
           rel="noreferrer"
         >
