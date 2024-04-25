@@ -14,7 +14,8 @@ const Clubes = ({ language, setLanguage }) => {
     en: {
       title: "Clubs ",
       title_part2: "and organizations",
-      subtitle: "Easily manage your club's events",
+      subtitle: "Easily manage your club's ",
+      subtitle_part2: "events",
       subsubtitle:
         "With Beachliga, creating events for your club and managing members has never been easier.",
       part_1_title: "Create and organize events",
@@ -82,11 +83,14 @@ const Clubes = ({ language, setLanguage }) => {
             </span>
           </h3>
           <h2 className="text-center text-4xl lg:text-6xl mx-auto font-[500] mb-16 lg:pb-28 lg:w-2/3 font-[gotham-bold]">
-            {translations[language].subtitle}
+            <span className="">{translations[language].subtitle}</span>
+            <span className="text-beachliga_yellow">
+              {translations[language].subtitle_part2}
+            </span>
           </h2>
         </div>
       </div>
-      <div className="flex items-center lg:items-start lg:flex-row flex-col-reverse mb-24 max-w-[1200px] mx-auto mt-[200px] h-[810px]">
+      <div className="flex items-center lg:items-start lg:flex-row flex-col-reverse mb-32 max-w-[1200px] mx-auto mt-[200px] h-[810px]">
         <div className="lg:w-1/2 lg:pr-12 flex flex-col justify-between min-h-[100%]">
           <div>
             <h4 className="text-3xl lg:text-4xl font-[400] mb-10 font-[gotham-bold]">
@@ -137,7 +141,7 @@ const Clubes = ({ language, setLanguage }) => {
                 size="4x"
                 className=" mb-4"
               /> */}
-              <p className="text-center font-[gotham-body] text-beachliga_blue text-2xl  border-2 border-beachliga_blue rounded-[100%] p-12">
+              <p className="text-center font-[gotham-body] text-beachliga_blue text-2xl  border-[3px] border-beachliga_blue rounded-[100%] p-12 ">
                 +350
                 <br />
                 coaches
@@ -149,7 +153,7 @@ const Clubes = ({ language, setLanguage }) => {
                 size="4x"
                 className="mb-4"
               /> */}
-              <p className="text-center font-[gotham-body] text-beachliga_blue text-2xl  border-2 border-beachliga_blue rounded-[100%] p-12">
+              <p className="text-center font-[gotham-body] text-beachliga_blue text-2xl  border-[3px] border-beachliga_blue rounded-[100%] p-12 ">
                 +100
                 <br /> clubes
               </p>
@@ -259,7 +263,7 @@ const Clubes = ({ language, setLanguage }) => {
                 <div className="text-xl lg:text-3xl font-[gotham-body]">
                   {translations[language].download_1}
                   <br />
-                  {translations[language].download_2}
+                  <span className="">{translations[language].download_2}</span>
                   <br /> {translations[language].download_3}
                   <br />
                   {translations[language].download_4}
