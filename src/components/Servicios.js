@@ -40,9 +40,7 @@ const Servicios = ({ language }) => {
         <h2 className="text-beachliga_blue text-3xl font-[400] mb-3 text-center">
           {translations[language].events}
         </h2>
-        <p className="text-center font-[400]">
-          {translations[language].events_desc}
-        </p>
+        <p className="text-center">{translations[language].events_desc}</p>
       </div>
       <div className="flex flex-col items-center mb-12 md:mb-0">
         <img
@@ -53,9 +51,7 @@ const Servicios = ({ language }) => {
         <h2 className="text-beachliga_blue text-3xl font-[400] mb-3 text-center">
           {translations[language].payments}
         </h2>
-        <p className="text-center font-[400]">
-          {translations[language].payments_desc}
-        </p>
+        <p className="text-center">{translations[language].payments_desc}</p>
       </div>
       <div className="flex flex-col items-center">
         <img
@@ -66,9 +62,7 @@ const Servicios = ({ language }) => {
         <h2 className="text-beachliga_blue text-3xl font-[400] mb-3 text-center">
           {translations[language].chat}
         </h2>
-        <p className="text-center font-[400]">
-          {translations[language].chat_desc}
-        </p>
+        <p className="text-center">{translations[language].chat_desc}</p>
       </div>
     </div>
   );

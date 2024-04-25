@@ -2,13 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "gotham-bold";
+  src: url("../public/fonts/Gotham-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gotham-light";
+  src: url("../public/fonts/Gotham-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gotham-body";
+  src: url("../public/fonts/Gotham-Medium.otf") format("opentype");
+}
+
 body {
   margin: 0;
   padding: 0;
   max-width: 100%;
-  font-family: Gotham;
+  font-family: "gotham-light";
   font-weight: 325;
   letter-spacing: -0.02em;
+}
+
+button {
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
 }
 
 .hamburger {

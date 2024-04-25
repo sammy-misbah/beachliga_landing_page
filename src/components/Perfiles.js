@@ -28,10 +28,10 @@ const Perfiles = ({ language }) => {
         <h2 className="text-5xl text-beachliga_blue mb-6 font-[400]">
           {translations[language].profile}
         </h2>
-        <h3 className="text-2xl max-w-[600px] mb-12 font-[400]">
+        <h3 className="text-2xl max-w-[600px] mb-12">
           {translations[language].profile_desc}
         </h3>
-        <div className="flex flex-col md:flex-row justify-between font-[400]">
+        <div className="flex flex-col md:flex-row justify-between">
           <a href="/entrenadores">
             <div className="flex flex-col items-center mb-12 md:mb-0">
               <img

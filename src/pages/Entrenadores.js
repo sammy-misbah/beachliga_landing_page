@@ -67,27 +67,27 @@ const Entrenadores = ({ language, setLanguage }) => {
         <h3 className="text-center text-2xl lg:text-4xl font-[400] mb-6 mt-12">
           {translations[language].title}
         </h3>
-        <h2 className="text-center text-4xl lg:text-6xl mx-auto font-[500] mb-16 lg:mb-28 lg:w-2/3">
+        <h2 className="text-center font-[gotham-bold] text-4xl lg:text-6xl mx-auto font-[500] mb-16 lg:mb-28 lg:w-2/3">
           {translations[language].subtitle}
         </h2>
-        <div className="flex items-center lg:items-start lg:flex-row flex-col-reverse mb-24">
+        <div className="flex items-center lg:items-start lg:flex-row flex-col-reverse mb-24 font-[gotham-bold]">
           <div className="lg:w-1/2 lg:pr-12">
-            <h4 className="text-3xl lg:text-4xl font-[500] mb-10">
+            <h4 className="text-3xl lg:text-4xl font-[400] mb-10">
               {translations[language].subsubtitle}
             </h4>
-            <h5 className="text-xl font-[500] mb-1">
+            <h5 className="text-xl font-[400] mb-1">
               {translations[language].part_1_title}
             </h5>
             <p className="text-md  mb-4">
               {translations[language].part_1_desc}
             </p>
-            <h5 className="text-xl font-[500] mb-1">
+            <h5 className="text-xl font-[400] mb-1">
               {translations[language].part_2_title}
             </h5>
             <p className="text-md  mb-4">
               {translations[language].part_2_desc}
             </p>
-            <h5 className="text-xl font-[500] mb-1">
+            <h5 className="text-xl font-[400] mb-1">
               {translations[language].part_3_title}
             </h5>
             <p className="text-md  mb-4">
@@ -99,7 +99,7 @@ const Entrenadores = ({ language, setLanguage }) => {
           </div>
         </div>
       </div>
-      <h2 className="text-center text-5xl mx-auto font-[500] mb-24 lg:w-1/2 px-6">
+      <h2 className="text-center text-5xl mx-auto font-[500] mb-24 lg:w-1/2 px-6 font-[gotham-bold]">
         {translations[language].title_2}
       </h2>
       <div className="flex flex-col lg:flex-row items-center lg:items-start mb-32 max-w-[1200px] mx-auto  px-6 lg:px-12">

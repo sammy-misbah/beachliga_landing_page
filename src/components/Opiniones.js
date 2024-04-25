@@ -38,7 +38,7 @@ const Opiniones = ({ language }) => {
             className="absolute w-[150px] h-[150px] rounded-full top-[-60px] right-[-30px] border-beachliga_blue border-[3px]"
           />
           <div>
-            <h3 className="font-[500] text-lg ">Daniel Oberthür</h3>
+            <h3 className="font-[400] text-lg ">Daniel Oberthür</h3>
             <h4 className="mb-4">{translations[language].national_player}</h4>
           </div>
           <div>
@@ -49,7 +49,7 @@ const Opiniones = ({ language }) => {
               <img src="./assets/star.png" />
               <img src="./assets/star.png" />
             </div>
-            <p className="text-xl">{translations[language].opinion_1}</p>
+            <p className="text-lg">{translations[language].opinion_1}</p>
           </div>
         </div>
         <div className="flex flex-col py-6 px-8 text-white w-[300px] md:w-[380px] lg:w-[500px] bg-beachliga_grey border-[3px] border-beachliga_blue rounded-[35px] relative mb-24 lg:mb-0">
@@ -58,7 +58,7 @@ const Opiniones = ({ language }) => {
             className="absolute w-[150px] h-[150px] rounded-full top-[-60px] right-[-30px] border-beachliga_blue border-[3px]"
           />
           <div>
-            <h3 className="font-[500] text-lg ">Finn Pickert</h3>
+            <h3 className="font-[400] text-lg ">Finn Pickert</h3>
             <h4 className="mb-4">{translations[language].national_player}</h4>
           </div>
           <div>
@@ -69,7 +69,7 @@ const Opiniones = ({ language }) => {
               <img src="./assets/star.png" />
               <img src="./assets/star.png" />
             </div>
-            <p className="text-xl">{translations[language].opinion_2}</p>
+            <p className="text-lg">{translations[language].opinion_2}</p>
           </div>
         </div>
         <div className="flex flex-col py-6 px-8 text-white w-[300px] md:w-[380px] lg:w-[500px] bg-beachliga_grey border-[3px] border-beachliga_blue rounded-[35px] relative">
@@ -78,7 +78,7 @@ const Opiniones = ({ language }) => {
             className="absolute w-[150px] h-[150px] rounded-full top-[-60px] right-[-30px] border-beachliga_blue border-[3px]"
           />
           <div>
-            <h3 className="font-[500] text-lg ">Blanca Seguí</h3>
+            <h3 className="font-[400] text-lg ">Blanca Seguí</h3>
             <h4 className="mb-4">{translations[language].madison_player}</h4>
           </div>
           <div>
@@ -89,7 +89,7 @@ const Opiniones = ({ language }) => {
               <img src="./assets/star.png" />
               <img src="./assets/star.png" />
             </div>
-            <p className="text-xl">{translations[language].opinion_3}</p>
+            <p className="text-lg">{translations[language].opinion_3}</p>
           </div>
         </div>
       </div>

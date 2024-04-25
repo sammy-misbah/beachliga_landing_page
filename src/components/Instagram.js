@@ -46,7 +46,7 @@ const Instagram = ({ language }) => {
                 src="./assets/insta1.png"
                 className="h-[280px] w-full rounded-t-xl"
               />
-              <p className="text-ellipsis overflow-hidden px-6 py-6 max-h-[200px] text-lg font-[500]">
+              <p className="text-ellipsis overflow-hidden px-6 py-6 max-h-[200px] text-lg">
                 {translations[language].post_1}
               </p>
             </div>
@@ -56,9 +56,9 @@ const Instagram = ({ language }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="w-[275px] bg-beachliga_yellow py-3 px-4 rounded-full text-white font-[500]">
+                <div className="w-[275px] bg-beachliga_yellow py-3 px-4 rounded-full text-white font-[400] flex justify-center items-center">
                   {translations[language].read_more}
-                </button>
+                </div>
               </a>
             </div>
           </div>
@@ -68,7 +68,7 @@ const Instagram = ({ language }) => {
                 src="./assets/insta2.png"
                 className="h-[280px] w-full rounded-t-xl"
               />
-              <p className="text-ellipsis overflow-hidden px-6 py-6 max-h-[200px] text-lg font-[500]">
+              <p className="text-ellipsis overflow-hidden px-6 py-6 max-h-[200px] text-lg ">
                 {translations[language].post_2}
               </p>
             </div>
@@ -78,9 +78,9 @@ const Instagram = ({ language }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="w-[275px] bg-beachliga_yellow py-3 px-4 rounded-full text-white font-[500]">
+                <div className="w-[275px] bg-beachliga_yellow py-3 px-4 rounded-full text-white font-[400] flex justify-center items-center">
                   {translations[language].read_more}
-                </button>
+                </div>
               </a>
             </div>
           </div>
@@ -90,7 +90,7 @@ const Instagram = ({ language }) => {
                 src="./assets/insta3.png"
                 className="h-[280px] w-full rounded-t-xl"
               />
-              <p className="text-ellipsis overflow-hidden px-6 py-6 max-h-[200px] text-lg font-[500]">
+              <p className="text-ellipsis overflow-hidden px-6 py-6 max-h-[200px] text-lg">
                 {translations[language].post_3}
               </p>
             </div>
@@ -100,9 +100,9 @@ const Instagram = ({ language }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="w-[275px] bg-beachliga_yellow py-3 px-4 rounded-full text-white font-[500]">
+                <div className="w-[275px] bg-beachliga_yellow py-3 px-4 rounded-full text-white font-[400] flex justify-center items-center">
                   {translations[language].read_more}
-                </button>
+                </div>
               </a>
             </div>
           </div>
@@ -113,7 +113,7 @@ const Instagram = ({ language }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src="./assets/insta_logo.png" className="mb-4" />
+            <img src="./assets/insta_logo.png" className="mb-2" />
           </a>
           <h3 className="text-white text-3xl">
             {translations[language].follow_us}

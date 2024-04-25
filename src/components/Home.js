@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Home = ({ language }) => {
+  useEffect(() => {
+    const anchor = window.location.hash.slice(1);
+    if (anchor) {
+      const anchorDiv = document.getElementById(anchor);
+      if (anchorDiv) {
+        anchorDiv.scrollIntoView();
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, []);
+
   const translations = {
     en: {
       title_1: "",
@@ -43,7 +55,7 @@ const Home = ({ language }) => {
               {translations[language].title_4}
             </span>
           </h1>
-          <h2 className="text-center text-lg xl:text-start lg:text-xl xl:text-2xl text-white font-[300] mb-6 xl:mb-16">
+          <h2 className="text-center text-lg xl:text-start lg:text-xl xl:text-2xl text-white  mb-6 xl:mb-16">
             {translations[language].subtitle_1}
             <br /> {translations[language].subtitle_2}
             <br /> {translations[language].subtitle_3}

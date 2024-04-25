@@ -34,7 +34,9 @@ const Footer = ({ language, setLanguage }) => {
           <Link to="/#contact">{translations[language].contact}</Link>
           <Link to="/#contact">{translations[language].investors}</Link>
           <Link to="/#noticias">{translations[language].news}</Link>
-          <Link to="/">{translations[language].beach_liga}</Link>
+          <a href="https://beachliga.com" target="_blank" rel="noreferrer">
+            {translations[language].beach_liga}
+          </a>
         </div>
       </div>
     </div>
