@@ -84,7 +84,7 @@ const Planes = ({ language }) => {
           <div className="flex flex-col w-[340px] xl:w-[340px] lg:w-[300px] h-[800px] justify-between px-8 py-10 border-2 border-beachliga_lightgrey rounded-3xl bg-white mb-12 lg:mb-0">
             <div>
               <h4 className="mb-2 italic text-sm text-center h-[40px]"></h4>
-              <h3 className="text-4xl font-semibold mb-6">
+              <h3 className="text-4xl font-[gotham-bold] mb-6">
                 {translations[language].free}
               </h3>
               <p className="mb-6 text-lg">{translations[language].free_desc}</p>
@@ -125,19 +125,18 @@ const Planes = ({ language }) => {
             </div>
             <div>
               <img src="./assets/line1.png" className="mb-8" alt="line_1" />
-              <h2 className="text-5xl font-[400] mb-8">
+              <h2 className="text-4xl font-[400] mb-8">
                 {translations[language].free_price}
               </h2>
               <div className="flex justify-center">
-                <div className="w-[290px] bg-black text-white py-3 rounded-full font-[400] text-lg flex justify-center items-center">
-                  <a
-                    href="https://onelink.to/x7v9kz"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {translations[language].get_started}
-                  </a>
-                </div>
+                <a
+                  href="https://onelink.to/x7v9kz"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-[290px] bg-black text-white py-3 rounded-full font-[400] text-lg flex justify-center items-center hover:bg-white hover:text-black duration-300 border-2 border-black"
+                >
+                  {translations[language].get_started}
+                </a>
               </div>
             </div>
           </div>
@@ -147,7 +146,7 @@ const Planes = ({ language }) => {
                 {translations[language].yearly_payment}
               </h4>
               <div className="flex items-baseline">
-                <h3 className="text-4xl font-semibold mb-6 mr-4">
+                <h3 className="text-4xl font-[gotham-bold] mb-6 mr-4">
                   {translations[language].pro}
                 </h3>
               </div>
@@ -197,22 +196,21 @@ const Planes = ({ language }) => {
             </div>
             <div>
               <img src="./assets/line2.png" className="mb-8" alt="line_2" />
-              <h2 className="text-5xl font-[400] mb-8">
+              <h2 className="text-4xl font-[400] mb-8">
                 {translations[language].pro_price_1}
                 <span className="text-3xl">
                   {translations[language].pro_price_2}
                 </span>
               </h2>
               <div className="flex justify-center">
-                <div className="w-[290px] bg-beachliga_blue text-white py-3 rounded-full font-[400] text-lg flex justify-center items-center">
-                  <a
-                    href="https://onelink.to/x7v9kz"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {translations[language].get_started}
-                  </a>
-                </div>
+                <a
+                  href="https://onelink.to/x7v9kz"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-[290px] bg-beachliga_blue text-white py-3 rounded-full font-[400] text-lg flex justify-center items-center hover:bg-white hover:text-black duration-300 border-2 border-beachliga_blue"
+                >
+                  {translations[language].get_started}
+                </a>
               </div>
             </div>
           </div>
@@ -221,7 +219,7 @@ const Planes = ({ language }) => {
               <h4 className="mb-2 italic text-sm text-center h-[40px]">
                 {translations[language].yearly_payment}
               </h4>
-              <h3 className="text-4xl font-semibold mb-6">
+              <h3 className="text-4xl font-[gotham-bold] mb-6">
                 {translations[language].premium}
               </h3>
               <p className="mb-6 text-lg">
@@ -266,22 +264,21 @@ const Planes = ({ language }) => {
             </div>
             <div>
               <img src="./assets/line3.png" className="mb-8" alt="line_3" />
-              <h2 className="text-5xl font-[400] mb-8">
+              <h2 className="text-4xl font-[400] mb-8">
                 {translations[language].premium_price_1}
                 <span className="text-3xl">
                   {translations[language].premium_price_2}
                 </span>
               </h2>
               <div className="flex justify-center">
-                <div className="w-[290px] bg-white text-beachliga_blue py-3 rounded-full font-[400] text-lg flex justify-center items-center">
-                  <a
-                    href="https://onelink.to/x7v9kz"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {translations[language].get_started}
-                  </a>
-                </div>
+                <a
+                  href="https://onelink.to/x7v9kz"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-[290px] bg-white text-beachliga_blue py-3 rounded-full font-[400] text-lg flex justify-center items-center hover:bg-beachliga_blue hover:text-white duration-300 border-2 border-white"
+                >
+                  {translations[language].get_started}
+                </a>
               </div>
             </div>
           </div>

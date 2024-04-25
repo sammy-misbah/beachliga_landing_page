@@ -13,6 +13,7 @@ module.exports = {
         beachliga_lightblue: "#DCF5FF",
         beachliga_lightgrey: "#EDEDED",
         beachliga_blue_border: "#0DBAE0",
+        beachliga_grey_opacity: "rgba(54,52,59,0.8)",
       },
       fontFamily: {
         body: ["Gotham"],

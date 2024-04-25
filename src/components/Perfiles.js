@@ -31,53 +31,63 @@ const Perfiles = ({ language }) => {
         <h3 className="text-2xl max-w-[600px] mb-12">
           {translations[language].profile_desc}
         </h3>
-        <div className="flex flex-col md:flex-row justify-between">
+        <div className="flex flex-col md:flex-row justify-between mb-12">
           <a href="/entrenadores">
-            <div className="flex flex-col items-center mb-12 md:mb-0">
+            <div className="flex relative mb-12 md:mb-0 w-[530px] h-[300px] perfil-anim-container overflow-hidden shadow-2xl rounded-2xl">
               <img
                 src="./assets/luca_marisol.jpg"
-                className="mb-6 w-[225px] h-[225px] rounded-full"
+                className="mb-6 w-full h-full  opacity-100"
                 alt="coach"
               />
-              <h3 className="text-2xl max-w-[200px] text-center">
-                {translations[language].trainers}
-              </h3>
+              <div className="absolute flex items-center justify-center w-full h-full transform translate-x-[-100%] bg-beachliga_grey_opacity perfil-anim-layer">
+                <h3 className="text-4xl text-white max-w-[200px] text-center montserrat">
+                  {translations[language].trainers}
+                </h3>
+              </div>
             </div>
           </a>
           <a href="/clubes">
-            <div className="flex flex-col items-center mb-12 md:mb-0">
+            <div className="flex relative mb-12 md:mb-0 w-[530px] h-[300px] perfil-anim-container overflow-hidden shadow-2xl rounded-2xl">
               <img
                 src="./assets/balls.png"
-                className="mb-6 w-[225px] h-[225px] rounded-full"
-                alt="club"
+                className="mb-6 w-full h-full  opacity-100"
+                alt="clubes"
               />
-              <h3 className="text-2xl max-w-[200px] text-center">
-                {translations[language].clubs}
-              </h3>
+              <div className="absolute flex items-center justify-center w-full h-full transform translate-x-[-100%] bg-beachliga_grey_opacity perfil-anim-layer">
+                <h3 className="text-4xl text-white max-w-[200px] text-center montserrat">
+                  {translations[language].clubs}
+                </h3>
+              </div>
             </div>
           </a>
+        </div>
+        <div className="flex flex-col md:flex-row justify-between">
           <a href="/jugadores">
-            <div className="flex flex-col items-center mb-12 md:mb-0">
+            <div className="flex relative mb-12 md:mb-0 w-[530px] h-[300px] perfil-anim-container overflow-hidden shadow-2xl rounded-2xl">
               <img
                 src="./assets/anina_gabri.jpg"
-                className="mb-6 w-[225px] h-[225px] rounded-full"
-                alt="player"
+                className="mb-6 w-full h-full  opacity-100"
+                alt="coach"
               />
-              <h3 className="text-2xl max-w-[200px] text-center">
-                {translations[language].players}
-              </h3>
+              <div className="absolute flex items-center justify-center w-full h-full transform translate-x-[-100%] bg-beachliga_grey_opacity perfil-anim-layer">
+                <h3 className="text-4xl text-white max-w-[200px] text-center montserrat">
+                  {translations[language].players}
+                </h3>
+              </div>
             </div>
           </a>
           <a href="/federaciones">
-            <div className="flex flex-col items-center">
+            <div className="flex relative mb-12 md:mb-0 w-[530px] h-[300px] perfil-anim-container overflow-hidden shadow-2xl rounded-2xl">
               <img
                 src="./assets/federacion2.png"
-                className="mb-6 w-[225px] h-[225px] rounded-full"
-                alt="federacion"
+                className="mb-6 w-full h-full  opacity-100"
+                alt="coach"
               />
-              <h3 className="text-2xl max-w-[200px] text-center">
-                {translations[language].federations}
-              </h3>
+              <div className="absolute flex items-center justify-center w-full h-full transform translate-x-[-100%] bg-beachliga_grey_opacity perfil-anim-layer">
+                <h3 className="text-4xl text-white max-w-[200px] text-center montserrat">
+                  {translations[language].federations}
+                </h3>
+              </div>
             </div>
           </a>
         </div>

@@ -119,20 +119,30 @@ const Navbar = ({ language, setLanguage }) => {
                 className=" hidden shadow-2xl absolute top-[42px] bg-white w-[150%] left-[-25%] flex flex-col items-center justify-center z-20"
                 id="dropdown_menu"
               >
-                <div className="hover:bg-white w-full py-3 hover:text-black bg-beachliga_blue text-center">
-                  <a href="/entrenadores">{translations[language].trainers}</a>
-                </div>
-                <div className="hover:bg-white w-full py-3 hover:text-black bg-beachliga_blue text-center">
-                  <a href="/clubes">{translations[language].clubs}</a>
-                </div>
-                <div className="hover:bg-white w-full py-3 hover:text-black bg-beachliga_blue text-center">
-                  <a href="/jugadores">{translations[language].players}</a>
-                </div>
-                <div className="hover:bg-white w-full py-3 hover:text-black bg-beachliga_blue text-center">
-                  <a href="/federaciones">
-                    {translations[language].federations}
-                  </a>
-                </div>
+                <a
+                  href="/entrenadores"
+                  className="hover:bg-white w-full py-3 hover:text-black bg-beachliga_blue text-center"
+                >
+                  {translations[language].trainers}
+                </a>
+                <a
+                  href="/clubes"
+                  className="hover:bg-white w-full py-3 hover:text-black bg-beachliga_blue text-center"
+                >
+                  {translations[language].clubs}
+                </a>
+                <a
+                  href="/jugadores"
+                  className="hover:bg-white w-full py-3 hover:text-black bg-beachliga_blue text-center"
+                >
+                  {translations[language].players}
+                </a>
+                <a
+                  href="/federaciones"
+                  className="hover:bg-white w-full py-3 hover:text-black bg-beachliga_blue text-center"
+                >
+                  {translations[language].federations}
+                </a>
               </div>
             </div>
           </div>

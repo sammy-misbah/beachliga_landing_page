@@ -70,9 +70,9 @@ const Entrenadores = ({ language, setLanguage }) => {
         <h2 className="text-center font-[gotham-bold] text-4xl lg:text-6xl mx-auto font-[500] mb-16 lg:mb-28 lg:w-2/3">
           {translations[language].subtitle}
         </h2>
-        <div className="flex items-center lg:items-start lg:flex-row flex-col-reverse mb-24 font-[gotham-bold]">
+        <div className="flex items-center lg:items-start lg:flex-row flex-col-reverse mb-24">
           <div className="lg:w-1/2 lg:pr-12">
-            <h4 className="text-3xl lg:text-4xl font-[400] mb-10">
+            <h4 className="text-3xl lg:text-4xl font-[400] mb-10  font-[gotham-bold]">
               {translations[language].subsubtitle}
             </h4>
             <h5 className="text-xl font-[400] mb-1">

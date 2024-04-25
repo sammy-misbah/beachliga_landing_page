@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "gotham-bold";
+  font-family: "gotham-body";
   src: url("../public/fonts/Gotham-Book.otf") format("opentype");
 }
 
@@ -13,8 +13,12 @@
 }
 
 @font-face {
-  font-family: "gotham-body";
+  font-family: "gotham-bold";
   src: url("../public/fonts/Gotham-Medium.otf") format("opentype");
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -128,4 +132,27 @@ button {
   width: 600px;
   height: 600px;
   z-index: 0;
+}
+
+.perfil-anim-layer {
+  transition: 0.5s all;
+}
+
+.perfil-anim-container:hover {
+  .perfil-anim-layer {
+    transform: translateX(0);
+  }
+}
+
+.bg-sand {
+  background-image: url("/public/assets/sand_2.png");
+  background-size: 100% 100%;
+}
+
+.icon-yellow {
+  color: #ffb600;
+}
+
+.icon-blue {
+  color: #00b8de;
 }
