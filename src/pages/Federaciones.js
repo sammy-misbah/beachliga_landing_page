@@ -1,12 +1,16 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Federaciones = ({ language, setLanguage }) => {
   const translations = {
     en: {
       title: "Federations",
-      subtitle: "Manage your community events",
+      subtitle: "Manage your ",
+      subtitle_part2: "community ",
+      subtitle_part3: "events",
       subsubtitle:
         "Beachliga allows you to manage licenses and track results for clubs and players in your community.",
       part_1_title: "License management for federated players",
@@ -18,13 +22,15 @@ const Federaciones = ({ language, setLanguage }) => {
       part_3_title: "Creation of federated events",
       part_3_desc:
         "With Beachliga, you can create events for federated players of all ages in just a few clicks.",
-      title_2: "Keep track of everything happening in your community",
-      feature_1: "License management",
-      feature_2: "Federal ranking updated after each event",
-      feature_3: "Organization and creation of federated events",
-      feature_4: "Results of all federated players",
+      part_4_title: "Results of all federated players",
+      part_4_desc:
+        "With just a few clicks, players, coaches, and fans alike can track the progress of federated players, analyze performance trends, and celebrate their successes.",
+      number_1: "+750",
+      circle_1: "federated players",
+      number_2: "+300",
+      circle_2: "federated events",
       quote:
-        "BeachLiga allows us to manage all events in the Valencian Community in one place",
+        "BeachLiga allows us to manage all events in the Valencian Community in one place efficiently and conveniently. From local tournaments to regional competitions, our centralized platform provides a comprehensive overview of all beach volleyball-related activities in the region. With BeachLiga, we can easily organize and coordinate every event, from initial planning to execution and follow-up.",
       author: "Nuria, Valencian Volleyball Federation",
       download_1: "Download",
       download_2: "BeachLiga",
@@ -33,7 +39,8 @@ const Federaciones = ({ language, setLanguage }) => {
     },
     es: {
       title: "Federaciones",
-      subtitle: "Gestiona los eventos de tu comunidad",
+      subtitle: "Gestiona los eventos de tu ",
+      subtitle_part2: "comunidad",
       subsubtitle:
         "Beachliga te permite gestionar las licencias y seguir los resultados de los clubes y jugadores de tu comunidad.",
       part_1_title: "Gestión de licencias para jugadores federados",
@@ -45,13 +52,19 @@ const Federaciones = ({ language, setLanguage }) => {
       part_3_title: "Creación de eventos federados",
       part_3_desc:
         "Con Beachliga, puedes crear eventos para jugadores federados de todas las edades en unos clics.",
-      title_2: "Sigue todo lo que pasa en tu comunidad",
+      part_4_title: "Resultados de todos los jugadores federados",
+      part_4_desc:
+        "Con solo unos pocos clics, tanto jugadores, entrenadores como fanáticos pueden seguir el progreso de los jugadores federados, analizar tendencias de rendimiento y celebrar sus éxitos.",
+      number_1: "+750",
+      circle_1: "jugadores federados",
+      number_2: "+300",
+      circle_2: "eventos federados",
       feature_1: "Gestión de licencias",
       feature_2: "Ranking federal actualizado a cada evento",
       feature_3: "Organización y creación de eventos federados",
       feature_4: "Resultados de todos los jugadores federados",
       quote:
-        "BeachLiga nos permite gestionar todos los eventos de la Comunidad Valenciana en un mismo lugar",
+        "BeachLiga nos permite gestionar todos los eventos en la Comunidad Valenciana en un solo lugar de manera eficiente y conveniente. Desde torneos locales hasta competiciones regionales, nuestra plataforma centralizada ofrece una visión completa de todas las actividades relacionadas con el vóley playa en la región. Con BeachLiga, podemos organizar y coordinar cada evento con facilidad, desde la planificación inicial hasta la ejecución y el seguimiento posterior.",
       author: "Nuria, Federación Valenciana de Voleibol",
       download_1: "Bájate",
       download_2: "BeachLiga",
@@ -61,144 +74,177 @@ const Federaciones = ({ language, setLanguage }) => {
   };
 
   return (
-    <div className="relative bg-white text-gray-800 overflow-hidden">
+    <div className="relative overflow-hidden text-gray-800">
       <Navbar language={language} setLanguage={setLanguage} />
-      <div className="pt-6 lg:pt-24 lg:pb-0 px-6 lg:px-12 max-w-[1200px] mx-auto relative z-10">
-        <h3 className="text-center text-2xl lg:text-4xl font-[400] mb-6 mt-12">
-          {translations[language].title}
-        </h3>
-        <h2 className="text-center text-4xl lg:text-6xl mx-auto font-[500] mb-16 lg:mb-28 lg:w-2/3 font-[gotham-bold]">
-          {translations[language].subtitle}
-        </h2>
-        <div className="flex items-center lg:items-start lg:flex-row flex-col-reverse mb-24">
-          <div className="lg:w-1/2 lg:pr-12">
-            <h4 className="text-3xl lg:text-4xl font-[400] mb-10  font-[gotham-bold]">
+      <div className="bg-beachliga_grey">
+        <div className="pt-6 lg:pt-12 lg:pb-0 px-6 lg:px-12 max-w-[1200px] mx-auto relative z-10 text-white">
+          <h3 className="text-center text-2xl lg:text-4xl font-[400] mb-6 mt-12 ">
+            <span className="text-beachliga_blue">
+              {translations[language].title}
+            </span>
+          </h3>
+          <h2 className="text-center text-5xl lg:text-6xl mx-auto font-[500] mb-16 pb-20 lg:pb-28 w-2/3 font-[gotham-bold]">
+            <span className="">{translations[language].subtitle}</span>
+            <span className="text-beachliga_yellow">
+              {translations[language].subtitle_part2}
+            </span>
+            {translations[language].subtitle_part3}
+          </h2>
+        </div>
+      </div>
+      <div className="flex items-center lg:items-start lg:flex-row flex-col mb-32 max-w-[1200px] px-6 mx-auto mt-[60px] lg:mt-[200px] lg:h-[860px]">
+        <div className="lg:w-1/2 lg:pr-12 flex flex-col justify-between min-h-[100%]">
+          <div className="mb-8 lg:mb-0">
+            <h4 className="text-3xl lg:text-4xl font-[400] mb-10 font-[gotham-bold]">
               {translations[language].subsubtitle}
             </h4>
-            <h5 className="text-xl font-[400] mb-1">
-              {translations[language].part_1_title}
-            </h5>
-            <p className="text-md mb-4">{translations[language].part_1_desc}</p>
-            <h5 className="text-xl font-[400] mb-1">
-              {translations[language].part_2_title}
-            </h5>
-            <p className="text-md mb-4">{translations[language].part_2_desc}</p>
-            <h5 className="text-xl font-[400] mb-1">
-              {translations[language].part_3_title}
-            </h5>
+            <div className="flex items-center mb-1">
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                className="mr-3 icon-blue"
+                size="xl"
+              />
+              <h5 className="text-xl font-[gotham-body] font-[400]">
+                {translations[language].part_1_title}
+              </h5>
+            </div>
+            <p className="text-md  mb-4">
+              {translations[language].part_1_desc}
+            </p>
+            <div className="flex items-center mb-1">
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                className="mr-3 icon-blue"
+                size="xl"
+              />
+              <h5 className="text-xl font-[gotham-body] font-[400]">
+                {translations[language].part_2_title}
+              </h5>
+            </div>
+            <p className="text-md  mb-4">
+              {translations[language].part_2_desc}
+            </p>
+            <div className="flex items-center mb-1">
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                className="mr-3 icon-blue"
+                size="xl"
+              />
+              <h5 className="text-xl font-[gotham-body] font-[400]">
+                {translations[language].part_3_title}
+              </h5>
+            </div>
             <p className="text-md mb-4">{translations[language].part_3_desc}</p>
+            <div className="flex items-center mb-1">
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                className="mr-3 icon-blue"
+                size="xl"
+              />
+              <h5 className="text-xl font-[gotham-body] font-[400]">
+                {translations[language].part_4_title}
+              </h5>
+            </div>
+            <p className="text-md mb-4">{translations[language].part_4_desc}</p>
           </div>
-          <div className="lg:w-1/2 mb-12 lg:mb-0">
-            <img src="./assets/torneo_bl1.png" className="rounded-xl" />
+          <div className="flex justify-around  mb-20 lg:mb-0">
+            <div className="flex flex-col justify-center items-center">
+              <p className="font-[gotham-body] text-beachliga_blue text-2xl  w-[160px] h-[160px] border-[3px] border-beachliga_blue rounded-[100%] flex flex-col justify-center items-center text-center">
+                {translations[language].number_1}
+                <br />
+                {translations[language].circle_1}
+              </p>
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <p className="font-[gotham-body] text-beachliga_blue text-2xl  w-[160px] h-[160px] border-[3px] border-beachliga_blue rounded-[100%] flex justify-center items-center text-center">
+                {translations[language].number_2}
+                <br /> {translations[language].circle_2}
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <h2 className="text-center text-5xl mx-auto font-[500] mb-24 lg:w-1/2 px-6 font-[gotham-bold]">
-        {translations[language].title_2}
-      </h2>
-      <div className="max-w-[1200px] mx-auto  px-6 lg:px-12">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start mb-32">
-          <div className="lg:w-1/2 flex lg:justify-center">
+        <div className="lg:w-1/2 mb-12 lg:mb-0">
+          <div className="relative flex justify-around">
+            <img
+              src="./assets/torneo_bl1.jpg"
+              className="hidden md:block rounded-xl shadow-2xl w-1/2 lg:w-full"
+            />
             <img
               src="./assets/federacion_app.png"
-              className="rounded-[50px] shadow-2xl"
+              className="rounded-xl lg:absolute lg:top-[-100px] right-[0px] w-[300px] shadow-2xl w-1/2"
             />
           </div>
-          <div className="lg:w-1/2 flex flex-col text-xl lg:text-[28px] font-[400]">
-            <div className="flex pt-8 items-start lg:items-center">
-              <img
-                src="./assets/check_black.png"
-                className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2 lg:pt-0"
-              />
-              <h4> {translations[language].feature_1}</h4>
-            </div>
-            <div className="flex pt-8 items-start lg:items-center">
-              <img
-                src="./assets/check_black.png"
-                className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2 lg:pt-0"
-              />
-              <h4> {translations[language].feature_2}</h4>
-            </div>
-            <div className="flex pt-8 items-start lg:items-center">
-              <img
-                src="./assets/check_black.png"
-                className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2 lg:pt-0"
-              />
-              <h4> {translations[language].feature_3}</h4>
-            </div>
-            <div className="flex pt-8 items-start lg:items-center">
-              <img
-                src="./assets/check_black.png"
-                className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2 lg:pt-0"
-              />
-              <h4>{translations[language].feature_4}</h4>
+        </div>
+      </div>
+      <div className="px-6 lg:px-12 bg-beachliga_grey">
+        <div className=" relative flex max-w-[1200px] mx-auto py-6 flex-col justify-center items-center lg:flex-row lg:items-center  p-12  text-white rounded-[20px]">
+          <div>
+            <div className="flex flex-col mt-[50px]">
+              <div>
+                <div className="text-2xl">
+                  <div className="mb-6 mx-auto flex flex-col lg:flex-row">
+                    <img
+                      src="./assets/quotes_1.png"
+                      className="w-[100px] h-[80px] mr-6 mb-4 lg:mb-0"
+                    />
+                    <p className="text-xl mb-6 lg:mb-0">
+                      {translations[language].quote}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex justify-end mb-12">
+                <div className="flex flex-col items-center justify-end">
+                  <img
+                    src="./assets/nuria_min.jpg"
+                    className="rounded-full w-[150px] mb-4"
+                    alt="oban"
+                  />
+                  <p className="text-base">{translations[language].author}</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-beachliga_grey text-white  px-6 lg:px-12">
-        <div className="flex max-w-[1200px] mx-auto  mb-32 py-16 flex-col items-center lg:flex-row lg:items-start">
-          <div className="mb-6">
-            <img
-              src="./assets/nuria_min.jpg"
-              className="lg:mr-6 rounded-full w-[400px]"
-            />
-          </div>
-          <div className="flex flex-col">
-            <div className="text-2xl lg:text-3xl italic text-center">
-              <div className="flex justify-center mb-6">
-                <img src="./assets/star.png" className="w-[30px]" />
-                <img src="./assets/star.png" className="w-[30px]" />
-                <img src="./assets/star.png" className="w-[30px]" />
-                <img src="./assets/star.png" className="w-[30px]" />
-                <img src="./assets/star.png" className="w-[30px]" />
+      <div className="bg-sand pt-32 flex items-center h-[300px] md:h-auto">
+        <div className="max-w-[1200px] mx-auto pb-12  px-6 lg:px-12 flex items-center">
+          <div className="flex justify-between items-center">
+            <div className="flex flex-col items-center">
+              <div className="flex space-x-6 items-center mb-12">
+                <img
+                  src="data:image/gif;base64,R0lGODdhfQB9AIAAAAAAAP///ywAAAAAfQB9AAAC/4SPqbvhnp58zMw4M628+w9eiLYx4kFq4Mq2poSR3GmltIvn1W3P8Gj76YbEWsmo2gmRwSIrCIUAj52bLxqLpq5a2VT6sSqx326Ga+Ytq2t0r5ymZuNU8Us+hs7pATd9vmLXoLX3l9cXstaVo+aF0naIFqhIiNOY9Ih3Bzao2ckJsGhJ6cg06RkKuYmYqTdat1V2CgqYCEvmcnkma0vLG0bq2ro7rFsLjCqooPtWHExs+uuhrHzM1Hz9bCzNlqz6yZpdmjqOTQ5azW3djV7pfIsZPTwbvvxtD19Pzxw736uvLlJAZPHONRkITtK/dfu09ZM37V46fxRbmBNVkR3AjP8KOf7jV+4eQziGMl6U6E5cGj9x1p30hkulGZYrub309a4gH2o78xXyeejmTpozbT40SBRkTScE620z+YypVItRjQL1ODUrvnZXISJFqDXsU69jv4Y967Iq1K5iey712jGi27l0oZmVixNc3b09R65qyDdwUawJPwo+HPOuRsCIGW+EG7TkEHOMjvrVK1kH5VcFL28dWmRzLstgf77VTHr0OM+mB09OTRa2QdEyHcdVnHY1Sd05H3/myTZ3593De9sWSFgx7dmyl7e+DZxrcZnR7RKFLhJsdYyQV/G57Xl7StyRWyIv/Le8sO6Yzad/j779evLeM4dHCfP0ROrj7+f/P9jUd8T5lpRa8lmnnmvMoVJgcAPut6B+sjUonW/caSSgcZwByF6ECNbnXm0bZhjfZ+BZVSGFdi1X3YlrpZigUC2eZyKNZbUmI3550ddhWeIlxqKOFgop3JAhKucQb/w5CN9vzRno4Y86ZZfchUXiKKRQ9KiIXT5BAkllj/2h6NSYvd1II5YM2niUUis+6SWRCw1YZI7/PZcmmyHFued0SCrJY40avsihh136CaGbdbYJZ4UznskooJWt2aSKJBqaFYSsPTgXnlNpWhqnbnkqFajJqdkXnZmGKShehS56p6qQUuoqmoQ+KuKsOx5XZZI7KirqroYxGRugwOpK4LAw/zb5paO+fkhVn4hF6qy0qJYJ5rQ+judmt88KBuuUfIo7n7ZvjntuteQWau622aqb7qtoYapauVBaOa9zMd77LatO6AviuuFC25ak+7LlLa1MAXygu/BKqaCpS/7KLbXYpnrqwRS/G++1Wo7YKLsWezwyyMZWbG2wIit8LZeyFivsrf0aTMTHGcuMLsOopXwzzPHi+2nJPf+5LtClCt3hwCSzbPKySZNpa7Tw+uf0Yi8HuuXVuGINNZSTTq2d13oKHNqzVF+cLM5Vf4121ESn7fPZWQ+dKKsOGxlz3HM2NbfelY4NN9d08xsr36EOrvDdLpZYd+KdHn7gpgGijPHTAT+j/W9mdEkeOeQYUg7a0KQKXivol0pMr+WlJ6aV4irzmuu8hA7ceNH+lo3wzHmnzrvsriMLe+/5Ev6w3RbfUAAAOw=="
+                  className="w-[100px] lg:w-[135px]"
+                  alt="qr-code"
+                />
+                <div className="text-xl lg:text-3xl text-black">
+                  {translations[language].download_1}
+                  <br />
+                  <span className="">{translations[language].download_2}</span>
+                  <br /> {translations[language].download_3}
+                  <br />
+                  <span className="font-[gotham-body] font-bold">
+                    {translations[language].download_4}
+                  </span>
+                </div>
               </div>
-              <div className="mb-12">"{translations[language].quote}"</div>
-            </div>
-            <div className="text-2xl flex justify-end">
-              {translations[language].author}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="max-w-[1200px] mx-auto mb-24  px-6 lg:px-12">
-        <div className="flex justify-between items-center">
-          <div className="flex flex-col items-center">
-            <div className="flex space-x-6 items-center mb-12">
-              <img
-                src="data:image/gif;base64,R0lGODdhfQB9AIAAAAAAAP///ywAAAAAfQB9AAAC/4SPqbvhnp58zMw4M628+w9eiLYx4kFq4Mq2poSR3GmltIvn1W3P8Gj76YbEWsmo2gmRwSIrCIUAj52bLxqLpq5a2VT6sSqx326Ga+Ytq2t0r5ymZuNU8Us+hs7pATd9vmLXoLX3l9cXstaVo+aF0naIFqhIiNOY9Ih3Bzao2ckJsGhJ6cg06RkKuYmYqTdat1V2CgqYCEvmcnkma0vLG0bq2ro7rFsLjCqooPtWHExs+uuhrHzM1Hz9bCzNlqz6yZpdmjqOTQ5azW3djV7pfIsZPTwbvvxtD19Pzxw736uvLlJAZPHONRkITtK/dfu09ZM37V46fxRbmBNVkR3AjP8KOf7jV+4eQziGMl6U6E5cGj9x1p30hkulGZYrub309a4gH2o78xXyeejmTpozbT40SBRkTScE620z+YypVItRjQL1ODUrvnZXISJFqDXsU69jv4Y967Iq1K5iey712jGi27l0oZmVixNc3b09R65qyDdwUawJPwo+HPOuRsCIGW+EG7TkEHOMjvrVK1kH5VcFL28dWmRzLstgf77VTHr0OM+mB09OTRa2QdEyHcdVnHY1Sd05H3/myTZ3593De9sWSFgx7dmyl7e+DZxrcZnR7RKFLhJsdYyQV/G57Xl7StyRWyIv/Le8sO6Yzad/j779evLeM4dHCfP0ROrj7+f/P9jUd8T5lpRa8lmnnmvMoVJgcAPut6B+sjUonW/caSSgcZwByF6ECNbnXm0bZhjfZ+BZVSGFdi1X3YlrpZigUC2eZyKNZbUmI3550ddhWeIlxqKOFgop3JAhKucQb/w5CN9vzRno4Y86ZZfchUXiKKRQ9KiIXT5BAkllj/2h6NSYvd1II5YM2niUUis+6SWRCw1YZI7/PZcmmyHFued0SCrJY40avsihh136CaGbdbYJZ4UznskooJWt2aSKJBqaFYSsPTgXnlNpWhqnbnkqFajJqdkXnZmGKShehS56p6qQUuoqmoQ+KuKsOx5XZZI7KirqroYxGRugwOpK4LAw/zb5paO+fkhVn4hF6qy0qJYJ5rQ+judmt88KBuuUfIo7n7ZvjntuteQWau622aqb7qtoYapauVBaOa9zMd77LatO6AviuuFC25ak+7LlLa1MAXygu/BKqaCpS/7KLbXYpnrqwRS/G++1Wo7YKLsWezwyyMZWbG2wIit8LZeyFivsrf0aTMTHGcuMLsOopXwzzPHi+2nJPf+5LtClCt3hwCSzbPKySZNpa7Tw+uf0Yi8HuuXVuGINNZSTTq2d13oKHNqzVF+cLM5Vf4121ESn7fPZWQ+dKKsOGxlz3HM2NbfelY4NN9d08xsr36EOrvDdLpZYd+KdHn7gpgGijPHTAT+j/W9mdEkeOeQYUg7a0KQKXivol0pMr+WlJ6aV4irzmuu8hA7ceNH+lo3wzHmnzrvsriMLe+/5Ev6w3RbfUAAAOw=="
-                className="w-[100px] xl:w-[135px]"
-                alt="qr-code"
-              />
-              <div className="text-xl lg:text-3xl ">
-                {translations[language].download_1}
-                <br /> {translations[language].download_2}
-                <br /> {translations[language].download_3}
-                <br /> {translations[language].download_4}
+              <div className="flex space-x-6 mb-12">
+                <a
+                  href="https://apple.co/4asnKF5"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src="./assets/apple.png" className="h-[60px]" />
+                </a>
+                <a
+                  href="https://bit.ly/beachliga-google-play"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src="./assets/google_play3.png" className="h-[60px]" />
+                </a>
               </div>
             </div>
-            <div className="flex space-x-6 mb-12">
-              <a
-                href="https://apple.co/4asnKF5"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src="./assets/apple.png" className="h-[70px]" />
-              </a>
-              <a
-                href="https://bit.ly/beachliga-google-play"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src="./assets/google_play3.png" className="h-[70px]" />
-              </a>
-            </div>
-          </div>
-          <div className="hidden lg:flex w-1/2 justify-center">
-            <img
-              src="./assets/app_photo.png"
-              className="app-transform rounded-[100%] w-[400px] h-[400px] "
-            />
           </div>
         </div>
       </div>

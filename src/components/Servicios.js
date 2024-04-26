@@ -28,7 +28,7 @@ const Servicios = ({ language }) => {
 
   return (
     <div
-      className="max-w-[1200px] mx-auto flex flex-col items-center md:flex-row justify-between py-24 md:space-x-24 px-12"
+      className="max-w-[1200px] mx-auto flex flex-col items-center md:flex-row justify-between py-12 md:py-24 md:space-x-24 px-12"
       id="funcionalidades"
     >
       <div className="flex flex-col items-center mb-12 md:mb-0">

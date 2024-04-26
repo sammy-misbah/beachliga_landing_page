@@ -79,8 +79,7 @@ const Home = ({ language }) => {
               >
                 <img
                   src="./assets/google_play3.png"
-                  className="h-[40px] xl:h-[47px]"
-                  alt="google-play"
+                  className="h-[40px] lg:h-[50px]"
                 />
               </a>
               <a
@@ -90,7 +89,7 @@ const Home = ({ language }) => {
               >
                 <img
                   src="./assets/apple.png"
-                  className="h-[40px] xl:h-[47px]"
+                  className="h-[40px] lg:h-[50px]"
                   alt="apple"
                 />
               </a>

@@ -24,7 +24,7 @@ const Lanzadera = ({ language }) => {
           <br />
           {translations[language].title_2}
         </h3>
-        <img src="./assets/lanzadera.png" className="w-[150px] md:w-[300px]" />
+        <img src="./assets/lanzadera.png" className="w-[200px] md:w-[300px]" />
       </div>
     </div>
   );

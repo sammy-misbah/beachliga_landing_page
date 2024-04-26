@@ -20,11 +20,26 @@ const Descarga = ({ language }) => {
               {translations[language].download}
             </h3>
             <div className="flex space-x-12">
-              <img
-                src="./assets/google_play3.png"
-                className="h-[40px] lg:h-[50px]"
-              />
-              <img src="./assets/apple.png" className="h-[40px] lg:h-[50px]" />
+              <a
+                href="https://bit.ly/beachliga-google-play"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="./assets/google_play3.png"
+                  className="h-[40px] lg:h-[50px]"
+                />
+              </a>
+              <a
+                href="https://apple.co/4asnKF5"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="./assets/apple.png"
+                  className="h-[40px] lg:h-[50px]"
+                />
+              </a>
             </div>
           </div>
           <div className="hidden lg:block relative w-[430px]">

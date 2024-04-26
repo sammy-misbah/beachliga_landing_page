@@ -2,18 +2,12 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChartArea,
-  faChartSimple,
-  faCheckCircle,
-  faVolleyball,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Clubes = ({ language, setLanguage }) => {
   const translations = {
     en: {
-      title: "Clubs ",
-      title_part2: "and organizations",
+      title: "Clubs and organizations",
       subtitle: "Easily manage your club's ",
       subtitle_part2: "events",
       subsubtitle:
@@ -21,51 +15,57 @@ const Clubes = ({ language, setLanguage }) => {
       part_1_title: "Create and organize events",
       part_1_desc:
         "In just 2 minutes, you can create events and training sessions for your club and allow players to sign up through our platform.",
-      part_2_title: "Manage club members and students",
+      part_2_title: "Manage club members and receive payments",
       part_2_desc:
         "With Beachliga, you can see the status of your training sessions at any time: number of students, payment status, attendance, etc...",
       part_3_title: "Court reservation",
       part_3_desc:
         "With Beachliga, you can give players the opportunity to reserve a court for free or by paying.",
-      title_2: "Create your events in 2 clicks.",
-      feature_1: "Tournament and training creation in 2 clicks.",
-      feature_2: "Simple and secure payment management",
-      feature_3: "Court reservation system",
-      feature_4: "Real-time results",
+      part_4_title: "Real-time results",
+      part_4_desc:
+        "Keep up with the action without missing a beat! With our real-time results feature, stay updated on all the details directly on your device.",
+      number_1: "+1500",
+      circle_1: "eventos",
+      number_2: "+25",
+      circle_2: "clubes",
       quote:
-        "BeachLiga is the perfect app to manage everything happening at the club. From scheduling matches to tracking player statistics, and from managing memberships to coordinating events, BeachLiga streamlines all club activities into one convenient platform. With intuitive features designed specifically for beach soccer clubs, BeachLiga empowers administrators, coaches, and players alike to focus on what they do best: enjoying the game.",
+        "BeachLiga is the perfect app to manage everything happening at the club. From scheduling matches to tracking player statistics, and from managing memberships to coordinating events, BeachLiga streamlines all club activities into one convenient platform. With intuitive features designed specifically for beach volley clubs, BeachLiga empowers administrators, coaches, and players alike to focus on what they do best: enjoying the game.",
       author: "Obán, Mediterranean Beach Volley",
       download_1: "Download",
       download_2: "BeachLiga",
       download_3: "on your mobile.",
-      download_4: "It's free.",
+      download_4: "It's free!",
     },
     es: {
       title: "Clubes y organizaciónes",
-      subtitle: "Gestiona de manera sencilla los eventos de tu club",
+      subtitle: "Gestiona de manera sencilla ",
+      subtitle_part2: "los eventos ",
+      subtitle_part3: "de tu club",
       subsubtitle:
         "Con Beachliga, crear los eventos de tu club y gestionar los miembros nunca ha sido tan fácil.",
       part_1_title: "Crea y organiza eventos",
       part_1_desc:
         "En solo 2 minutos, podras crear los eventos y entrenamientos de tu club y permitir a los jugadores de apuntarse a través de nuestra plataforma.",
-      part_2_title: "Gestiona los miembros y alumnos del club",
+      part_2_title: "Administrar miembros del club y recibir pagos",
       part_2_desc:
         "Con Beachliga, podras ver en cada momento el estado de tus entrenamientos: numero de alumnos, estado de pago, asistencia etc...",
       part_3_title: "Reserva de pistas",
       part_3_desc:
         "Con Beachliga, puedes ofrecer a los jugadores la posibilidad de reservar una cancha de forma gratuita o pagando.",
-      title_2: "Crea tus eventos en 2 clics",
-      feature_1: "Creación de torneos y entrenamientos en 2 clics",
-      feature_2: "Gestión de pagos sencilla y segura",
-      feature_3: "Sistema de reserva de pistas",
-      feature_4: "Resultados en tiempo real",
+      part_4_title: "Resultados en tiempo real",
+      part_4_desc:
+        "¡Sigue la acción sin perder un solo segundo! Con nuestra función de resultados en tiempo real, mantente al tanto de todos los detalles directamente en tu dispositivo.",
+      number_1: "+1500",
+      circle_1: "events",
+      number_2: "+25",
+      circle_2: "clubs",
       quote:
-        "BeachLiga es la App perfecta para gestionar todo lo que pasa en el club",
-      author: "Simone, Encargado del BeachBol",
+        "BeachLiga es la aplicación perfecta para gestionar todo lo que sucede en el club. Desde programar partidos hasta hacer un seguimiento de las estadísticas de los jugadores, y desde gestionar membresías hasta coordinar eventos, BeachLiga simplifica todas las actividades del club en una plataforma conveniente. Con funciones intuitivas diseñadas específicamente para clubes de volley playa, BeachLiga capacita a administradores, entrenadores y jugadores por igual para enfocarse en lo que hacen mejor: disfrutar del juego.",
+      author: "Obán, Mediterranean Beach Volley",
       download_1: "Bájate",
       download_2: "BeachLiga",
       download_3: "al movil.",
-      download_4: "Es gratis.",
+      download_4: "¡Es gratis!",
     },
   };
 
@@ -78,21 +78,19 @@ const Clubes = ({ language, setLanguage }) => {
             <span className="text-beachliga_blue">
               {translations[language].title}
             </span>
-            <span className="text-beachliga_blue">
-              {translations[language].title_part2}
-            </span>
           </h3>
-          <h2 className="text-center text-4xl lg:text-6xl mx-auto font-[500] mb-16 lg:pb-28 lg:w-2/3 font-[gotham-bold]">
+          <h2 className="text-center text-5xl lg:text-6xl mx-auto font-[500] mb-16 pb-20 lg:pb-28 w-2/3 font-[gotham-bold]">
             <span className="">{translations[language].subtitle}</span>
             <span className="text-beachliga_yellow">
               {translations[language].subtitle_part2}
             </span>
+            {translations[language].subtitle_part3}
           </h2>
         </div>
       </div>
-      <div className="flex items-center lg:items-start lg:flex-row flex-col-reverse mb-32 max-w-[1200px] mx-auto mt-[200px] h-[810px]">
+      <div className="flex items-center lg:items-start lg:flex-row flex-col mb-32 max-w-[1200px] px-6 mx-auto mt-[60px] lg:mt-[200px] lg:h-[860px]">
         <div className="lg:w-1/2 lg:pr-12 flex flex-col justify-between min-h-[100%]">
-          <div>
+          <div className="mb-8 lg:mb-0">
             <h4 className="text-3xl lg:text-4xl font-[400] mb-10 font-[gotham-bold]">
               {translations[language].subsubtitle}
             </h4>
@@ -133,125 +131,80 @@ const Clubes = ({ language, setLanguage }) => {
               </h5>
             </div>
             <p className="text-md mb-4">{translations[language].part_3_desc}</p>
+            <div className="flex items-center mb-1">
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                className="mr-3 icon-blue"
+                size="xl"
+              />
+              <h5 className="text-xl font-[gotham-body] font-[400]">
+                {translations[language].part_4_title}
+              </h5>
+            </div>
+            <p className="text-md mb-4">{translations[language].part_4_desc}</p>
           </div>
-          <div className="flex justify-around pb-12">
-            <div className="flex flex-col justify-center items-center">
-              {/* <FontAwesomeIcon
-                icon={faVolleyball}
-                size="4x"
-                className=" mb-4"
-              /> */}
-              <p className="text-center font-[gotham-body] text-beachliga_blue text-2xl  border-[3px] border-beachliga_blue rounded-[100%] p-12 ">
-                +350
+          <div className="flex justify-around  mb-20 lg:mb-0">
+            <div className="flex flex-col justify-center items-center ">
+              <p className="font-[gotham-body] text-beachliga_blue text-2xl  w-[150px] h-[150px] border-[3px] border-beachliga_blue rounded-[100%] flex justify-center items-center text-center">
+                {translations[language].number_1}
                 <br />
-                coaches
+                {translations[language].circle_1}
               </p>
             </div>
             <div className="flex flex-col justify-center items-center">
-              {/* <FontAwesomeIcon
-                icon={faChartSimple}
-                size="4x"
-                className="mb-4"
-              /> */}
-              <p className="text-center font-[gotham-body] text-beachliga_blue text-2xl  border-[3px] border-beachliga_blue rounded-[100%] p-12 ">
-                +100
-                <br /> clubes
+              <p className="font-[gotham-body] text-beachliga_blue text-2xl  w-[150px] h-[150px] border-[3px] border-beachliga_blue rounded-[100%] flex justify-center items-center text-center">
+                {translations[language].number_2}
+                <br /> {translations[language].circle_2}
               </p>
             </div>
           </div>
         </div>
         <div className="lg:w-1/2 mb-12 lg:mb-0">
-          <div className="relative">
+          <div className="relative flex justify-around">
             <img
               src="./assets/qr_torneo.png"
-              className="rounded-xl shadow-2xl"
+              className="hidden md:block rounded-xl shadow-2xl w-1/2 lg:w-full"
             />
             <img
               src="./assets/app.png"
-              className="rounded-xl absolute top-[-100px] right-[0px] w-[300px] shadow-2xl"
+              className="rounded-xl lg:absolute lg:top-[-100px] right-[0px] w-[300px] shadow-2xl w-1/2"
             />
           </div>
         </div>
       </div>
-
-      {/* <h2 className="text-center text-5xl mx-auto font-[500] mb-24 lg:w-1/2 px-6 font-[gotham-bold]">
-        {translations[language].title_2}
-      </h2>
-      <div className="max-w-[1200px] mx-auto  px-6 lg:px-12">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start mb-32">
-          <div className="lg:w-1/2 flex lg:justify-center">
-            <img src="./assets/app.png" className="rounded-[50px] shadow-2xl" />
-          </div>
-          <div className="lg:w-1/2 flex flex-col text-xl lg:text-[28px] font-[400]">
-            <div className="flex pt-8 items-start lg:items-center">
-              <img
-                src="./assets/check_black.png"
-                className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2"
-              />
-              <h4>{translations[language].feature_1}</h4>
-            </div>
-            <div className="flex pt-8 items-start lg:items-center">
-              <img
-                src="./assets/check_black.png"
-                className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2"
-              />
-              <h4>{translations[language].feature_2}</h4>
-            </div>
-            <div className="flex pt-8 items-start lg:items-center">
-              <img
-                src="./assets/check_black.png"
-                className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2"
-              />
-              <h4>{translations[language].feature_3}</h4>
-            </div>
-            <div className="flex pt-8 items-start lg:items-center">
-              <img
-                src="./assets/check_black.png"
-                className="w-6 h-6 lg:h-8 lg:w-8 mr-4 pt-2"
-              />
-              <h4>{translations[language].feature_4}</h4>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className="px-6 lg:px-12 bg-beachliga_grey">
-        <div className=" relative flex max-w-[1200px] mx-auto mb-12  py-6 flex-col justify-center items-center lg:flex-row lg:items-center  p-12  text-white rounded-[20px]">
+        <div className="relative flex max-w-[1200px] mx-auto py-6 flex-col justify-center items-center lg:flex-row lg:items-center  p-12  text-white rounded-[20px]">
           <div>
             <div className="flex flex-col mt-[50px]">
               <div>
                 <div className="text-2xl">
-                  <div className="mb-16 mx-auto flex">
+                  <div className="mb-6 mx-auto flex flex-col lg:flex-row">
                     <img
                       src="./assets/quotes_1.png"
-                      className="w-[100px] h-[80px] mr-6"
+                      className="w-[100px] h-[80px] mr-6 mb-4 lg:mb-0"
                     />
-                    <p className="text-2xl">{translations[language].quote}</p>
+                    <p className="text-xl mb-6 lg:mb-0">
+                      {translations[language].quote}
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="flex justify-end mb-12">
-                <div className="text-2xl flex flex-col items-center justify-end">
+                <div className="flex flex-col items-center justify-end">
                   <img
                     src="./assets/oban_min.jpg"
-                    className="rounded-full w-[150px] mb-6"
+                    className="rounded-full w-[150px] mb-4"
                     alt="oban"
                   />
-                  <p className="text-xl">{translations[language].author}</p>
+                  <p className="text-base">{translations[language].author}</p>
                 </div>
               </div>
-              {/* <div className="flex justify-center mb-6">
-                <img src="./assets/star.png" className="w-[30px]" />
-                <img src="./assets/star.png" className="w-[30px]" />
-                <img src="./assets/star.png" className="w-[30px]" />
-                <img src="./assets/star.png" className="w-[30px]" />
-                <img src="./assets/star.png" className="w-[30px]" />
-              </div> */}
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-sand pt-32">
-        <div className="max-w-[1200px] mx-auto pb-12  px-6 lg:px-12 ">
+      <div className="bg-sand pt-32 flex items-center">
+        <div className="max-w-[1200px] mx-auto pb-12  px-6 lg:px-12 flex items-center">
           <div className="flex justify-between items-center">
             <div className="flex flex-col items-center">
               <div className="flex space-x-6 items-center mb-12">
@@ -260,13 +213,15 @@ const Clubes = ({ language, setLanguage }) => {
                   className="w-[100px] xl:w-[135px]"
                   alt="qr-code"
                 />
-                <div className="text-xl lg:text-3xl font-[gotham-body]">
+                <div className="text-xl lg:text-3xl text-black">
                   {translations[language].download_1}
                   <br />
                   <span className="">{translations[language].download_2}</span>
                   <br /> {translations[language].download_3}
                   <br />
-                  {translations[language].download_4}
+                  <span className="font-[gotham-body] font-bold">
+                    {translations[language].download_4}
+                  </span>
                 </div>
               </div>
               <div className="flex space-x-6 mb-12">
@@ -275,22 +230,16 @@ const Clubes = ({ language, setLanguage }) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="./assets/apple.png" className="h-[70px]" />
+                  <img src="./assets/apple.png" className="h-[60px]" />
                 </a>
                 <a
                   href="https://bit.ly/beachliga-google-play"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="./assets/google_play3.png" className="h-[70px]" />
+                  <img src="./assets/google_play3.png" className="h-[60px]" />
                 </a>
               </div>
-            </div>
-            <div className="hidden lg:flex w-1/2 justify-center">
-              <img
-                src="./assets/app_photo_trans.png"
-                className="app-transform rounded-[100%] w-[400px] h-[400px] "
-              />
             </div>
           </div>
         </div>

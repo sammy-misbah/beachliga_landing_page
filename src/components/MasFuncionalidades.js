@@ -22,13 +22,13 @@ const MasFuncionalidades = ({ language }) => {
     },
   };
   return (
-    <div className="max-w-[1200px] mx-auto pb-20 pt-6 px-12">
+    <div className="max-w-[1200px] mx-auto md:pb-20 pb-8 pt-6 px-12">
       <h2 className="text-center text-beachliga_yellow text-4xl font-[400] mb-12">
         {translations[language].more_features}
       </h2>
       <div className="flex flex-col items-center md:flex-row text-beachliga_text">
-        <div className="flex flex-col md:w-1/3 items-center">
-          <div className="flex flex-col  md:flex-row items-center mb-8">
+        <div className="flex flex-row md:flex-col w-full md:w-1/3 items-center justify-between">
+          <div className="flex flex-col md:flex-row items-center mb-8  w-1/2 md:w-fit">
             <img
               src="./assets/credit_card.png"
               className="md:mr-3 w-[48px] h-[48px]"
@@ -38,7 +38,7 @@ const MasFuncionalidades = ({ language }) => {
               {translations[language].payments}
             </h3>
           </div>
-          <div className="flex flex-col items-center md:flex-row mb-8 md:mb-0">
+          <div className="flex flex-col items-center md:flex-row mb-8 md:mb-0  w-1/2 md:w-fit">
             <img
               src="./assets/cup.png"
               className="md:mr-3 w-[48px] h-[48px]"
@@ -49,8 +49,8 @@ const MasFuncionalidades = ({ language }) => {
             </h3>
           </div>
         </div>
-        <div className="flex flex-col w-1/3 items-center">
-          <div className="flex flex-col items-center md:flex-row mb-8">
+        <div className="flex flex-row md:flex-col w-full md:w-1/3 items-center justify-between">
+          <div className="flex flex-col items-center md:flex-row mb-8 w-1/2 md:w-fit">
             <img
               src="./assets/volleyball.png"
               className="md:mr-3 w-[48px] h-[48px]"
@@ -60,7 +60,7 @@ const MasFuncionalidades = ({ language }) => {
               {translations[language].events}
             </h3>
           </div>
-          <div className="flex flex-col items-center md:flex-row mb-8 md:mb-0">
+          <div className="flex flex-col items-center md:flex-row mb-8 md:mb-0  w-1/2 md:w-fit">
             <img
               src="./assets/demography.png"
               className="md:mr-3 w-[48px] h-[48px]"
@@ -71,8 +71,8 @@ const MasFuncionalidades = ({ language }) => {
             </h3>
           </div>
         </div>
-        <div className="flex flex-col w-1/3 items-center">
-          <div className="flex flex-col items-center md:flex-row mb-8">
+        <div className="flex flex-row md:flex-col w-full md:w-1/3 items-center justify-between">
+          <div className="flex flex-col items-center md:flex-row mb-8  w-1/2 md:w-fit">
             <img
               src="./assets/chat_icon.png"
               className="md:mr-3 w-[48px] h-[48px]"
@@ -82,7 +82,7 @@ const MasFuncionalidades = ({ language }) => {
               {translations[language].communication}
             </h3>
           </div>
-          <div className="flex flex-col items-center md:flex-row">
+          <div className="flex flex-col items-center md:flex-row  w-1/2 md:w-fit">
             <img
               src="./assets/admin_panel.png"
               className="md:mr-3 w-[48px] h-[48px]"
