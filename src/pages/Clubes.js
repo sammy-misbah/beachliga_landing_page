@@ -24,7 +24,7 @@ const Clubes = ({ language, setLanguage }) => {
       part_4_title: "Real-time results",
       part_4_desc:
         "Keep up with the action without missing a beat! With our real-time results feature, stay updated on all the details directly on your device.",
-      number_1: "+1500",
+      number_1: "+1.500",
       circle_1: "eventos",
       number_2: "+25",
       circle_2: "clubes",
@@ -55,7 +55,7 @@ const Clubes = ({ language, setLanguage }) => {
       part_4_title: "Resultados en tiempo real",
       part_4_desc:
         "¡Sigue la acción sin perder un solo segundo! Con nuestra función de resultados en tiempo real, mantente al tanto de todos los detalles directamente en tu dispositivo.",
-      number_1: "+1500",
+      number_1: "+1.500",
       circle_1: "events",
       number_2: "+25",
       circle_2: "clubs",

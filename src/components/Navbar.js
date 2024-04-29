@@ -108,7 +108,7 @@ const Navbar = ({ language, setLanguage }) => {
             className="cursor-pointer"
             ref={dropdownRef}
           >
-            <div className="flex items-center relative">
+            <div className="flex items-center relative w-[100px]">
               <div className="mr-3">{translations[language].who}</div>
               <FontAwesomeIcon
                 className="pt-1"

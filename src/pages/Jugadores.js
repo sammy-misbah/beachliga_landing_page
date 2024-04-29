@@ -24,9 +24,9 @@ const Jugadores = ({ language, setLanguage }) => {
       part_4_title: "Explore the Beachliga player community",
       part_4_desc:
         "With Beachliga, you're not just joining a sports app, you're becoming part of a dynamic and supportive community of players, coaches, and enthusiasts passionate about Beach Volley.",
-      number_1: "+25000",
+      number_1: "+25.000",
       circle_1: "players",
-      number_2: "+100000",
+      number_2: "+100.000",
       circle_2: "partidos",
       quote:
         "I've registered for dozens of tournaments using Beachliga. The process is efficient and super easy. With Beachliga, I can sign up for tournaments quickly and effortlessly, without any complications or delays. The app's intuitive interface guides me step by step, from selecting the tournament to paying the registration fee, allowing me to focus on preparing for the competition. Additionally, Beachliga offers a wide variety of tournaments in different locations and skill levels, providing me with the opportunity to participate in exciting and challenging events at all times. I can't recommend it enough for all beach volleyball enthusiasts looking to take their game to the next level!",
@@ -54,9 +54,9 @@ const Jugadores = ({ language, setLanguage }) => {
       part_4_title: "Explora la comunidad de jugadores de Beachliga",
       part_4_desc:
         "Con Beachliga, no solo estás uniéndote a una aplicación deportiva, te estás convirtiendo en parte de una comunidad dinámica y solidaria de jugadores, entrenadores y entusiastas apasionados por el vóley playa.",
-      number_1: "+25000",
+      number_1: "+25.000",
       circle_1: "jugadores",
-      number_2: "+100000",
+      number_2: "+100.000",
       circle_2: "partidos",
       quote:
         "He registrado decenas de torneos utilizando Beachliga. El proceso es eficiente y súper fácil de realizar. Con Beachliga, puedo inscribirme en torneos de manera rápida y sencilla, sin complicaciones ni demoras. La interfaz intuitiva de la aplicación me guía paso a paso, desde la selección del torneo hasta el pago de la inscripción, lo que me permite concentrarme en prepararme para la competencia. Además, Beachliga ofrece una amplia variedad de torneos en diferentes ubicaciones y niveles de habilidad, lo que me brinda la oportunidad de participar en eventos emocionantes y desafiantes en todo momento. ¡No puedo recomendarlo lo suficiente para todos los amantes del vóley playa que deseen llevar su juego al siguiente nivel!",

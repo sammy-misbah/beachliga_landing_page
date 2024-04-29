@@ -7,6 +7,7 @@ import Jugadores from "./pages/Jugadores";
 import Clubes from "./pages/Clubes";
 import Federaciones from "./pages/Federaciones";
 import Entrenadores from "./pages/Entrenadores";
+import Descarga from "./pages/Descarga";
 
 function App() {
   const [language, setLanguage] = useState("en");
@@ -58,6 +59,12 @@ function App() {
               language={language}
               setLanguage={handleLanguageChange}
             />
+          }
+        />
+        <Route
+          path="/download"
+          element={
+            <Descarga language={language} setLanguage={handleLanguageChange} />
           }
         />
         <Route path="*" element={<Navigate to="/" replace />} />

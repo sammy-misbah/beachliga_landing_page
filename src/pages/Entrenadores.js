@@ -24,9 +24,9 @@ const Entrenadores = ({ language, setLanguage }) => {
       part_4_title: "Trainings and events notifications",
       part_4_desc:
         "Stay updated on your training sessions and sporting events with our real-time notifications. Never miss a training session or important event thanks to our app.",
-      number_1: "+1000",
+      number_1: "+1.000",
       circle_1: "trainings",
-      number_2: "+10000",
+      number_2: "+10.000",
       circle_2: "students",
       quote:
         "With Beachliga, I can effortlessly keep track of the number of students in each group and easily communicate with them directly. Whether it's organizing training sessions, coordinating events, or simply providing updates, Beachliga's user-friendly interface streamlines communication, allowing me to focus more on coaching and less on administrative tasks. Plus, with the ability to send notifications and messages in real-time, I can ensure that everyone is informed and engaged, enhancing the overall experience for both students and coaches.",
@@ -54,9 +54,9 @@ const Entrenadores = ({ language, setLanguage }) => {
       part_4_title: "Notificaciones de entrenamientos y eventos",
       part_4_desc:
         "Mantente al tanto de tus entrenamientos y eventos deportivos con nuestras notificaciones en tiempo real. Nunca te pierdas una sesión de entrenamiento o un evento importante gracias a nuestra aplicación.",
-      number_1: "+1000",
+      number_1: "+1.000",
       circle_1: "entrenamientos",
-      number_2: "+10000",
+      number_2: "+10.000",
       circle_2: "alumnos",
       quote:
         "Con Beachliga, puedo mantener un seguimiento sin esfuerzo del número de estudiantes en cada grupo y comunicarme fácilmente con ellos directamente. Ya sea organizando sesiones de entrenamiento, coordinando eventos o simplemente proporcionando actualizaciones, la interfaz de Beachliga simplifica la comunicación, permitiéndome enfocarme más en la enseñanza y menos en las tareas administrativas. Además, con la capacidad de enviar notificaciones y mensajes en tiempo real, puedo asegurarme de que todos estén informados y comprometidos, mejorando la experiencia general tanto para los estudiantes como para los entrenadores.",

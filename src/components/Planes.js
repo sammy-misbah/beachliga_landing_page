@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Planes = ({ language }) => {
   const translations = {
@@ -129,14 +130,11 @@ const Planes = ({ language }) => {
                 {translations[language].free_price}
               </h2>
               <div className="flex justify-center">
-                <a
-                  href="https://onelink.to/x7v9kz"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-[290px] bg-black text-white py-3 rounded-full font-[400] text-lg flex justify-center items-center hover:bg-white hover:text-black duration-300 border-2 border-black"
-                >
-                  {translations[language].get_started}
-                </a>
+                <Link to="/download">
+                  <div className="w-[290px] bg-black text-white py-3 rounded-full font-[400] text-lg flex justify-center items-center hover:bg-white hover:text-black duration-300 border-2 border-black">
+                    {translations[language].get_started}
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -203,14 +201,11 @@ const Planes = ({ language }) => {
                 </span>
               </h2>
               <div className="flex justify-center">
-                <a
-                  href="https://onelink.to/x7v9kz"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-[290px] bg-beachliga_blue text-white py-3 rounded-full font-[400] text-lg flex justify-center items-center hover:bg-white hover:text-black duration-300 border-2 border-beachliga_blue"
-                >
-                  {translations[language].get_started}
-                </a>
+                <Link to="/download">
+                  <div className="w-[290px] bg-beachliga_blue text-white py-3 rounded-full font-[400] text-lg flex justify-center items-center hover:bg-white hover:text-black duration-300 border-2 border-beachliga_blue">
+                    {translations[language].get_started}
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -271,14 +266,11 @@ const Planes = ({ language }) => {
                 </span>
               </h2>
               <div className="flex justify-center">
-                <a
-                  href="https://onelink.to/x7v9kz"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-[290px] bg-white text-beachliga_blue py-3 rounded-full font-[400] text-lg flex justify-center items-center hover:bg-beachliga_blue hover:text-white duration-300 border-2 border-white"
-                >
-                  {translations[language].get_started}
-                </a>
+                <Link to="/download">
+                  <div className="w-[290px] bg-white text-beachliga_blue py-3 rounded-full font-[400] text-lg flex justify-center items-center hover:bg-beachliga_blue hover:text-white duration-300 border-2 border-white">
+                    {translations[language].get_started}
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -297,13 +289,7 @@ const Planes = ({ language }) => {
               <br /> {translations[language].contact_us}
             </h3>
             <div className="bg-beachliga_yellow w-[200px] md:w-[350px] text-white py-3 px-4 rounded-full font-[400] text-lg flex justify-center items-center text-center">
-              <a
-                href="https://onelink.to/x7v9kz"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {translations[language].custom_plan}
-              </a>
+              <Link to="/download">{translations[language].custom_plan}</Link>
             </div>
           </div>
         </div>
