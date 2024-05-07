@@ -24,6 +24,17 @@ const Servicios = ({ language }) => {
       chat_desc:
         "Únete a conversaciones emocionantes, intercambia tácticas y coordina con tu equipo directamente desde nuestro chat integrado.",
     },
+    ger: {
+      events: "Veranstaltungen organisieren",
+      events_desc:
+        "Von kleinen lokalen Treffen bis hin zu großen Meisterschaften ermöglicht unsere App die Planung und Verwaltung jedes Details deiner Veranstaltung.",
+      payments: "Zahlungsabwicklung",
+      payments_desc:
+        "Vergiss die Kopfschmerzen. Mit unserem Zahlungsabwicklungstool ist die Anmeldung zu Turnieren und Zahlungsabwicklung schnell, sicher und stressfrei.",
+      chat: "Chat-Funktion",
+      chat_desc:
+        "Nutze die Chat-Funktion und koordiniere dich direkt mit deinem Team oder dem Veranstalter über unseren integrierten Chat.",
+    },
   };
 
   return (

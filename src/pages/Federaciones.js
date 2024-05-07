@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Federaciones = ({ language, setLanguage }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const translations = {
     en: {
       title: "Federations",
@@ -70,6 +73,40 @@ const Federaciones = ({ language, setLanguage }) => {
       download_2: "BeachLiga",
       download_3: "al movil.",
       download_4: "Es gratis.",
+    },
+    ger: {
+      title: "Verbände",
+      subtitle: "Verwalte die Veranstaltungen deines ",
+      subtitle_part2: "Verbands",
+      subsubtitle:
+        "Mit Beachliga kannst du Lizenzen verwalten und die Ergebnisse von Vereinen und Spielern deines Verbands verfolgen.",
+      part_1_title: "Lizenzverwaltung für registrierte Spieler",
+      part_1_desc:
+        "Mit Beachliga können Spieler ihre Lizenzen einfach hochladen und auf nationale Turniere zugreifen.",
+      part_2_title: "Aktualisiertes Verbands-Ranking",
+      part_2_desc:
+        "Verfolge das aktualisierte Ranking von Spielern und Vereinen des Verbands nach jedem Event.",
+      part_3_title: "Erstellung von nationalen Veranstaltungen",
+      part_3_desc:
+        "Mit Beachliga kannst du Veranstaltungen für Spieler jeden Alters mit nur wenigen Klicks erstellen.",
+      part_4_title: "Ergebnisse aller registrierten Spieler",
+      part_4_desc:
+        "Mit nur wenigen Klicks können sowohl Spieler, Trainer als auch Fans den Fortschritt der Spieler verfolgen, Leistungstrends analysieren und ihre Erfolge feiern.",
+      number_1: "+750",
+      circle_1: "registrierte Spieler",
+      number_2: "+300",
+      circle_2: "Nationale Verbandsturniere",
+      feature_1: "Lizenzverwaltung",
+      feature_2: "Aktualisiertes Verbandsranking nach jedem Event",
+      feature_3: "Organisation und Erstellung von Verbandsturnieren",
+      feature_4: "Live-Ergebnisse aller Spieler",
+      quote:
+        "BeachLiga ermöglicht es uns, alle Turniere in der Region Valencia an einem Ort effizient und bequem zu verwalten. Von lokalen Turnieren bis hin zu regionalen Wettbewerben bietet die Plattform einen umfassenden Überblick über alle Beachvolleyballaktivitäten in der Region. Mit BeachLiga können wir jedes Turnier einfach organisieren und koordinieren, von der Anmeldung bis zur Durchführung und Ergebnismeldung ist alles automatisiert.",
+      author: "Nuria, Valencianischer Volleyballverband",
+      download_1: "Lade",
+      download_2: "BeachLiga",
+      download_3: "auf dein Handy herunter.",
+      download_4: "Es ist kostenlos.",
     },
   };
 
@@ -152,13 +189,26 @@ const Federaciones = ({ language, setLanguage }) => {
               <p className="font-[gotham-body] text-beachliga_blue text-2xl  w-[160px] h-[160px] border-[3px] border-beachliga_blue rounded-[100%] flex flex-col justify-center items-center text-center">
                 {translations[language].number_1}
                 <br />
-                {translations[language].circle_1}
+                {language === "ger" ? (
+                  <span className="text-sm">
+                    {translations[language].circle_2}
+                  </span>
+                ) : (
+                  <span>{translations[language].circle_2}</span>
+                )}
               </p>
             </div>
             <div className="flex flex-col justify-center items-center">
-              <p className="font-[gotham-body] text-beachliga_blue text-2xl  w-[160px] h-[160px] border-[3px] border-beachliga_blue rounded-[100%] flex justify-center items-center text-center">
+              <p className="font-[gotham-body] text-beachliga_blue text-2xl flex flex-col w-[160px] h-[160px] border-[3px] border-beachliga_blue rounded-[100%] flex justify-center items-center text-center">
                 {translations[language].number_2}
-                <br /> {translations[language].circle_2}
+                <br />
+                {language === "ger" ? (
+                  <span className="text-sm">
+                    {translations[language].circle_2}
+                  </span>
+                ) : (
+                  <span>{translations[language].circle_2}</span>
+                )}
               </p>
             </div>
           </div>

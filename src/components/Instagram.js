@@ -28,6 +28,18 @@ const Instagram = ({ language }) => {
       read_more: "Seguir leyendo",
       follow_us: "¡Síguenos!",
     },
+    ger: {
+      title: "NEUESTE BEITRÄGE",
+      subtitle: "Das Neueste auf Instagram",
+      post_1:
+        "Mehr als zwei Jahre Zusammenarbeit! Der Valencianische Volleyballverband ist unser Partner. Auf ihrer Website findest du Turniere, Veranstaltungen: fvbcv.com und in ihren sozialen Medien @federacionvoleibol_cvalenciana",
+      post_2:
+        "Letzte Chance, um sich für die Turniere dieses Wochenendes des Valencianischen Volleyballverbands in Gandia anzumelden! Jetzt teilzunehmen!",
+      post_3:
+        "Wir sind bei Lanzadera und haben bald großartige Neuigkeiten! Wir sind super happy! Wenn du weitere Infos über unser Projekt möchtest, kontaktiere uns.",
+      read_more: "Weiterlesen",
+      follow_us: "Folge uns!",
+    },
   };
 
   return (

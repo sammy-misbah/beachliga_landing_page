@@ -24,6 +24,18 @@ const Opiniones = ({ language }) => {
       opinion_3:
         "La plataforma Beachliga simplifica enormemente el registro en los torneos. Al crear tu perfil una vez al principio, puedes registrarte rápidamente en todos los torneos futuros sin necesidad de repetir toda la información personal o de pago. Es visual, práctico y, sobre todo, ÁGIL.",
     },
+    ger: {
+      title: "Was andere über uns sagen?",
+      national_player: "Nationaler Spieler",
+      madison_player: "Madison-Spielerin",
+      opinion_1:
+        "Die Anmeldung für ein Beachvolleyballturnier mit Beachliga war sehr einfach und viel schneller als bei anderen Turnieren. Ich habe mich innerhalb von 1 Minute über mein Google-Konto registriert und konnte schnell und einfach mit PayPal bezahlen, ohne zusätzliche Dokumente auszufüllen oder Zahlungsbelege zu senden. Ein sehr reibungsloser Prozess!",
+      opinion_2:
+        "Einfach brillant! Die Anmeldung für Turniere über die Beachliga-Plattform ist einfach, schnell und sehr bequem. Endlich eine passende Lösung, um Google-Formulare zu ersetzen!",
+      opinion_3:
+        "Die Beachliga-Plattform vereinfacht die Anmeldung zu Turnieren erheblich. Indem du dein Profil einmal am Anfang erstellst, kannst du dich schnell für alle zukünftigen Turniere anmelden, ohne alle persönlichen oder Zahlungsinformationen erneut eingeben zu müssen. Es ist visuell, praktisch und vor allem AGIL.",
+      download: "Lade unsere App herunter!",
+    },
   };
 
   return (

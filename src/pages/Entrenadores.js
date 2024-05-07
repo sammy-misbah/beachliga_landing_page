@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Entrenadores = ({ language, setLanguage }) => {
+  console.log(language);
   const translations = {
     en: {
       title: "Coaches",
@@ -65,6 +66,36 @@ const Entrenadores = ({ language, setLanguage }) => {
       download_2: "BeachLiga",
       download_3: "al movil.",
       download_4: "Es gratis.",
+    },
+    ger: {
+      title: "Trainer",
+      subtitle: "Plane, verwalte ",
+      subtitle_part2: "und kommuniziere effizient",
+      subsubtitle:
+        "Mit Beachliga kannst du deine Trainings planen, Zahlungen erhalten und mit deinen Teilnehmern chatten.",
+      part_1_title: "Plane deine Trainings",
+      part_1_desc:
+        "Erstelle deine Trainingsgruppen: Wähle den Ort, die Zeit, das Niveau und erstelle das erste Training in deiner Gegend.",
+      part_2_title: "Zahlungsabwicklung",
+      part_2_desc:
+        "Bei Beachliga bieten wir dir eine einfache und sichere Zahlungsabwicklung: Deine Teilnehmer haben Zugang zu einer sicheren Zahlungsplattform und du erhältst das Geld sofort.",
+      part_3_title: "Kommuniziere mit deinen Teilnehmern",
+      part_3_desc:
+        "Über unseren Chat kannst du Nachrichten an Vereinsmitglieder senden, Gruppen erstellen und direkt mit deinen Kollegen und Teilnehmern kommunizieren.",
+      part_4_title: "Benachrichtigungen über Trainings und Veranstaltungen",
+      part_4_desc:
+        "Bleibe mit unseren Benachrichtigungen in Echtzeit über deine Trainings und Sportveranstaltungen auf dem Laufenden. Verpasse nie wieder ein Training oder ein wichtiges Turnier dank unserer App.",
+      number_1: "+1.000",
+      circle_1: "Trainings",
+      number_2: "+10.000",
+      circle_2: "Schüler",
+      quote:
+        "Mit Beachliga kann ich mühelos verfolgen, wie viele Teilnehmer in jeder Gruppe sind, und mich direkt mit ihnen in Verbindung setzen. Ob bei der Organisation von Trainingseinheiten, der Koordination von Turnieren oder wenn es Neues gibt, die Benutzeroberfläche von Beachliga vereinfacht die Kommunikation und ermöglicht es mir, mich mehr auf das Training und weniger auf administrative Aufgaben zu konzentrieren. Darüber hinaus kann ich mit der Möglichkeit, Benachrichtigungen und Nachrichten in Echtzeit zu senden, sicherstellen, dass alle informiert sind und so das Erlebnis für Schüler als auch für Trainer verbessern.",
+      author: "Blai, Trainer von Beachbol",
+      download_1: "Lade",
+      download_2: "BeachLiga",
+      download_3: "auf dein Handy herunter.",
+      download_4: "Es ist kostenlos.",
     },
   };
 

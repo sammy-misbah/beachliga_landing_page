@@ -11,6 +11,10 @@ const Lanzadera = ({ language }) => {
       title: "Somos un proyecto que forma parte de la",
       title_2: "aceleradora e incubadora para startups",
     },
+    ger: {
+      title: "Wir sind Teil des",
+      title_2: "Startup-Accelerator",
+    },
   };
 
   return (

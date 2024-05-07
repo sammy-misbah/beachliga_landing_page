@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 
 const Descarga = ({ language, setLanguage }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const translations = {
     en: { title: "Download the App!" },
     es: { title: "¡Descarga la App!" },
+    ger: {
+      title: "Lade die App jetzt herunter!",
+    },
   };
 
   return (

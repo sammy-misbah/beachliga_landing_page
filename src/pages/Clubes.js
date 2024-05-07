@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Clubes = ({ language, setLanguage }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const translations = {
     en: {
       title: "Clubs and organizations",
@@ -66,6 +70,38 @@ const Clubes = ({ language, setLanguage }) => {
       download_2: "BeachLiga",
       download_3: "al movil.",
       download_4: "¡Es gratis!",
+    },
+    ger: {
+      title: "Vereine und Organisationen",
+      subtitle: "Verwalte einfach ",
+      subtitle_part2: "die Veranstaltungen ",
+      subtitle_part3: "deines Vereins",
+      subsubtitle:
+        "Mit BeachLiga war es noch nie so einfach, die Veranstaltungen deines Vereins zu erstellen und die Mitglieder zu verwalten.",
+      part_1_title: "Erstelle und organisiere Veranstaltungen",
+      part_1_desc:
+        "In nur 2 Minuten kannst du die Veranstaltungen und Trainings deines Vereins erstellen und den Spielern ermöglichen, sich über unsere Plattform anzumelden.",
+      part_2_title:
+        "Verwalte Vereinsmitglieder und erhalte Zahlungen automatisch",
+      part_2_desc:
+        "Mit Beachliga kannst du jederzeit den Status deiner Trainings sehen: Anzahl der Teilnehmer, Zahlungsstatus, Anwesenheit usw.",
+      part_3_title: "Platzbuchung",
+      part_3_desc:
+        "Mit Beachliga kannst du den Spielern die Möglichkeit bieten, einen Platz kostenlos oder gegen Gebühr zu buchen.",
+      part_4_title: "Echtzeit-Ergebnisse",
+      part_4_desc:
+        "Verfolge die Spiele ohne einen einzigen Moment zu verpassen! Mit unserer Echtzeit-Ergebnisfunktion bleibst du direkt auf deinem Gerät über alle Spiele informiert.",
+      number_1: "+1.500",
+      circle_1: "Veranstaltungen",
+      number_2: "+25",
+      circle_2: "Vereine",
+      quote:
+        "BeachLiga ist die perfekte App, um alles zu verwalten, was im Verein passiert. Von der Terminierung von Spielen bis zur Verfolgung von Spielerstatistiken und von der Verwaltung von Mitgliedschaften bis zur Koordination von Veranstaltungen vereinfacht BeachLiga alle Aktivitäten des Vereins auf einer Plattform. Mit intuitiven Funktionen, die speziell für Beachvolleyballvereine entwickelt wurden, befähigt BeachLiga Administratoren, Trainer und Spieler gleichermaßen, sich auf das zu konzentrieren, was sie am besten können: Beachvolleyball.",
+      author: "Obán, Mediterranean Beach Volley",
+      download_1: "Lade",
+      download_2: "BeachLiga",
+      download_3: "auf dein Handy herunter.",
+      download_4: "Es ist kostenlos!",
     },
   };
 
@@ -145,16 +181,29 @@ const Clubes = ({ language, setLanguage }) => {
           </div>
           <div className="flex justify-around  mb-20 lg:mb-0">
             <div className="flex flex-col justify-center items-center ">
-              <p className="font-[gotham-body] text-beachliga_blue text-2xl  w-[150px] h-[150px] border-[3px] border-beachliga_blue rounded-[100%] flex justify-center items-center text-center">
+              <p className="font-[gotham-body] text-beachliga_blue flex flex-col text-2xl  w-[150px] h-[150px] border-[3px] border-beachliga_blue rounded-[100%] flex justify-center items-center text-center">
                 {translations[language].number_1}
                 <br />
-                {translations[language].circle_1}
+                {language === "ger" ? (
+                  <span className="text-sm">
+                    {translations[language].circle_1}
+                  </span>
+                ) : (
+                  <span>{translations[language].circle_1}</span>
+                )}
               </p>
             </div>
             <div className="flex flex-col justify-center items-center">
-              <p className="font-[gotham-body] text-beachliga_blue text-2xl  w-[150px] h-[150px] border-[3px] border-beachliga_blue rounded-[100%] flex justify-center items-center text-center">
+              <p className="font-[gotham-body] text-beachliga_blue text-2xl flex flex-col w-[150px] h-[150px] border-[3px] border-beachliga_blue rounded-[100%] flex justify-center items-center text-center">
                 {translations[language].number_2}
-                <br /> {translations[language].circle_2}
+                <br />
+                {language === "ger" ? (
+                  <span className="text-sm">
+                    {translations[language].circle_2}
+                  </span>
+                ) : (
+                  <span>{translations[language].circle_2}</span>
+                )}
               </p>
             </div>
           </div>

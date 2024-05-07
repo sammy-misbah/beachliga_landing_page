@@ -20,6 +20,15 @@ const MasFuncionalidades = ({ language }) => {
       admin: "Administración de jugadores",
       register: "Automatización de registro",
     },
+    ger: {
+      more_features: "Weitere Funktionen",
+      payments: "Zahlungen über die App",
+      events: "Veranstaltungsorganisation",
+      communication: "Instant-Kommunikation",
+      results: "Online-Ergebnisse",
+      admin: "Spielerverwaltung",
+      register: "Automatisierung der Registrierung",
+    },
   };
   return (
     <div className="max-w-[1200px] mx-auto md:pb-20 pb-8 pt-6 px-12">

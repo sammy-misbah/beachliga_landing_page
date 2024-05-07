@@ -73,6 +73,41 @@ const Planes = ({ language }) => {
       custom_plan: "Quiero un plan personalizado",
       yearly_payment: "Pago anual",
     },
+    ger: {
+      title: "Pläne und Preise",
+      free: "Kostenlos",
+      free_desc:
+        "Unser kostenloser Plan bietet dir Zugang zu den Grundfunktionen ohne Kosten, zusammen mit regelmäßigen Updates und ohne Werbung!",
+      free_feature_1: "1 Turnier pro Monat für maximal 16 Teams erstellen",
+      free_feature_2: "2 Trainings pro Woche erstellen",
+      free_feature_3: "Mit anderen Spielern chatten",
+      free_feature_4: "Veranstaltung ohne Limits: 84€/Veranstaltung",
+      free_price: "0€",
+      pro: "Pro",
+      pro_desc:
+        "Mit unserem Pro-Plan genießt du die Freiheit, Turniere mit unbegrenzten Teams zu erstellen und bis zu 6 Trainer für deinen Verein hinzuzufügen.",
+      pro_feature_1: "Unbegrenzte Turniere",
+      pro_feature_2: "Unbegrenzte Trainings",
+      pro_feature_3: "Unbegrenzte Felder",
+      pro_feature_4: "Bis zu 3 Admins",
+      pro_feature_5: "Unbegrenzte Teilnehmer",
+      pro_price_1: "49.50€",
+      pro_price_2: "/Monat",
+      premium: "Premium",
+      premium_desc:
+        "Mit unserem Premium-Plan genießt du eine unbegrenzte Anzahl von Turnieren und Trainern und kannst von Lizenzen verwalten und das Seeding nach Verbandspunkten automatisiert erstellen.",
+      premium_feature_1: "Alle Pro-Funktionen",
+      premium_feature_2: "Lizenzverwaltung",
+      premium_feature_3: "Private Veranstaltungen",
+      premium_feature_4: "Bis zu 10 Admins",
+      premium_price_1: "189€",
+      premium_price_2: "/Monat",
+      get_started: "Lade die App herunter!",
+      not_sure: "Nicht sicher?",
+      contact_us: "Kontaktiere uns für eine maßgeschneiderte Lösung.",
+      custom_plan: "Ich möchte eine maßgeschneiderte Lösung",
+      yearly_payment: "Jährliche Zahlung",
+    },
   };
 
   return (
@@ -82,7 +117,7 @@ const Planes = ({ language }) => {
           {translations[language].title}
         </h2>
         <div className="flex flex-col items-center lg:flex-row lg:items-center justify-between mb-20">
-          <div className="flex flex-col w-[340px] xl:w-[340px] lg:w-[300px] h-[800px] justify-between px-8 py-10 border-2 border-beachliga_lightgrey rounded-3xl bg-white mb-12 lg:mb-0">
+          <div className="flex flex-col w-[340px] xl:w-[340px] lg:w-[300px] h-[900px] justify-between px-8 py-10 border-2 border-beachliga_lightgrey rounded-3xl bg-white mb-12 lg:mb-0">
             <div>
               <h4 className="mb-2 italic text-sm text-center h-[40px]"></h4>
               <h3 className="text-4xl font-[gotham-bold] mb-6">
@@ -138,7 +173,7 @@ const Planes = ({ language }) => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-[340px] xl:w-[340px] lg:w-[300px] h-[800px] justify-between px-8 py-10 border-2 border-beachliga_blue_border rounded-3xl bg-beachliga_lightblue text-beachliga_blue  mb-12 lg:mb-0">
+          <div className="flex flex-col w-[340px] xl:w-[340px] lg:w-[300px] h-[900px] justify-between px-8 py-10 border-2 border-beachliga_blue_border rounded-3xl bg-beachliga_lightblue text-beachliga_blue  mb-12 lg:mb-0">
             <div>
               <h4 className="mb-2 italic text-sm text-center h-[40px]">
                 {translations[language].yearly_payment}
@@ -209,7 +244,7 @@ const Planes = ({ language }) => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-[340px] xl:w-[340px] lg:w-[300px] h-[800px] justify-between px-8 py-10 rounded-3xl bg-beachliga_blue text-white">
+          <div className="flex flex-col w-[340px] xl:w-[340px] lg:w-[300px] h-[900px] justify-between px-8 py-10 rounded-3xl bg-beachliga_blue text-white">
             <div>
               <h4 className="mb-2 italic text-sm text-center h-[40px]">
                 {translations[language].yearly_payment}

@@ -6,6 +6,7 @@ const Descarga = ({ language }) => {
       download: "Download our App!",
     },
     es: { download: "¡Descarga nuestra App!" },
+    ger: { download: "Lade unsere App herunter!" },
   };
   return (
     <div className="bg-beachliga_blue overflow-hidden">

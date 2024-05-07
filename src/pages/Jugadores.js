@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Jugadores = ({ language, setLanguage }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const translations = {
     en: {
       title: "Players",
@@ -27,7 +30,7 @@ const Jugadores = ({ language, setLanguage }) => {
       number_1: "+25.000",
       circle_1: "players",
       number_2: "+100.000",
-      circle_2: "partidos",
+      circle_2: "matches",
       quote:
         "I've registered for dozens of tournaments using Beachliga. The process is efficient and super easy. With Beachliga, I can sign up for tournaments quickly and effortlessly, without any complications or delays. The app's intuitive interface guides me step by step, from selecting the tournament to paying the registration fee, allowing me to focus on preparing for the competition. Additionally, Beachliga offers a wide variety of tournaments in different locations and skill levels, providing me with the opportunity to participate in exciting and challenging events at all times. I can't recommend it enough for all beach volleyball enthusiasts looking to take their game to the next level!",
       author: "Julia, national player",
@@ -65,6 +68,36 @@ const Jugadores = ({ language, setLanguage }) => {
       download_2: "BeachLiga",
       download_3: "al movil.",
       download_4: "Es gratis.",
+    },
+    ger: {
+      title: "Spieler",
+      subtitle: "Finde Vereine und Veranstaltungen ",
+      subtitle_part2: "in deiner Nähe",
+      subsubtitle:
+        "Egal, ob du lernen möchtest zu spielen, eine Trainingsgruppe auf deinem Niveau finden möchtest oder an Turnieren teilnehmen möchtest, Beachliga ist die App, die du brauchst.",
+      part_1_title: "Finde Spieler in deiner Nähe",
+      part_1_desc:
+        "Suche die nächstgelegenen Vereine, melde dich zu Kursen an, vernetze dich mit anderen Spielern in deiner Region!",
+      part_2_title: "Melde dich zu Turnieren an",
+      part_2_desc:
+        "Wenn du Lust auf Turniere hast, kannst du dich mit Beachliga sicher und einfach für diese anmelden.",
+      part_3_title: "Finde deinen perfekten Partner",
+      part_3_desc:
+        "Nimm Kontakt mit Spielern in deiner Region auf und finde deinen Partner auf deinem Niveau für das nächste Treffen oder das nächste Turnier.",
+      part_4_title: "Erkunde die Beachliga-Community",
+      part_4_desc:
+        "Mit Beachliga trittst du nicht nur einer Sport-App bei, sondern wirst Teil der größten Beachvolleyball Community Europas, Trainern und Vereinen, die alle für Beachvolleyball brennen. ",
+      number_1: "+25.000",
+      circle_1: "Spieler",
+      number_2: "+100.000",
+      circle_2: "Spiele",
+      quote:
+        "Ich habe mich für Dutzende von Turnieren über Beachliga registriert. Der Prozess ist super einfach. Mit Beachliga kann ich mich in Sekunden unkompliziert für Turniere anmelden. Die intuitive Benutzeroberfläche der App führt mich Schritt für Schritt durch die Auswahl des Turniers bis hin zur Zahlung der Anmeldegebühr. Darüber hinaus bietet Beachliga eine Vielzahl von Turnieren an verschiedenen Standorten und Nievaustufen. Ich kann es allen Beachvolleyball-Liebhabern nur wärmstens empfehlen, die ihr Spiel auf das nächste Level bringen möchten!",
+      author: "Julia, nationale Spielerin",
+      download_1: "Lade",
+      download_2: "BeachLiga",
+      download_3: "auf dein Handy herunter.",
+      download_4: "Es ist kostenlos.",
     },
   };
 
@@ -161,7 +194,7 @@ const Jugadores = ({ language, setLanguage }) => {
         <div className="lg:w-1/2 mb-12 lg:mb-0">
           <div className="relative flex justify-around">
             <img
-              src="./assets/sammy.jpg"
+              src="./assets/sammy.png"
               className="hidden md:block rounded-xl shadow-2xl w-1/2 lg:w-full"
             />
             <img

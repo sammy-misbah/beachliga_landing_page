@@ -89,27 +89,41 @@ const Navbar = ({ language, setLanguage }) => {
       news: "Noticias",
       contact: "Contacto",
     },
+    ger: {
+      home: "Home",
+      who: "Für wen?",
+      trainers: "Trainer",
+      clubs: "Vereine",
+      players: "Spieler",
+      federations: "Verbände",
+      features: "Funktionen",
+      plans: "Pläne & Preise",
+      news: "Neuigkeiten",
+      contact: "Kontakt",
+    },
   };
 
   return (
     <nav className="flex bg-beachliga_blue h-[65px] text-white relative z-20">
       <div className="flex w-[80%] max-w-[1200px] mx-auto items-center justify-between px-6">
-        <a href="/">
+        <Link to="/">
           <img
             src="./assets/vector_logo.png"
             className="h-[45px]"
             alt="vector-logo"
           />
-        </a>
+        </Link>
         <div className="hidden md:flex space-x-8 lg:space-x-12 font-body text-sm">
-          <a href="/">{translations[language].home}</a>
+          <Link to="/">{translations[language].home}</Link>
           <div
             onClick={toggleDropdown}
             className="cursor-pointer"
             ref={dropdownRef}
           >
-            <div className="flex items-center relative w-[100px]">
-              <div className="mr-3">{translations[language].who}</div>
+            <div className="flex items-center justify-center relative">
+              <div className="mr-3 whitespace-nowrap">
+                {translations[language].who}
+              </div>
               <FontAwesomeIcon
                 className="pt-1"
                 icon={dropdownIsOpen ? faChevronUp : faChevronDown}
@@ -119,30 +133,30 @@ const Navbar = ({ language, setLanguage }) => {
                 className=" hidden shadow-2xl absolute top-[42px] bg-white w-[150%] left-[-25%] flex flex-col items-center justify-center z-20"
                 id="dropdown_menu"
               >
-                <a
-                  href="/entrenadores"
+                <Link
+                  to="/entrenadores"
                   className="hover:bg-white w-full py-3 hover:text-black bg-beachliga_blue text-center"
                 >
                   {translations[language].trainers}
-                </a>
-                <a
-                  href="/clubes"
+                </Link>
+                <Link
+                  to="/clubes"
                   className="hover:bg-white w-full py-3 hover:text-black bg-beachliga_blue text-center"
                 >
                   {translations[language].clubs}
-                </a>
-                <a
-                  href="/jugadores"
+                </Link>
+                <Link
+                  to="/jugadores"
                   className="hover:bg-white w-full py-3 hover:text-black bg-beachliga_blue text-center"
                 >
                   {translations[language].players}
-                </a>
-                <a
-                  href="/federaciones"
+                </Link>
+                <Link
+                  to="/federaciones"
                   className="hover:bg-white w-full py-3 hover:text-black bg-beachliga_blue text-center"
                 >
                   {translations[language].federations}
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -208,7 +222,10 @@ const Navbar = ({ language, setLanguage }) => {
           <img src="./assets/greatbritain_flag.svg" className="w-[30px] mr-3" />
         </div>
         <div className="cursor-pointer" onClick={() => setLanguage("es")}>
-          <img src="./assets/spain_flag.png" className="w-[30px]" />
+          <img src="./assets/spain_flag.png" className="w-[30px] mr-3" />
+        </div>
+        <div className="cursor-pointer" onClick={() => setLanguage("ger")}>
+          <img src="./assets/germany_flag.png" className="w-[30px]" />
         </div>
       </div>
     </nav>

@@ -41,6 +41,19 @@ const Home = ({ language }) => {
         "Puedo crear un torneo en menos de 1 minuto y ver fácilmente quién se ha inscrito",
       testimony_2: "Una app genial para encontrar con quién entrenar",
     },
+    ger: {
+      title_1: "Entdecke eine",
+      title_2: "neue Art,",
+      title_3: "Sport zu",
+      title_4: "treiben",
+      subtitle_1: "Erstelle und verwalte deine Turniere",
+      subtitle_2: "und Veranstaltungen über eine einzige App",
+      subtitle_3: "einfach und unkompliziert.",
+      download: "Lade unsere App herunter!",
+      testimony_1:
+        "Ich kann in weniger als 1 Minute ein Turnier erstellen und leicht sehen, wer sich angemeldet hat",
+      testimony_2: "Eine großartige App, um Trainingspartner zu finden",
+    },
   };
   return (
     <div className="bg-beachliga_grey">

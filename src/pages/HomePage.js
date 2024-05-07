@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Clientes from "../components/Clientes";
 import Footer from "../components/Footer";
 import Contacto from "../components/Contacto";
@@ -15,6 +15,9 @@ import Video from "../components/Video";
 import Navbar from "../components/Navbar";
 
 const HomePage = ({ language, setLanguage }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Navbar language={language} setLanguage={setLanguage} />

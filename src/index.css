@@ -145,11 +145,9 @@ button {
   }
 }
 
-.perfil-anim-container:hover {
-  .perfil-anim-layer {
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-  }
+.perfil-anim-container:hover .perfil-anim-layer {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
 }
 
 .bg-sand {

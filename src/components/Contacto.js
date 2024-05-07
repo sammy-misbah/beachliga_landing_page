@@ -30,6 +30,17 @@ const Contacto = ({ language }) => {
       success_message:
         "Su mensaje se ha enviado correctamente. Nos pondremos en contacto con usted pronto.",
     },
+    ger: {
+      title: "Kontakt",
+      first_name: "Vorname",
+      last_name: "Nachname",
+      email: "E-Mail",
+      message: "Schreibe uns eine Nachricht",
+      send: "Senden",
+      error: "Bitte fülle alle Felder aus.",
+      success_message:
+        "Deine Nachricht wurde erfolgreich gesendet. Wir werden uns bald bei dir melden.",
+    },
   };
 
   const [firstName, setFirstName] = useState("");

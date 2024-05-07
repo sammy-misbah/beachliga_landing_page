@@ -12,8 +12,8 @@ import Descarga from "./pages/Descarga";
 function App() {
   const [language, setLanguage] = useState("en");
 
-  const handleLanguageChange = (language) => {
-    setLanguage(language);
+  const handleLanguageChange = (newLanguage) => {
+    setLanguage(newLanguage);
   };
 
   return (

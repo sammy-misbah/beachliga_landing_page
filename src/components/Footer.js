@@ -8,14 +8,21 @@ const Footer = ({ language, setLanguage }) => {
       contact: "Contact us",
       investors: "Investors",
       news: "News",
-      beach_liga: "Beach Liga",
+      beach_liga: "BeachLiga",
     },
     es: {
       terms: "Términos y Condiciones",
       contact: "Contacta con nosotros",
       investors: "Inversores",
       news: "Noticias",
-      beach_liga: "Beach Liga",
+      beach_liga: "BeachLiga",
+    },
+    ger: {
+      terms: "Nutzungsbedingungen",
+      contact: "Kontaktiere uns",
+      investors: "Investoren",
+      news: "Nachrichten",
+      beach_liga: "BeachLiga",
     },
   };
 

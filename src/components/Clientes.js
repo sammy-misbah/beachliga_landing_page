@@ -20,6 +20,15 @@ const Clientes = ({ language }) => {
       tournaments: "torneos",
       users: "usuarios",
     },
+    ger: {
+      title_1: "Unsere",
+      title_2: "Erfahrung",
+      title_3: "ist dein Vertrauen",
+      subtitle_1: "Über drei Jahre lang haben wir organisiert und verwaltet",
+      subtitle_2: "Turniere in ganz Spanien.",
+      tournaments: "Turniere",
+      users: "Benutzer",
+    },
   };
 
   return (
