@@ -21,11 +21,12 @@ const Clientes = ({ language }) => {
       users: "usuarios",
     },
     ger: {
-      title_1: "Unsere",
-      title_2: "Erfahrung",
-      title_3: "ist dein Vertrauen",
-      subtitle_1: "Über drei Jahre lang haben wir organisiert und verwaltet",
-      subtitle_2: "Turniere in ganz Spanien.",
+      title_1: "Nutze",
+      title_2: "unsere Erfahrung",
+      title_3: "zu deinem Vorteil",
+      subtitle_1:
+        "Seit mehr als 3 Jahren unterstützen wir mit unserer Software",
+      subtitle_2: "die Turnierorganisatio in ganz Europa.",
       tournaments: "Turniere",
       users: "Benutzer",
     },
@@ -45,7 +46,7 @@ const Clientes = ({ language }) => {
             <br /> {translations[language].subtitle_2}
           </div>
         </div>
-        <div className="flex space-x-12">
+        <div className="flex space-x-6 md:space-x-12">
           <div className="flex justify-center items-center">
             <div className="flex flex-col justify-center items-center text-2xl md:text-5xl text-white border-4 rounded-full w-40 h-40 md:w-60 md:h-60">
               +1.500

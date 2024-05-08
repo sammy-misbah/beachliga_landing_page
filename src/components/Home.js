@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const Home = ({ language }) => {
+const Home = ({ language, isAndroid, isIOS }) => {
   useEffect(() => {
     const anchor = window.location.hash.slice(1);
     if (anchor) {
@@ -11,7 +11,7 @@ const Home = ({ language }) => {
     } else {
       window.scrollTo(0, 0);
     }
-  }, []);
+  }, [isAndroid]);
 
   const translations = {
     en: {
@@ -47,7 +47,7 @@ const Home = ({ language }) => {
       title_3: "Sport zu",
       title_4: "treiben",
       subtitle_1: "Erstelle und verwalte deine Turniere",
-      subtitle_2: "und Veranstaltungen über eine einzige App",
+      subtitle_2: "und Events über eine einzige App",
       subtitle_3: "einfach und unkompliziert.",
       download: "Lade unsere App herunter!",
       testimony_1:
@@ -80,33 +80,64 @@ const Home = ({ language }) => {
                 className="w-[100px] xl:w-[135px] mb-6"
                 alt="qr-code"
               />
-              <h3 className=" text-xl xl:text-3xl text-white  mb-6 lg:mb-12">
+              <h3 className=" text-xl xl:text-3xl text-white  mb-6 lg:mb-6">
                 {translations[language].download}
               </h3>
             </div>
-            <div className="flex items-center space-x-8 mb-12 lg:mb-0">
-              <a
-                href="https://bit.ly/beachliga-google-play"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="./assets/google_play3.png"
-                  className="h-[40px] lg:h-[50px]"
-                />
-              </a>
-              <a
-                href="https://apple.co/4asnKF5"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="./assets/apple.png"
-                  className="h-[40px] lg:h-[50px]"
-                  alt="apple"
-                />
-              </a>
-            </div>
+            {isAndroid === true ? (
+              <div className="flex items-center space-x-8 mb-12 lg:mb-0">
+                <a
+                  href="https://bit.ly/beachliga-google-play"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="./assets/google_play3.png"
+                    className="h-[40px] lg:h-[50px]"
+                    alt="google_play"
+                  />
+                </a>
+              </div>
+            ) : isIOS ? (
+              <div className="flex items-center space-x-8 mb-12 lg:mb-0">
+                <a
+                  href="https://apple.co/4asnKF5"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="./assets/apple.png"
+                    className="h-[40px] lg:h-[50px]"
+                    alt="apple"
+                  />
+                </a>
+              </div>
+            ) : (
+              <div className="flex items-center space-x-8 mb-12 lg:mb-0">
+                <a
+                  href="https://bit.ly/beachliga-google-play"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="./assets/google_play3.png"
+                    className="h-[40px] lg:h-[50px]"
+                    alt="google_play"
+                  />
+                </a>
+                <a
+                  href="https://apple.co/4asnKF5"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="./assets/apple.png"
+                    className="h-[40px] lg:h-[50px]"
+                    alt="apple"
+                  />
+                </a>
+              </div>
+            )}
           </div>
         </div>
         <div className="flex relative mx-12 lg:mx-0">

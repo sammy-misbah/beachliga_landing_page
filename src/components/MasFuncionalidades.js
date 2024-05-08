@@ -23,11 +23,11 @@ const MasFuncionalidades = ({ language }) => {
     ger: {
       more_features: "Weitere Funktionen",
       payments: "Zahlungen über die App",
-      events: "Veranstaltungsorganisation",
-      communication: "Instant-Kommunikation",
+      events: "Event Organisation",
+      communication: "Instant-Chat",
       results: "Online-Ergebnisse",
       admin: "Spielerverwaltung",
-      register: "Automatisierung der Registrierung",
+      register: "Automatisierte Registrierung",
     },
   };
   return (
@@ -36,7 +36,7 @@ const MasFuncionalidades = ({ language }) => {
         {translations[language].more_features}
       </h2>
       <div className="flex flex-col items-center md:flex-row text-beachliga_text">
-        <div className="flex flex-row md:flex-col w-full md:w-1/3 items-center justify-between">
+        <div className="flex flex-row md:flex-col w-full md:w-1/3 items-baseline md:items-center justify-between">
           <div className="flex flex-col md:flex-row items-center mb-8  w-1/2 md:w-fit">
             <img
               src="./assets/credit_card.png"
@@ -58,7 +58,7 @@ const MasFuncionalidades = ({ language }) => {
             </h3>
           </div>
         </div>
-        <div className="flex flex-row md:flex-col w-full md:w-1/3 items-center justify-between">
+        <div className="flex flex-row md:flex-col w-full md:w-1/3 items-baseline md:items-center justify-between">
           <div className="flex flex-col items-center md:flex-row mb-8 w-1/2 md:w-fit">
             <img
               src="./assets/volleyball.png"
@@ -80,7 +80,7 @@ const MasFuncionalidades = ({ language }) => {
             </h3>
           </div>
         </div>
-        <div className="flex flex-row md:flex-col w-full md:w-1/3 items-center justify-between">
+        <div className="flex flex-row md:flex-col w-full md:w-1/3 items-baseline md:items-center justify-between">
           <div className="flex flex-col items-center md:flex-row mb-8  w-1/2 md:w-fit">
             <img
               src="./assets/chat_icon.png"

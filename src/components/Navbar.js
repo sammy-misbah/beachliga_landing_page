@@ -161,9 +161,13 @@ const Navbar = ({ language, setLanguage }) => {
             </div>
           </div>
           <Link to="/#funcionalidades">{translations[language].features}</Link>
-          <Link to="/#precios">{translations[language].plans}</Link>
+          <Link to="/#precios" className="whitespace-nowrap">
+            {translations[language].plans}
+          </Link>
           <Link to="/#noticias">{translations[language].news}</Link>
-          <Link to="/#contact">{translations[language].contact}</Link>
+          <Link to="/#contact" className="whitespace-nowrap">
+            {translations[language].contact}
+          </Link>
         </div>
         <div className="md:hidden" ref={mobileMenuRef}>
           <div
@@ -219,13 +223,25 @@ const Navbar = ({ language, setLanguage }) => {
       </div>
       <div className="flex items-center pr-12 pb-2">
         <div className="cursor-pointer" onClick={() => setLanguage("en")}>
-          <img src="./assets/greatbritain_flag.svg" className="w-[30px] mr-3" />
+          <img
+            src="./assets/greatbritain_flag.svg"
+            className="min-w-[30px] w-[30px] h-[20px] mr-3"
+            alt="gb_flag"
+          />
         </div>
         <div className="cursor-pointer" onClick={() => setLanguage("es")}>
-          <img src="./assets/spain_flag.png" className="w-[30px] mr-3" />
+          <img
+            src="./assets/spain_flag.png"
+            className="min-w-[30px] w-[30px] h-[20px] mr-3"
+            alt="spain_flag"
+          />
         </div>
         <div className="cursor-pointer" onClick={() => setLanguage("ger")}>
-          <img src="./assets/germany_flag.png" className="w-[30px]" />
+          <img
+            src="./assets/germany_flag.png"
+            className="min-w-[30px] w-[30px] h-[20px]"
+            alt="germany_flag"
+          />
         </div>
       </div>
     </nav>

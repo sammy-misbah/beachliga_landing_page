@@ -83,12 +83,6 @@ button {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
-.app-transform {
-  /* position: relative;
-  outline: 50px solid #b765dd;
-  outline-offset: 0px; */
-}
-
 .app-transform:before {
   content: " ";
   position: absolute;
@@ -128,7 +122,6 @@ button {
   right: -100px;
   border-radius: 100%;
   background-color: #5e4bdb;
-  /* background-image: linear-gradient(180deg, #4d3eaf, #7c4ed8); */
   width: 600px;
   height: 600px;
   z-index: 0;
@@ -152,7 +145,8 @@ button {
 
 .bg-sand {
   background-image: url("/public/assets/palmtree_2.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: 0% 50%;
 }
 
 .icon-yellow {

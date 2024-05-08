@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Instagram = ({ language }) => {
   const translations = {
@@ -32,18 +31,18 @@ const Instagram = ({ language }) => {
       title: "NEUESTE BEITRÄGE",
       subtitle: "Das Neueste auf Instagram",
       post_1:
-        "Mehr als zwei Jahre Zusammenarbeit! Der Valencianische Volleyballverband ist unser Partner. Auf ihrer Website findest du Turniere, Veranstaltungen: fvbcv.com und in ihren sozialen Medien @federacionvoleibol_cvalenciana",
+        "Mehr als zwei Jahre Zusammenarbeit! Der valenzianische Volleyball Verband ist unser Partner. Auf ihrer Website findest du Turniere, Veranstaltungen: fvbcv.com und in ihren sozialen Medien @federacionvoleibol_cvalenciana",
       post_2:
-        "Letzte Chance, um sich für die Turniere dieses Wochenendes des Valencianischen Volleyballverbands in Gandia anzumelden! Jetzt teilzunehmen!",
+        "Letzte Chance, um sich für die Turniere dieses Wochenendes des valenzianischen Volleyball Verbands in Gandia anzumelden! Jetzt teilzunehmen!",
       post_3:
-        "Wir sind bei Lanzadera und haben bald großartige Neuigkeiten! Wir sind super happy! Wenn du weitere Infos über unser Projekt möchtest, kontaktiere uns.",
+        "Wir sind bei Lanzadera und haben bald großartige News! Wir sind super happy! Wenn du weitere Infos über unser Projekt möchtest, kontaktiere uns.",
       read_more: "Weiterlesen",
       follow_us: "Folge uns!",
     },
   };
 
   return (
-    <div className="bg-beachliga_grey z-10" id="noticias">
+    <div className="bg-beachliga_grey z-10 font-[gotham-body]" id="noticias">
       <div className="max-w-[1440px] mx-auto py-24 px-12">
         <h3 className="text-beachliga_yellow text-3xl mb-2">
           {translations[language].title}
@@ -56,9 +55,10 @@ const Instagram = ({ language }) => {
             <div>
               <img
                 src="./assets/insta1.png"
-                className="h-[280px] w-full rounded-t-xl"
+                className=" w-full rounded-t-xl"
+                alt="insta1"
               />
-              <p className="text-ellipsis overflow-hidden px-6 py-6 max-h-[200px] text-lg">
+              <p className="text-ellipsis overflow-hidden px-6 py-6 text-lg">
                 {translations[language].post_1}
               </p>
             </div>
@@ -68,7 +68,7 @@ const Instagram = ({ language }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="w-[275px] bg-beachliga_yellow py-3 px-4 rounded-full text-white font-[400] flex justify-center items-center">
+                <div className="w-[275px] bg-beachliga_yellow py-3 px-4 rounded-full text-white flex justify-center items-center">
                   {translations[language].read_more}
                 </div>
               </a>
@@ -78,9 +78,10 @@ const Instagram = ({ language }) => {
             <div>
               <img
                 src="./assets/insta2.png"
-                className="h-[280px] w-full rounded-t-xl"
+                className=" w-full rounded-t-xl"
+                alt="insta2"
               />
-              <p className="text-ellipsis overflow-hidden px-6 py-6 max-h-[200px] text-lg ">
+              <p className="text-ellipsis overflow-hidden px-6 py-6 text-lg ">
                 {translations[language].post_2}
               </p>
             </div>
@@ -90,7 +91,7 @@ const Instagram = ({ language }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="w-[275px] bg-beachliga_yellow py-3 px-4 rounded-full text-white font-[400] flex justify-center items-center">
+                <div className="w-[275px] bg-beachliga_yellow py-3 px-4 rounded-full text-white flex justify-center items-center">
                   {translations[language].read_more}
                 </div>
               </a>
@@ -100,9 +101,10 @@ const Instagram = ({ language }) => {
             <div>
               <img
                 src="./assets/insta3.png"
-                className="h-[280px] w-full rounded-t-xl"
+                className=" w-full rounded-t-xl"
+                alt="insta3"
               />
-              <p className="text-ellipsis overflow-hidden px-6 py-6 max-h-[200px] text-lg">
+              <p className="text-ellipsis overflow-hidden px-6 py-6 text-lg">
                 {translations[language].post_3}
               </p>
             </div>
@@ -112,7 +114,7 @@ const Instagram = ({ language }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="w-[275px] bg-beachliga_yellow py-3 px-4 rounded-full text-white font-[400] flex justify-center items-center">
+                <div className="w-[275px] bg-beachliga_yellow py-3 px-4 rounded-full text-white flex justify-center items-center">
                   {translations[language].read_more}
                 </div>
               </a>
@@ -125,7 +127,7 @@ const Instagram = ({ language }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src="./assets/insta_logo.png" className="mb-2" />
+            <img src="./assets/insta_logo.png" className="mb-2" alt="insta" />
           </a>
           <h3 className="text-white text-3xl">
             {translations[language].follow_us}

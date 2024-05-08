@@ -30,7 +30,7 @@ const Servicios = ({ language }) => {
         "Von kleinen lokalen Treffen bis hin zu großen Meisterschaften ermöglicht unsere App die Planung und Verwaltung jedes Details deiner Veranstaltung.",
       payments: "Zahlungsabwicklung",
       payments_desc:
-        "Vergiss die Kopfschmerzen. Mit unserem Zahlungsabwicklungstool ist die Anmeldung zu Turnieren und Zahlungsabwicklung schnell, sicher und stressfrei.",
+        "Keine Kopfschmerzen mehr: Mit unserem automatischen Zahlungsabwicklungstool ist die Anmeldung zu Turnieren und Zahlungsabwicklung schnell, sicher und stressfrei.",
       chat: "Chat-Funktion",
       chat_desc:
         "Nutze die Chat-Funktion und koordiniere dich direkt mit deinem Team oder dem Veranstalter über unseren integrierten Chat.",
