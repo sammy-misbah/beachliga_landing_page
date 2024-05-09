@@ -337,9 +337,11 @@ const Planes = ({ language }) => {
                 </span>
                 <br /> {translations[language].contact_us}
               </h3>
-              <div className="bg-beachliga_yellow w-[200px] md:w-[350px] text-white py-3 px-4 rounded-full font-[400] text-lg flex justify-center items-center text-center">
-                <Link to="/download">{translations[language].custom_plan}</Link>
-              </div>
+              <Link to="/download">
+                <div className="bg-beachliga_yellow w-[200px] md:w-[350px] text-white py-3 px-4 rounded-full font-[400] text-lg flex justify-center items-center text-center">
+                  {translations[language].custom_plan}
+                </div>
+              </Link>
             </div>
           </div>
         ) : (
@@ -359,9 +361,11 @@ const Planes = ({ language }) => {
                 </h3>
               </div>
             </div>
-            <div className="bg-beachliga_yellow w-full text-white py-3 px-4 rounded-full font-[400] text-lg flex justify-center items-center text-center">
-              <Link to="/download">{translations[language].custom_plan}</Link>
-            </div>
+            <Link to="/download">
+              <div className="bg-beachliga_yellow w-full text-white py-3 px-4 rounded-full font-[400] text-lg flex justify-center items-center text-center">
+                {translations[language].custom_plan}
+              </div>
+            </Link>
           </div>
         )}
       </div>
