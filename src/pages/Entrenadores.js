@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Entrenadores = ({ language, setLanguage, isAndroid, isIOS }) => {
-  console.log(language);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const translations = {
     en: {
       title: "Coaches",

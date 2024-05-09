@@ -3,18 +3,18 @@ import React from "react";
 const Clientes = ({ language }) => {
   const translations = {
     en: {
-      title_1: "Our track",
-      title_2: "record is",
-      title_3: "your trust",
+      title_1: "Make our",
+      title_2: "experience",
+      title_3: "your ally",
       subtitle_1: "Over three years organizing and managing",
       subtitle_2: "competitions throughout Spain.",
       tournaments: "tournaments",
       users: "users",
     },
     es: {
-      title_1: "Nuestra",
-      title_2: "trayectoria",
-      title_3: "es tu confianza",
+      title_1: "Haz de nuestra",
+      title_2: "experiencia",
+      title_3: "tu aliada",
       subtitle_1: "Más de tres años organizando y gestionando",
       subtitle_2: "competiciones por toda España.",
       tournaments: "torneos",
