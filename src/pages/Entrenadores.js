@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Entrenadores = ({ language, setLanguage }) => {
-  console.log(language);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const translations = {
     en: {
       title: "Coaches",
@@ -109,7 +111,7 @@ const Entrenadores = ({ language, setLanguage }) => {
               {translations[language].title}
             </span>
           </h3>
-          <h2 className="text-center text-5xl lg:text-6xl mx-auto font-[500] mb-16 pb-20 lg:pb-28 w-2/3 font-[gotham-bold]">
+          <h2 className="text-center text-5xl lg:text-6xl mx-auto font-[500] mb-16 pb-20 lg:pb-28 w-2/3 font-[gotham-bold] flex flex-col items-center">
             <span className="text-beachliga_yellow">
               {translations[language].subtitle}
             </span>

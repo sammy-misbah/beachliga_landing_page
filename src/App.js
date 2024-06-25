@@ -3,6 +3,7 @@ import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Terms from "./pages/Terms";
 import Whatsapp from "./utils/Whatsapp";
+import CrispChat from "./utils/CrispChat";
 import Jugadores from "./pages/Jugadores";
 import Clubes from "./pages/Clubes";
 import Federaciones from "./pages/Federaciones";
@@ -69,7 +70,8 @@ function App() {
         />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-      <Whatsapp />
+      {/* <Whatsapp /> */}
+      <CrispChat />
     </div>
   );
 }

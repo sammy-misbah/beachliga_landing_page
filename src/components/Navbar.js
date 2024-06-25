@@ -219,13 +219,19 @@ const Navbar = ({ language, setLanguage }) => {
       </div>
       <div className="flex items-center pr-12 pb-2">
         <div className="cursor-pointer" onClick={() => setLanguage("en")}>
-          <img src="./assets/greatbritain_flag.svg" className="w-[30px] mr-3" />
+          <img
+            src="./assets/greatbritain_flag.svg"
+            className="w-[30px] h-[20px] mr-3"
+          />
         </div>
         <div className="cursor-pointer" onClick={() => setLanguage("es")}>
-          <img src="./assets/spain_flag.png" className="w-[30px] mr-3" />
+          <img
+            src="./assets/spain_flag.png"
+            className="w-[30px] h-[20px] mr-3"
+          />
         </div>
         <div className="cursor-pointer" onClick={() => setLanguage("ger")}>
-          <img src="./assets/germany_flag.png" className="w-[30px]" />
+          <img src="./assets/germany_flag.png" className="w-[30px] h-[20px]" />
         </div>
       </div>
     </nav>
