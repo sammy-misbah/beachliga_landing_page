@@ -22,7 +22,7 @@ const Perfiles = ({ language }) => {
       federations: "Federaciones",
     },
     ger: {
-      profile: "Welches Profil hast du?",
+      profile: "Welches Profil bist du?",
       profile_desc:
         "Wähle den Plan aus, der am besten zu deinem Profil und deinen Bedürfnissen passt.",
       trainers: "Trainer",
@@ -43,7 +43,7 @@ const Perfiles = ({ language }) => {
         </h3>
         <div className="flex flex-col lg:flex-row justify-around xl:justify-between mb-6 md:mb-12">
           <Link to="/entrenadores" className="mb-6 md:mb-12 lg:mb-0">
-            <div className=" mb-6 flex relative mb-12 md:mb-0 lg:w-[450px] lg:h-[280px] xl:w-[530px] xl:h-[300px] perfil-anim-container overflow-hidden shadow-2xl rounded-2xl">
+            <div className=" mb-6 flex relative mb-12 md:mb-0 lg:w-[450px] lg:h-[297px] xl:w-[530px] xl:h-[350px] perfil-anim-container overflow-hidden shadow-2xl rounded-2xl">
               <img
                 src="./assets/luca_mari.jpg"
                 className="w-full h-full  opacity-100"
@@ -57,7 +57,7 @@ const Perfiles = ({ language }) => {
             </div>
           </Link>
           <Link to="/clubes">
-            <div className="mb-6 flex relative mb-12 md:mb-0 lg:w-[450px] lg:h-[280px] xl:w-[530px] xl:h-[300px] perfil-anim-container overflow-hidden shadow-2xl rounded-2xl">
+            <div className="mb-6 flex relative mb-12 md:mb-0 lg:w-[450px] lg:h-[297px] xl:w-[530px] xl:h-[350px] perfil-anim-container overflow-hidden shadow-2xl rounded-2xl">
               <img
                 src="./assets/balls_resize.jpg"
                 className=" w-full h-full  opacity-100"
@@ -73,7 +73,7 @@ const Perfiles = ({ language }) => {
         </div>
         <div className="flex flex-col lg:flex-row justify-around xl:justify-between">
           <Link to="/jugadores" className="mb-6 md:mb-12 lg:mb-0">
-            <div className=" mb-6 flex relative mb-12 md:mb-0 lg:w-[450px] lg:h-[280px] xl:w-[530px] xl:h-[300px] perfil-anim-container overflow-hidden shadow-2xl rounded-2xl">
+            <div className=" mb-6 flex relative mb-12 md:mb-0 lg:w-[450px] lg:h-[297px] xl:w-[530px] xl:h-[350px] perfil-anim-container overflow-hidden shadow-2xl rounded-2xl">
               <img
                 src="./assets/anina_gabri.jpg"
                 className=" w-full h-full  opacity-100"
@@ -87,7 +87,7 @@ const Perfiles = ({ language }) => {
             </div>
           </Link>
           <Link to="/federaciones">
-            <div className=" mb-6 flex relative mb-12 md:mb-0 lg:w-[450px] lg:h-[280px] xl:w-[530px] xl:h-[300px]  perfil-anim-container overflow-hidden shadow-2xl rounded-2xl">
+            <div className=" mb-6 flex relative mb-12 md:mb-0 lg:w-[450px] lg:h-[297px] xl:w-[530px] xl:h-[350px]  perfil-anim-container overflow-hidden shadow-2xl rounded-2xl">
               <img
                 src="./assets/federacion2.png"
                 className=" w-full h-full  opacity-100"

@@ -48,6 +48,7 @@ const Opiniones = ({ language }) => {
           <img
             src="./assets/dani.webp"
             className="absolute w-[150px] h-[150px] rounded-full top-[-60px] right-[-30px] border-beachliga_blue border-[3px]"
+            alt="dani"
           />
           <div>
             <h3 className="font-[400] text-lg ">Daniel Oberthür</h3>
@@ -55,11 +56,11 @@ const Opiniones = ({ language }) => {
           </div>
           <div>
             <div className="flex mb-2">
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
             </div>
             <p className="text-lg">{translations[language].opinion_1}</p>
           </div>
@@ -68,6 +69,7 @@ const Opiniones = ({ language }) => {
           <img
             src="./assets/finn.webp"
             className="absolute w-[150px] h-[150px] rounded-full top-[-60px] right-[-30px] border-beachliga_blue border-[3px]"
+            alt="finn"
           />
           <div>
             <h3 className="font-[400] text-lg ">Finn Pickert</h3>
@@ -75,19 +77,20 @@ const Opiniones = ({ language }) => {
           </div>
           <div>
             <div className="flex mb-2">
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
             </div>
             <p className="text-lg">{translations[language].opinion_2}</p>
           </div>
         </div>
         <div className="flex flex-col py-6 px-8 text-white w-[300px] md:w-[380px] lg:w-[500px] bg-beachliga_grey border-[3px] border-beachliga_blue rounded-[35px] relative">
           <img
-            src="./assets/blanca.webp"
+            src="./assets/blanca.jpg"
             className="absolute w-[150px] h-[150px] rounded-full top-[-60px] right-[-30px] border-beachliga_blue border-[3px]"
+            alt="blanca"
           />
           <div>
             <h3 className="font-[400] text-lg ">Blanca Seguí</h3>
@@ -95,11 +98,11 @@ const Opiniones = ({ language }) => {
           </div>
           <div>
             <div className="flex mb-2">
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
-              <img src="./assets/star.png" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
+              <img src="./assets/star.png" alt="star" />
             </div>
             <p className="text-lg">{translations[language].opinion_3}</p>
           </div>

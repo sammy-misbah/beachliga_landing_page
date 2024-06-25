@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
-const Clubes = ({ language, setLanguage }) => {
+const Clubes = ({ language, setLanguage, isAndroid, isIOS }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -115,7 +115,7 @@ const Clubes = ({ language, setLanguage }) => {
               {translations[language].title}
             </span>
           </h3>
-          <h2 className="text-center text-5xl lg:text-6xl mx-auto font-[500] mb-16 pb-20 lg:pb-28 w-2/3 font-[gotham-bold] flex flex-col items-center">
+          <h2 className="text-center text-5xl lg:text-6xl mx-auto font-[500] mb-16 pb-20 lg:pb-28 w-2/3 font-[gotham-bold]  flex flex-col items-center">
             <span className="">{translations[language].subtitle}</span>
             <span className="text-beachliga_yellow">
               {translations[language].subtitle_part2}
@@ -179,7 +179,7 @@ const Clubes = ({ language, setLanguage }) => {
             </div>
             <p className="text-md mb-4">{translations[language].part_4_desc}</p>
           </div>
-          <div className="flex justify-around  mb-20 lg:mb-0">
+          <div className="flex justify-center space-x-6 md:space-x-0 md:justify-around  mb-20 lg:mb-0">
             <div className="flex flex-col justify-center items-center ">
               <p className="font-[gotham-body] text-beachliga_blue flex flex-col text-2xl  w-[150px] h-[150px] border-[3px] border-beachliga_blue rounded-[100%] flex justify-center items-center text-center">
                 {translations[language].number_1}
@@ -213,16 +213,18 @@ const Clubes = ({ language, setLanguage }) => {
             <img
               src="./assets/qr_torneo.png"
               className="hidden md:block rounded-xl shadow-2xl w-1/2 lg:w-full"
+              alt="qr_pic"
             />
             <img
               src="./assets/app.png"
               className="rounded-xl lg:absolute lg:top-[-100px] right-[0px] w-[300px] shadow-2xl w-1/2"
+              alt="app_pic"
             />
           </div>
         </div>
       </div>
-      <div className="px-6 lg:px-12 bg-beachliga_grey">
-        <div className="relative flex max-w-[1200px] mx-auto py-6 flex-col justify-center items-center lg:flex-row lg:items-center  p-12  text-white rounded-[20px]">
+      <div className="px-6 lg:px-12 bg-beachliga_grey mx-auto">
+        <div className="relative flex max-w-[1200px] mx-auto py-6 flex-col justify-center items-center lg:flex-row lg:items-center text-white rounded-[20px]">
           <div>
             <div className="flex flex-col mt-[50px]">
               <div>
@@ -231,6 +233,7 @@ const Clubes = ({ language, setLanguage }) => {
                     <img
                       src="./assets/quotes_1.png"
                       className="w-[100px] h-[80px] mr-6 mb-4 lg:mb-0"
+                      alt="quote"
                     />
                     <p className="text-xl mb-6 lg:mb-0">
                       {translations[language].quote}
@@ -256,13 +259,15 @@ const Clubes = ({ language, setLanguage }) => {
         <div className="max-w-[1200px] mx-auto pb-12  px-6 lg:px-12 flex items-center">
           <div className="flex justify-between items-center">
             <div className="flex flex-col items-center">
-              <div className="flex space-x-6 items-center mb-12">
-                <img
-                  src="data:image/gif;base64,R0lGODdhfQB9AIAAAAAAAP///ywAAAAAfQB9AAAC/4SPqbvhnp58zMw4M628+w9eiLYx4kFq4Mq2poSR3GmltIvn1W3P8Gj76YbEWsmo2gmRwSIrCIUAj52bLxqLpq5a2VT6sSqx326Ga+Ytq2t0r5ymZuNU8Us+hs7pATd9vmLXoLX3l9cXstaVo+aF0naIFqhIiNOY9Ih3Bzao2ckJsGhJ6cg06RkKuYmYqTdat1V2CgqYCEvmcnkma0vLG0bq2ro7rFsLjCqooPtWHExs+uuhrHzM1Hz9bCzNlqz6yZpdmjqOTQ5azW3djV7pfIsZPTwbvvxtD19Pzxw736uvLlJAZPHONRkITtK/dfu09ZM37V46fxRbmBNVkR3AjP8KOf7jV+4eQziGMl6U6E5cGj9x1p30hkulGZYrub309a4gH2o78xXyeejmTpozbT40SBRkTScE620z+YypVItRjQL1ODUrvnZXISJFqDXsU69jv4Y967Iq1K5iey712jGi27l0oZmVixNc3b09R65qyDdwUawJPwo+HPOuRsCIGW+EG7TkEHOMjvrVK1kH5VcFL28dWmRzLstgf77VTHr0OM+mB09OTRa2QdEyHcdVnHY1Sd05H3/myTZ3593De9sWSFgx7dmyl7e+DZxrcZnR7RKFLhJsdYyQV/G57Xl7StyRWyIv/Le8sO6Yzad/j779evLeM4dHCfP0ROrj7+f/P9jUd8T5lpRa8lmnnmvMoVJgcAPut6B+sjUonW/caSSgcZwByF6ECNbnXm0bZhjfZ+BZVSGFdi1X3YlrpZigUC2eZyKNZbUmI3550ddhWeIlxqKOFgop3JAhKucQb/w5CN9vzRno4Y86ZZfchUXiKKRQ9KiIXT5BAkllj/2h6NSYvd1II5YM2niUUis+6SWRCw1YZI7/PZcmmyHFued0SCrJY40avsihh136CaGbdbYJZ4UznskooJWt2aSKJBqaFYSsPTgXnlNpWhqnbnkqFajJqdkXnZmGKShehS56p6qQUuoqmoQ+KuKsOx5XZZI7KirqroYxGRugwOpK4LAw/zb5paO+fkhVn4hF6qy0qJYJ5rQ+judmt88KBuuUfIo7n7ZvjntuteQWau622aqb7qtoYapauVBaOa9zMd77LatO6AviuuFC25ak+7LlLa1MAXygu/BKqaCpS/7KLbXYpnrqwRS/G++1Wo7YKLsWezwyyMZWbG2wIit8LZeyFivsrf0aTMTHGcuMLsOopXwzzPHi+2nJPf+5LtClCt3hwCSzbPKySZNpa7Tw+uf0Yi8HuuXVuGINNZSTTq2d13oKHNqzVF+cLM5Vf4121ESn7fPZWQ+dKKsOGxlz3HM2NbfelY4NN9d08xsr36EOrvDdLpZYd+KdHn7gpgGijPHTAT+j/W9mdEkeOeQYUg7a0KQKXivol0pMr+WlJ6aV4irzmuu8hA7ceNH+lo3wzHmnzrvsriMLe+/5Ev6w3RbfUAAAOw=="
-                  className="w-[100px] xl:w-[135px]"
-                  alt="qr-code"
-                />
-                <div className="text-xl lg:text-3xl text-black">
+              <div className="flex justify-between items-center mb-12 bg-beachliga_grey px-8 py-6  lg:w-max ">
+                <div className="w-1/2 flex justify-center">
+                  <img
+                    src="data:image/gif;base64,R0lGODdhfQB9AIAAAAAAAP///ywAAAAAfQB9AAAC/4SPqbvhnp58zMw4M628+w9eiLYx4kFq4Mq2poSR3GmltIvn1W3P8Gj76YbEWsmo2gmRwSIrCIUAj52bLxqLpq5a2VT6sSqx326Ga+Ytq2t0r5ymZuNU8Us+hs7pATd9vmLXoLX3l9cXstaVo+aF0naIFqhIiNOY9Ih3Bzao2ckJsGhJ6cg06RkKuYmYqTdat1V2CgqYCEvmcnkma0vLG0bq2ro7rFsLjCqooPtWHExs+uuhrHzM1Hz9bCzNlqz6yZpdmjqOTQ5azW3djV7pfIsZPTwbvvxtD19Pzxw736uvLlJAZPHONRkITtK/dfu09ZM37V46fxRbmBNVkR3AjP8KOf7jV+4eQziGMl6U6E5cGj9x1p30hkulGZYrub309a4gH2o78xXyeejmTpozbT40SBRkTScE620z+YypVItRjQL1ODUrvnZXISJFqDXsU69jv4Y967Iq1K5iey712jGi27l0oZmVixNc3b09R65qyDdwUawJPwo+HPOuRsCIGW+EG7TkEHOMjvrVK1kH5VcFL28dWmRzLstgf77VTHr0OM+mB09OTRa2QdEyHcdVnHY1Sd05H3/myTZ3593De9sWSFgx7dmyl7e+DZxrcZnR7RKFLhJsdYyQV/G57Xl7StyRWyIv/Le8sO6Yzad/j779evLeM4dHCfP0ROrj7+f/P9jUd8T5lpRa8lmnnmvMoVJgcAPut6B+sjUonW/caSSgcZwByF6ECNbnXm0bZhjfZ+BZVSGFdi1X3YlrpZigUC2eZyKNZbUmI3550ddhWeIlxqKOFgop3JAhKucQb/w5CN9vzRno4Y86ZZfchUXiKKRQ9KiIXT5BAkllj/2h6NSYvd1II5YM2niUUis+6SWRCw1YZI7/PZcmmyHFued0SCrJY40avsihh136CaGbdbYJZ4UznskooJWt2aSKJBqaFYSsPTgXnlNpWhqnbnkqFajJqdkXnZmGKShehS56p6qQUuoqmoQ+KuKsOx5XZZI7KirqroYxGRugwOpK4LAw/zb5paO+fkhVn4hF6qy0qJYJ5rQ+judmt88KBuuUfIo7n7ZvjntuteQWau622aqb7qtoYapauVBaOa9zMd77LatO6AviuuFC25ak+7LlLa1MAXygu/BKqaCpS/7KLbXYpnrqwRS/G++1Wo7YKLsWezwyyMZWbG2wIit8LZeyFivsrf0aTMTHGcuMLsOopXwzzPHi+2nJPf+5LtClCt3hwCSzbPKySZNpa7Tw+uf0Yi8HuuXVuGINNZSTTq2d13oKHNqzVF+cLM5Vf4121ESn7fPZWQ+dKKsOGxlz3HM2NbfelY4NN9d08xsr36EOrvDdLpZYd+KdHn7gpgGijPHTAT+j/W9mdEkeOeQYUg7a0KQKXivol0pMr+WlJ6aV4irzmuu8hA7ceNH+lo3wzHmnzrvsriMLe+/5Ev6w3RbfUAAAOw=="
+                    className="w-[100px] lg:w-[135px] mr-6"
+                    alt="qr-code"
+                  />
+                </div>
+                <div className="text-xl lg:text-3xl text-white w-1/2">
                   {translations[language].download_1}
                   <br />
                   <span className="">{translations[language].download_2}</span>
@@ -273,22 +278,60 @@ const Clubes = ({ language, setLanguage }) => {
                   </span>
                 </div>
               </div>
-              <div className="flex space-x-6 mb-12">
-                <a
-                  href="https://apple.co/4asnKF5"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src="./assets/apple.png" className="h-[60px]" />
-                </a>
-                <a
-                  href="https://bit.ly/beachliga-google-play"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src="./assets/google_play3.png" className="h-[60px]" />
-                </a>
-              </div>
+              {isAndroid ? (
+                <div className="flex space-x-6 mb-12">
+                  <a
+                    href="https://bit.ly/beachliga-google-play"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="./assets/google_play3.png"
+                      className="h-[50px]"
+                      alt="google_play"
+                    />
+                  </a>
+                </div>
+              ) : isIOS ? (
+                <div className="flex space-x-6 mb-12">
+                  <a
+                    href="https://apple.co/4asnKF5"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="./assets/apple.png"
+                      className="h-[50px]"
+                      alt="apple"
+                    />
+                  </a>
+                </div>
+              ) : (
+                <div className="flex space-x-6 mb-12">
+                  <a
+                    href="https://apple.co/4asnKF5"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="./assets/apple.png"
+                      className="h-[50px]"
+                      alt="apple"
+                    />
+                  </a>
+                  <a
+                    href="https://bit.ly/beachliga-google-play"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="./assets/google_play3.png"
+                      className="h-[50px]"
+                      alt="google_play"
+                    />
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </div>

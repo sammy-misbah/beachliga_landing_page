@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Planes = ({ language }) => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []); // e
   const translations = {
     en: {
       title: "Plans and prices",
@@ -77,7 +90,7 @@ const Planes = ({ language }) => {
       title: "Pläne und Preise",
       free: "Kostenlos",
       free_desc:
-        "Unser kostenloser Plan bietet dir Zugang zu den Grundfunktionen ohne Kosten, zusammen mit regelmäßigen Updates und ohne Werbung!",
+        "Unser kostenloser Plan bietet dir Zugang zu den Grundfunktionen ohne versteckte Kosten, zusammen mit regelmäßigen Updates und ohne Werbung!",
       free_feature_1: "1 Turnier pro Monat für maximal 16 Teams erstellen",
       free_feature_2: "2 Trainings pro Woche erstellen",
       free_feature_3: "Mit anderen Spielern chatten",
@@ -105,7 +118,7 @@ const Planes = ({ language }) => {
       get_started: "Lade die App herunter!",
       not_sure: "Nicht sicher?",
       contact_us: "Kontaktiere uns für eine maßgeschneiderte Lösung.",
-      custom_plan: "Ich möchte eine maßgeschneiderte Lösung",
+      custom_plan: "Anfrage stellen",
       yearly_payment: "Jährliche Zahlung",
     },
   };
@@ -119,7 +132,7 @@ const Planes = ({ language }) => {
         <div className="flex flex-col items-center lg:flex-row lg:items-center justify-between mb-20">
           <div className="flex flex-col w-[340px] xl:w-[340px] lg:w-[300px] h-[900px] justify-between px-8 py-10 border-2 border-beachliga_lightgrey rounded-3xl bg-white mb-12 lg:mb-0">
             <div>
-              <h4 className="mb-2 italic text-sm text-center h-[40px]"></h4>
+              <div className="mb-2 italic text-sm text-center h-[40px]"></div>
               <h3 className="text-4xl font-[gotham-bold] mb-6">
                 {translations[language].free}
               </h3>
@@ -310,24 +323,51 @@ const Planes = ({ language }) => {
             </div>
           </div>
         </div>
-        <div className="flex">
-          <img
-            src="./assets/question_mark.png"
-            className="mr-12 w-[80px] h-[90px]"
-            alt="question_mark"
-          />
-          <div className="flex flex-col">
-            <h3 className="text-beachliga_yellow text-2xl max-w-[600px] font-[400] mb-6">
-              <span className="text-3xl font-[400]">
-                {translations[language].not_sure}
-              </span>
-              <br /> {translations[language].contact_us}
-            </h3>
-            <div className="bg-beachliga_yellow w-[200px] md:w-[350px] text-white py-3 px-4 rounded-full font-[400] text-lg flex justify-center items-center text-center">
-              <Link to="/download">{translations[language].custom_plan}</Link>
+        {width > 768 ? (
+          <div className="flex">
+            <img
+              src="./assets/question_mark.png"
+              className="mr-12 w-[80px] h-[90px]"
+              alt="question_mark"
+            />
+            <div className="flex flex-col">
+              <h3 className="text-beachliga_yellow text-2xl max-w-[600px] font-[400] mb-6">
+                <span className="text-3xl font-[400]">
+                  {translations[language].not_sure}
+                </span>
+                <br /> {translations[language].contact_us}
+              </h3>
+              <Link to="/download">
+                <div className="bg-beachliga_yellow w-[200px] md:w-[350px] text-white py-3 px-4 rounded-full font-[400] text-lg flex justify-center items-center text-center">
+                  {translations[language].custom_plan}
+                </div>
+              </Link>
             </div>
           </div>
-        </div>
+        ) : (
+          <div className="flex flex-col">
+            <div className="flex">
+              <img
+                src="./assets/question_mark.png"
+                className="mr-12 w-[80px] h-[90px]"
+                alt="question_mark"
+              />
+              <div className="flex flex-col">
+                <h3 className="text-beachliga_yellow text-2xl max-w-[600px] font-[400] mb-6">
+                  <span className="text-3xl font-[400]">
+                    {translations[language].not_sure}
+                  </span>
+                  <br /> {translations[language].contact_us}
+                </h3>
+              </div>
+            </div>
+            <Link to="/download">
+              <div className="bg-beachliga_yellow w-full text-white py-3 px-4 rounded-full font-[400] text-lg flex justify-center items-center text-center">
+                {translations[language].custom_plan}
+              </div>
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

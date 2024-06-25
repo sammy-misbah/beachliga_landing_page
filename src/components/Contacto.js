@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -52,10 +51,10 @@ const Contacto = ({ language }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (
-      firstName.length == 0 ||
-      lastName.length == 0 ||
-      email.length == 0 ||
-      message.length == 0
+      firstName.length === 0 ||
+      lastName.length === 0 ||
+      email.length === 0 ||
+      message.length === 0
     ) {
       toast.error(translations[language].error);
       return;

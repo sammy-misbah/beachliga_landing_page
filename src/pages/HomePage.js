@@ -14,14 +14,19 @@ import Servicios from "../components/Servicios";
 import Video from "../components/Video";
 import Navbar from "../components/Navbar";
 
-const HomePage = ({ language, setLanguage }) => {
+const HomePage = ({ language, setLanguage, isAndroid, isIOS }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <div>
       <Navbar language={language} setLanguage={setLanguage} />
-      <Home language={language} setLanguage={setLanguage} />
+      <Home
+        language={language}
+        setLanguage={setLanguage}
+        isAndroid={isAndroid}
+        isIOS={isIOS}
+      />
       <Clientes language={language} setLanguage={setLanguage} />
       <Video language={language} setLanguage={setLanguage} />
       <Servicios language={language} setLanguage={setLanguage} />
@@ -30,7 +35,12 @@ const HomePage = ({ language, setLanguage }) => {
       <Planes language={language} setLanguage={setLanguage} />
       <Lanzadera language={language} setLanguage={setLanguage} />
       <Opiniones language={language} setLanguage={setLanguage} />
-      <Descarga language={language} setLanguage={setLanguage} />
+      <Descarga
+        language={language}
+        setLanguage={setLanguage}
+        isAndroid={isAndroid}
+        isIOS={isIOS}
+      />
       <Instagram language={language} setLanguage={setLanguage} />
       <Contacto language={language} setLanguage={setLanguage} />
       <Footer language={language} setLanguage={setLanguage} />

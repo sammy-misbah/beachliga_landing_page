@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Terms from "./pages/Terms";
 import Whatsapp from "./utils/Whatsapp";
@@ -12,6 +12,18 @@ import Descarga from "./pages/Descarga";
 
 function App() {
   const [language, setLanguage] = useState("en");
+  const [isAndroid, setIsAndroid] = useState(false);
+  const [isIOS, setIsIOS] = useState(false);
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent;
+    setIsAndroid(userAgent.includes("Android"));
+    setIsIOS(
+      userAgent.includes("iPhone") ||
+        userAgent.includes("iPad") ||
+        userAgent.includes("iPod")
+    );
+  }, []);
 
   const handleLanguageChange = (newLanguage) => {
     setLanguage(newLanguage);
@@ -23,25 +35,45 @@ function App() {
         <Route
           path="/"
           element={
-            <HomePage language={language} setLanguage={handleLanguageChange} />
+            <HomePage
+              language={language}
+              setLanguage={handleLanguageChange}
+              isAndroid={isAndroid}
+              isIOS={isIOS}
+            />
           }
         />
         <Route
           path="/terms"
           element={
-            <Terms language={language} setLanguage={handleLanguageChange} />
+            <Terms
+              language={language}
+              setLanguage={handleLanguageChange}
+              isAndroid={isAndroid}
+              isIOS={isIOS}
+            />
           }
         />
         <Route
           path="/jugadores"
           element={
-            <Jugadores language={language} setLanguage={handleLanguageChange} />
+            <Jugadores
+              language={language}
+              setLanguage={handleLanguageChange}
+              isAndroid={isAndroid}
+              isIOS={isIOS}
+            />
           }
         />
         <Route
           path="/clubes"
           element={
-            <Clubes language={language} setLanguage={handleLanguageChange} />
+            <Clubes
+              language={language}
+              setLanguage={handleLanguageChange}
+              isAndroid={isAndroid}
+              isIOS={isIOS}
+            />
           }
         />
         <Route
@@ -50,6 +82,8 @@ function App() {
             <Federaciones
               language={language}
               setLanguage={handleLanguageChange}
+              isAndroid={isAndroid}
+              isIOS={isIOS}
             />
           }
         />
@@ -59,13 +93,20 @@ function App() {
             <Entrenadores
               language={language}
               setLanguage={handleLanguageChange}
+              isAndroid={isAndroid}
+              isIOS={isIOS}
             />
           }
         />
         <Route
           path="/download"
           element={
-            <Descarga language={language} setLanguage={handleLanguageChange} />
+            <Descarga
+              language={language}
+              setLanguage={handleLanguageChange}
+              isAndroid={isAndroid}
+              isIOS={isIOS}
+            />
           }
         />
         <Route path="*" element={<Navigate to="/" replace />} />

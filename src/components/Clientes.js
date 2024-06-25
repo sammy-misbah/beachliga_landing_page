@@ -3,29 +3,30 @@ import React from "react";
 const Clientes = ({ language }) => {
   const translations = {
     en: {
-      title_1: "Our track",
-      title_2: "record is",
-      title_3: "your trust",
+      title_1: "Make our",
+      title_2: "experience",
+      title_3: "your ally",
       subtitle_1: "Over three years organizing and managing",
       subtitle_2: "competitions throughout Spain.",
       tournaments: "tournaments",
       users: "users",
     },
     es: {
-      title_1: "Nuestra",
-      title_2: "trayectoria",
-      title_3: "es tu confianza",
+      title_1: "Haz de nuestra",
+      title_2: "experiencia",
+      title_3: "tu aliada",
       subtitle_1: "Más de tres años organizando y gestionando",
       subtitle_2: "competiciones por toda España.",
       tournaments: "torneos",
       users: "usuarios",
     },
     ger: {
-      title_1: "Unsere",
-      title_2: "Erfahrung",
-      title_3: "ist dein Vertrauen",
-      subtitle_1: "Über drei Jahre lang haben wir organisiert und verwaltet",
-      subtitle_2: "Turniere in ganz Spanien.",
+      title_1: "Nutze",
+      title_2: "unsere Erfahrung",
+      title_3: "zu deinem Vorteil",
+      subtitle_1:
+        "Seit mehr als 3 Jahren unterstützen wir mit unserer Software",
+      subtitle_2: "die Turnierorganisation in ganz Europa.",
       tournaments: "Turniere",
       users: "Benutzer",
     },
@@ -45,7 +46,7 @@ const Clientes = ({ language }) => {
             <br /> {translations[language].subtitle_2}
           </div>
         </div>
-        <div className="flex space-x-12">
+        <div className="flex space-x-6 md:space-x-12">
           <div className="flex justify-center items-center">
             <div className="flex flex-col justify-center items-center text-2xl md:text-5xl text-white border-4 rounded-full w-40 h-40 md:w-60 md:h-60">
               +1.500
