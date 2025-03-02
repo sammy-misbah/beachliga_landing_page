@@ -4,6 +4,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
 import { faArrowLeft, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { HashLink as Link } from "react-router-hash-link";
 import { useEffect } from "react";
+import { getAuth, signOut } from "firebase/auth";
 
 const Navbar = ({ language, setLanguage }) => {
   const dropdownRef = useRef(null);
@@ -11,6 +12,8 @@ const Navbar = ({ language, setLanguage }) => {
   const mobileMenuRef = useRef(null);
   const [dropdownIsOpen, setDropdownIsOpen] = useState(false);
   const [subDropdownIsOpen, setSubDropdownIsOpen] = useState(false);
+  const auth = getAuth();
+  const user = auth.currentUser;
 
   useEffect(() => {
     const closeMenus = (e) => {
@@ -76,6 +79,9 @@ const Navbar = ({ language, setLanguage }) => {
       plans: "Plans & Pricing",
       news: "News",
       contact: "Contact us",
+      events: "Events",
+      login: "Login",
+      logout: "Logout",
     },
     es: {
       home: "Inicio",
@@ -88,6 +94,9 @@ const Navbar = ({ language, setLanguage }) => {
       plans: "Planes & Precios",
       news: "Noticias",
       contact: "Contacto",
+      events: "Eventos",
+      login: "Iniciar sesión",
+      logout: "Cerrar sesión",
     },
     ger: {
       home: "Home",
@@ -100,6 +109,9 @@ const Navbar = ({ language, setLanguage }) => {
       plans: "Pläne & Preise",
       news: "Neuigkeiten",
       contact: "Kontakt",
+      events: "Veranstaltungen",
+      login: "Anmelden",
+      logout: "Abmelden",
     },
   };
 
@@ -108,7 +120,7 @@ const Navbar = ({ language, setLanguage }) => {
       <div className="flex w-[80%] max-w-[1200px] mx-auto items-center justify-between px-6">
         <Link to="/">
           <img
-            src="./assets/vector_logo.png"
+            src="/assets/vector_logo.png"
             className="h-[45px]"
             alt="vector-logo"
           />
@@ -168,6 +180,26 @@ const Navbar = ({ language, setLanguage }) => {
           <Link to="/#contact" className="whitespace-nowrap">
             {translations[language].contact}
           </Link>
+          <Link to="/events" className="whitespace-nowrap">
+            {translations[language].events}
+          </Link>
+          {user ? (
+            <button
+              onClick={() => {
+                signOut(auth);
+                localStorage.removeItem("authToken");
+                localStorage.removeItem("userData");
+                localStorage.removeItem("userInfo");
+              }}
+              className="whitespace-nowrap"
+            >
+              {translations[language].logout}
+            </button>
+          ) : (
+            <Link to="/login" className="whitespace-nowrap">
+              {translations[language].login}
+            </Link>
+          )}
         </div>
         <div className="md:hidden" ref={mobileMenuRef}>
           <div
@@ -224,21 +256,21 @@ const Navbar = ({ language, setLanguage }) => {
       <div className="flex items-center pr-12 pb-2">
         <div className="cursor-pointer" onClick={() => setLanguage("en")}>
           <img
-            src="./assets/greatbritain_flag.svg"
+            src="/assets/greatbritain_flag.svg"
             className="min-w-[30px] w-[30px] h-[20px] mr-3"
             alt="gb_flag"
           />
         </div>
         <div className="cursor-pointer" onClick={() => setLanguage("es")}>
           <img
-            src="./assets/spain_flag.png"
+            src="/assets/spain_flag.png"
             className="min-w-[30px] w-[30px] h-[20px] mr-3"
             alt="spain_flag"
           />
         </div>
         <div className="cursor-pointer" onClick={() => setLanguage("ger")}>
           <img
-            src="./assets/germany_flag.png"
+            src="/assets/germany_flag.png"
             className="min-w-[30px] w-[30px] h-[20px]"
             alt="germany_flag"
           />

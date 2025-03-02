@@ -34,7 +34,7 @@ const Footer = ({ language, setLanguage }) => {
           target="_blank"
           rel="noreferrer"
         >
-          <img src="./assets/linkedin.png" alt="linkedin" />
+          <img src="/assets/linkedin.png" alt="linkedin" />
         </a>
         <div className="flex mr-[10px] text-white lg:space-x-12 lg:text-md lg:flex-row flex-col space-y-1 lg:-space-y-0">
           <Link to="/terms">{translations[language].terms}</Link>

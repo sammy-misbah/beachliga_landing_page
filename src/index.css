@@ -156,3 +156,8 @@ button {
 .icon-blue {
   color: #00b8de;
 }
+
+.custom-searchbox input:focus {
+  border: none !important;
+  outline: none !important;
+}

@@ -42,15 +42,7 @@ const Descarga = ({ language, setLanguage, isAndroid, isIOS }) => {
             </a>
           </div>
         ) : isIOS ? (
-          <div className="flex items-center space-x-8">
-            <a href="https://apple.co/4asnKF5" target="_blank" rel="noreferrer">
-              <img
-                src="./assets/apple.png"
-                className="h-[40px] lg:h-[50px]"
-                alt="apple"
-              />
-            </a>
-          </div>
+          <div className="flex items-center space-x-8"></div>
         ) : (
           <div className="flex items-center space-x-8">
             <a
